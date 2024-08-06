@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1722945838 source:/home/marko/Documents/Github/DS-A_leetcode/1. Two Sum/1_two_sum/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
