@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1723397586 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/145. Binary Tree Postorder Traversal/145_binary_tree_postorder_traversal_cpp/main.cpp
+	<iostream>
+	<vector>
+
