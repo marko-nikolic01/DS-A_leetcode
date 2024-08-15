@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1723735263 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/404. Sum of Left Leaves/404_sum_of_left_leaves_cpp/main.cpp
+	<iostream>
+	<queue>
+
