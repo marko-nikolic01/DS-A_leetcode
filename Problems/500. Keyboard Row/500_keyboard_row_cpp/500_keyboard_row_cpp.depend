@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724073829 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/500. Keyboard Row/500_keyboard_row_cpp/main.cpp
+	<iostream>
+	<vector>
+
