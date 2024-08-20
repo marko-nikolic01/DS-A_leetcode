@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724152108 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/543. Diameter of Binary Tree/543_diameter_of_binary_tree_cpp/main.cpp
+	<iostream>
+	<queue>
+
