@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724147201 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/530. Minimum Absolute Difference in BST/530_minimum_absolute_difference_in_bst_cpp/main.cpp
+	<iostream>
+	<queue>
+
