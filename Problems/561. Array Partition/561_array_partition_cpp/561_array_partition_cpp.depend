@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1724230911 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/561. Array Partition/561_array_partition_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
