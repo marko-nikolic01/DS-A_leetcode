@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1724236837 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/590. N-ary Tree Postorder Traversal/590_n_ary_tree_postorder_traversal_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
