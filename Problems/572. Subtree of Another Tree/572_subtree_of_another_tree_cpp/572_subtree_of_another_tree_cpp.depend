@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724234795 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/572. Subtree of Another Tree/572_subtree_of_another_tree_cpp/main.cpp
+	<iostream>
+	<queue>
+
