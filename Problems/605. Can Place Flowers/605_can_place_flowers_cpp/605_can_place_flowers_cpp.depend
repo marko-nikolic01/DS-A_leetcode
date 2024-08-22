@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724334667 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/605. Can Place Flowers/605_can_place_flowers_cpp/main.cpp
+	<iostream>
+	<vector>
+
