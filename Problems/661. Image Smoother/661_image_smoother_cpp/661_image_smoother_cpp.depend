@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1724498661 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/661. Image Smoother/661_image_smoother_cpp/main.cpp
+	<iostream>
+	<vector>
+
