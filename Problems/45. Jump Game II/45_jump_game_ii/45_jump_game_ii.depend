@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1725105491 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/45. Jump Game II/45_jump_game_ii/main.cpp
+	<iostream>
+	<vector>
+
