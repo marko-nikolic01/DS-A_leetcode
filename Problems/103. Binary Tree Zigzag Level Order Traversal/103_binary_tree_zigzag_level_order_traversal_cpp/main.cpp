@@ -13,7 +13,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-vector<vector<int>> levelOrder(TreeNode* root) {
+vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
     if(!root) {
         return {};
     }
@@ -21,12 +21,17 @@ vector<vector<int>> levelOrder(TreeNode* root) {
     queue<TreeNode*> nodes;
     nodes.push(root);
 
-    vector<vector<int>> levelOrders;
-    while(!nodes.empty()) {
-        vector<int> levelOrder;
+    bool direction = false;
 
-        for(int i = nodes.size(); i > 0; --i) {
-            levelOrder.push_back(nodes.front()->val);
+    vector<vector<int>> levelOrders;
+
+    while(!nodes.empty()) {
+        int n = nodes.size();
+        vector<int> levelOrder(n);
+
+        for(int i = 0; i < n; ++i) {
+            int index = direction ? n - i - 1 : i;
+            levelOrder[index] = nodes.front()->val;
 
             if(nodes.front()->left) {
                 nodes.push(nodes.front()->left);
@@ -38,6 +43,8 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 
             nodes.pop();
         }
+
+        direction = !direction;
 
         levelOrders.push_back(levelOrder);
     }
@@ -90,7 +97,7 @@ void testLevelOrder(TreeNode* root, const vector<vector<int>>& expected) {
     printLevelOrder(expected);
 
     cout << "Result:   ";
-    printLevelOrder(levelOrder(root));
+    printLevelOrder(zigzagLevelOrder(root));
 
     cout << endl;
 }
@@ -101,10 +108,14 @@ int main() {
     root1->right = new TreeNode(3);
     root1->left->left = new TreeNode(4);
     root1->left->right = new TreeNode(5);
-    vector<vector<int>> expected1 = {{1}, {2, 3}, {4, 5}};
+    root1->right->left = new TreeNode(6);
+    root1->right->right = new TreeNode(7);
+
+    vector<vector<int>> expected1 = {{1}, {3, 2}, {4, 5, 6, 7}};
     testLevelOrder(root1, expected1);
 
     TreeNode* root2 = new TreeNode(10);
+
     vector<vector<int>> expected2 = {{10}};
     testLevelOrder(root2, expected2);
 
@@ -115,9 +126,15 @@ int main() {
     root3->left->right = new TreeNode(5);
     root3->right->left = new TreeNode(6);
     root3->right->right = new TreeNode(7);
-    vector<vector<int>> expected3 = {{1}, {2, 3}, {4, 5, 6, 7}};
+    root3->left->left->left = new TreeNode(8);
+    root3->left->left->right = new TreeNode(9);
+
+    vector<vector<int>> expected3 = {{1}, {3, 2}, {4, 5, 6, 7}, {9, 8}};
     testLevelOrder(root3, expected3);
+
+    TreeNode* root4 = nullptr;
+    vector<vector<int>> expected4 = {};
+    testLevelOrder(root4, expected4);
 
     return 0;
 }
-
