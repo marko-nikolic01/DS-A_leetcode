@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1725978817 source:/home/marko/Documents/Github/DS-A_leetcode/Problems/198. House Robber/198_house_robber_cpp/main.cpp
+	<iostream>
+	<vector>
+
