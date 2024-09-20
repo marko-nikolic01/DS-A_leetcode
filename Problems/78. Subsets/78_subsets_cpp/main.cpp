@@ -37,8 +37,6 @@ void printVector(const vector<int>& vec) {
 }
 
 void testSubsets(const vector<int>& input, const vector<vector<int>>& expected) {
-    vector<vector<int>> result = subsets(const_cast<vector<int>&>(input));
-
     cout << "Input: ";
     printVector(input);
     cout << endl;
@@ -51,7 +49,7 @@ void testSubsets(const vector<int>& input, const vector<vector<int>>& expected) 
     cout << endl;
 
     cout << "Result: ";
-    for (const auto& vec : result) {
+    for (const auto& vec : subsets(const_cast<vector<int>&>(input))) {
         printVector(vec);
         cout << " ";
     }

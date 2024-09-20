@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1726834661 source:c:\users\marko\documents\github\ds-a_leetcode\problems\78. subsets\78_subsets_cpp\main.cpp
+	<iostream>
+	<vector>
+
