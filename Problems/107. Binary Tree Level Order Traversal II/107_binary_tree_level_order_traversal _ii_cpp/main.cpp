@@ -81,8 +81,6 @@ void printLevelOrder(TreeNode* root) {
 }
 
 void testLevelOrderBottom(TreeNode* root, const vector<vector<int>>& expected) {
-    vector<vector<int>> result = levelOrderBottom(root);
-
     cout << "Tree:" << endl;
     printLevelOrder(root);
 
@@ -98,7 +96,7 @@ void testLevelOrderBottom(TreeNode* root, const vector<vector<int>>& expected) {
     cout << endl;
 
     cout << "Result: ";
-    for (const auto& level : result) {
+    for (const auto& level : levelOrderBottom(root)) {
         cout << "[";
         for (size_t i = 0; i < level.size(); ++i) {
             cout << level[i];
