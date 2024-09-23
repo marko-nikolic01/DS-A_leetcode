@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727118421 source:c:\users\marko\documents\github\ds-a_leetcode\problems\695. max area of island\695_max_area_of_island_cpp\main.cpp
+	<iostream>
+	<vector>
+
