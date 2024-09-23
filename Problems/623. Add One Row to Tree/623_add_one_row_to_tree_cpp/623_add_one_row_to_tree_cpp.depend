@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727104977 source:c:\users\marko\documents\github\ds-a_leetcode\problems\623. add one row to tree\623_add_one_row_to_tree_cpp\main.cpp
+	<iostream>
+	<queue>
+
