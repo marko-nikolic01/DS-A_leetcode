@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1727099402 source:c:\users\marko\documents\github\ds-a_leetcode\problems\515. find largest value in each tree row\515_find_largest_value_in_each_tree_row_cpp\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
