@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727257717 source:c:\users\marko\documents\github\ds-a_leetcode\problems\2091. removing minimum and maximum from array\2091_removing_minimum_and_maximum_from_array_cpp\main.cpp
+	<iostream>
+	<vector>
+
