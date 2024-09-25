@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1727253195 source:c:\users\marko\documents\github\ds-a_leetcode\problems\1493. longest subarray of 1's after deleting one element\1493_longest_subarray_of_1_s_after_deleting_one_element_cpp\main.cpp
+	<iostream>
+	<vector>
+
