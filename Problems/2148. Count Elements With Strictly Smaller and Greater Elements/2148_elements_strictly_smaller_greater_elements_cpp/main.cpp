@@ -44,8 +44,7 @@ void runTest(vector<int> nums, int expected) {
     cout << endl;
 }
 
-int main()
-{
+int main() {
     runTest({1, 2, 3, 4, 5}, 3);
     runTest({1, 1, 1, 1, 1}, 0);
     runTest({1, 2, 2, 3, 4, 4, 5}, 5);
