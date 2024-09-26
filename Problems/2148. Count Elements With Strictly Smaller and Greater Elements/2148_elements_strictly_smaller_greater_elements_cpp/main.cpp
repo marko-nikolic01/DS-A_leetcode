@@ -31,7 +31,6 @@ int countElements(vector<int>& nums) {
 }
 
 void runTest(vector<int> nums, int expected) {
-    int result = countElements(nums);
     cout << "Input: ";
     for (int num : nums) {
         cout << num << " ";
@@ -40,7 +39,7 @@ void runTest(vector<int> nums, int expected) {
 
     cout << "Expected: " << expected << endl;
 
-    cout << "Result: " << result << endl;
+    cout << "Result: " << countElements(nums) << endl;
 
     cout << endl;
 }
