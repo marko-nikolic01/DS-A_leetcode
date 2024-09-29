@@ -30,3 +30,28 @@ int main() {
 
     return 0;
 }
+
+ListNode* doubleIt(ListNode* head) {
+        vector<ListNode*> nodes;
+
+        ListNode* current = head;
+        while(current) {
+            nodes.push_back(current);
+
+            current = current->next;
+        }
+
+        int carry = 0;
+        for(int i = nodes.size() - 1; i > -1; --i) {
+            nodes[i]-> val = 2 * nodes[i]-> val + carry;
+
+            carry = nodes[i]-> val / 10;
+            nodes[i]-> val %= 10;
+        }
+
+        if(carry > 0) {
+            head = new ListNode(carry, head);
+        }
+
+        return head;
+    }
