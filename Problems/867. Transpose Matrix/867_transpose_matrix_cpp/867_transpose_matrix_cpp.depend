@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1728054226 source:c:\users\marko\documents\github\ds-a_leetcode\problems\867. transpose matrix\867_transpose_matrix_cpp\main.cpp
+	<iostream>
+	<vector>
+
