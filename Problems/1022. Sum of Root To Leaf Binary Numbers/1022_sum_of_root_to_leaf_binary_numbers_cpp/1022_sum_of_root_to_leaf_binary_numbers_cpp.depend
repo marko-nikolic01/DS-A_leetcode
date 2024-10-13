@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1728747360 source:c:\users\marko\documents\github\ds-a_leetcode\problems\1022. sum of root to leaf binary numbers\1022_sum_of_root_to_leaf_binary_numbers_cpp\main.cpp
+	<iostream>
+	<queue>
+
