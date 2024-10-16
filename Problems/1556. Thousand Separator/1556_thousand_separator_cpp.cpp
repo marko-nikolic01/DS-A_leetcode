@@ -16,11 +16,15 @@ string thousandSeparator(int n) {
         if(n > 0) {
             thousandSeparatedNumber = (char)(n % 10 + 48) + thousandSeparatedNumber;
             n /= 10;
+        } else {
+            break;
         }
 
         if(n > 0) {
             thousandSeparatedNumber = (char)(n % 10 + 48) + thousandSeparatedNumber;
             n /= 10;
+        } else {
+            break;
         }
 
         if(n > 0) {
