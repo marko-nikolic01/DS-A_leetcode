@@ -11,13 +11,13 @@ int eliminateMaximum(vector<int>& dist, vector<int>& speed) {
 
     sort(dist.begin(), dist.end(), greater<int>());
 
-    int monstersEliminated = 0;
+    speed[0] = 0;
 
-    for(int i = dist.size() - 1; i > -1 && dist[i] - monstersEliminated > 0; --i) {
-        monstersEliminated++;
+    for(int i = dist.size() - 1; i > -1 && dist[i] - speed[0] > 0; --i) {
+        speed[0]++;
     }
 
-    return monstersEliminated;
+    return speed[0];
 }
 
 void test(vector<int> dist, vector<int> speed, int expected) {
