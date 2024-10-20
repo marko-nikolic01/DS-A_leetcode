@@ -18,7 +18,7 @@ vector<int> decode(vector<int>& encoded, int first) {
 
     return encoded;
 }
-void runTestCase(vector<int> encoded, int first, vector<int> expected) {
+void test(vector<int> encoded, int first, vector<int> expected) {
     cout << "Encoded: ";
     for (int num : encoded) {
         cout << num << " ";
@@ -43,12 +43,12 @@ void runTestCase(vector<int> encoded, int first, vector<int> expected) {
 }
 
 int main() {
-    runTestCase({1, 2, 3}, 0, {0, 1, 3, 0});
-    runTestCase({6, 5, 4}, 2, {2, 4, 1, 5});
-    runTestCase({3, 2, 1}, 5, {5, 6, 4, 5});
-    runTestCase({1, 0, 2, 1}, 4, {4, 5, 5, 7, 6});
-    runTestCase({0, 0, 0}, 0, {0, 0, 0, 0});
-    runTestCase({0, 1, 0}, 1, {1, 1, 0, 0});
+    test({1, 2, 3}, 0, {0, 1, 3, 0});
+    test({6, 5, 4}, 2, {2, 4, 1, 5});
+    test({3, 2, 1}, 5, {5, 6, 4, 5});
+    test({1, 0, 2, 1}, 4, {4, 5, 5, 7, 6});
+    test({0, 0, 0}, 0, {0, 0, 0, 0});
+    test({0, 1, 0}, 1, {1, 1, 0, 0});
 
     return 0;
 }
