@@ -17,7 +17,7 @@ int finalValueAfterOperations(vector<string>& operations) {
     return x;
 }
 
-void runTestCase(vector<string> operations, int expected) {
+void test(vector<string> operations, int expected) {
     cout << "Operations: ";
     for (string op : operations) {
         cout << op << " ";
@@ -32,13 +32,13 @@ void runTestCase(vector<string> operations, int expected) {
 }
 
 int main() {
-    runTestCase({"--X", "X++", "X++"}, 1);
-    runTestCase({"++X", "++X", "X--"}, 1);
-    runTestCase({"X++", "++X", "--X", "--X"}, 0);
-    runTestCase({"++X", "--X", "X++", "X--"}, 0);
-    runTestCase({"X++", "X++", "--X", "--X", "++X"}, 1);
-    runTestCase({"X++", "X++", "++X"}, 3);
-    runTestCase({"X--", "X--", "--X"}, -3);
+    test({"--X", "X++", "X++"}, 1);
+    test({"++X", "++X", "X--"}, 1);
+    test({"X++", "++X", "--X", "--X"}, 0);
+    test({"++X", "--X", "X++", "X--"}, 0);
+    test({"X++", "X++", "--X", "--X", "++X"}, 1);
+    test({"X++", "X++", "++X"}, 3);
+    test({"X--", "X--", "--X"}, -3);
 
     return 0;
 }

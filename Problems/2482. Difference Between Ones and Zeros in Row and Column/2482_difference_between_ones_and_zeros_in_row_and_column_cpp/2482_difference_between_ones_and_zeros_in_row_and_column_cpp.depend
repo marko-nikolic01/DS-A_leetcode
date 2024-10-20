@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729454906 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2482. Difference Between Ones and Zeros in Row and Column/2482_difference_between_ones_and_zeros_in_row_and_column_cpp/main.cpp
+	<iostream>
+	<vector>
+
