@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1729594589 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1376. Time Needed to Inform All Employees/1376_time_needed_to_inform_all_employees_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
