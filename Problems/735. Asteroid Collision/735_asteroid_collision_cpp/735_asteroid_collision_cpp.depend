@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729710147 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/735. Asteroid Collision/735_asteroid_collision_cpp/main.cpp
+	<iostream>
+	<vector>
+
