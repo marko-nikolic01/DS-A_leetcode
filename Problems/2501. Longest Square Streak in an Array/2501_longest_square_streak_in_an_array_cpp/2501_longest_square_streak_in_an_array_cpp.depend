@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1730122042 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2501. Longest Square Streak in an Array/2501_longest_square_streak_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
