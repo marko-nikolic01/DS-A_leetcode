@@ -76,5 +76,15 @@ int main() {
     long long expected5 = 5;
     test(roads5, seats5, expected5);
 
+    vector<vector<int>> roads6 = {};
+    int seats6 = 2;
+    long long expected6 = 0;
+    test(roads6, seats6, expected6);
+
+    vector<vector<int>> roads7 = {{0, 1}};
+    int seats7 = 5;
+    long long expected7 = 1;
+    test(roads7, seats7, expected7);
+
     return 0;
 }

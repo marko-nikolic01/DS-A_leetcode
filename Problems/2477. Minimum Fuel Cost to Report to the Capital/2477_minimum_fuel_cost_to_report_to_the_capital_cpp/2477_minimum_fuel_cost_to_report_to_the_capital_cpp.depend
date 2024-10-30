@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1730292098 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2477. Minimum Fuel Cost to Report to the Capital/2477_minimum_fuel_cost_to_report_to_the_capital_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+

@@ -72,7 +72,7 @@ void printTree(TreeNode* root) {
     }
 }
 
-void runTest(TreeNode* root, int expected) {
+void test(TreeNode* root, int expected) {
     cout << "Tree:";
     printTree(root);
 
@@ -90,7 +90,7 @@ int main() {
     root1->left->left = new TreeNode(1);
     root1->left->right = new TreeNode(1);
     root1->right->right = new TreeNode(5);
-    runTest(root1, 2);
+    test(root1, 2);
 
     TreeNode* root2 = new TreeNode(1);
     root2->left = new TreeNode(4);
@@ -98,7 +98,7 @@ int main() {
     root2->left->left = new TreeNode(4);
     root2->left->right = new TreeNode(4);
     root2->right->right = new TreeNode(5);
-    runTest(root2, 2);
+    test(root2, 2);
 
     TreeNode* root3 = new TreeNode(1);
     root3->left = new TreeNode(1);
@@ -107,18 +107,18 @@ int main() {
     root3->left->right = new TreeNode(1);
     root3->right->left = new TreeNode(1);
     root3->right->right = new TreeNode(1);
-    runTest(root3, 4);
+    test(root3, 4);
 
     TreeNode* root4 = new TreeNode(1);
     root4->left = new TreeNode(2);
     root4->right = new TreeNode(3);
-    runTest(root4, 0);
+    test(root4, 0);
 
     TreeNode* root5 = new TreeNode(1);
-    runTest(root5, 0);
+    test(root5, 0);
 
     TreeNode* root6 = nullptr;
-    runTest(root6, 0);
+    test(root6, 0);
 
     return 0;
 }
