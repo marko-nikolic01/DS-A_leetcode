@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1730297504 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1080. Insufficient Nodes in Root to Leaf Paths/1080_insufficient_nodes_in_root_to_leaf_paths_cpp/main.cpp
+	<iostream>
+	<queue>
+
