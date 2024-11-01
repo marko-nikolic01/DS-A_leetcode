@@ -83,7 +83,7 @@ void printTree(TreeNode* root) {
     }
 }
 
-void runTest(TreeNode* root1, TreeNode* root2, vector<int> expected) {
+void test(TreeNode* root1, TreeNode* root2, vector<int> expected) {
     cout << "Tree 1:";
     printTree(root1);
 
@@ -108,35 +108,35 @@ void runTest(TreeNode* root1, TreeNode* root2, vector<int> expected) {
 int main() {
     TreeNode* root1 = new TreeNode(2, new TreeNode(1), new TreeNode(4));
     TreeNode* root2 = new TreeNode(1, nullptr, new TreeNode(3));
-    runTest(root1, root2, {1, 1, 2, 3, 4});
+    test(root1, root2, {1, 1, 2, 3, 4});
 
     TreeNode* root3 = new TreeNode(5, new TreeNode(3, new TreeNode(2), new TreeNode(4)), new TreeNode(8));
     TreeNode* root4 = new TreeNode(7, new TreeNode(6), new TreeNode(9));
-    runTest(root3, root4, {2, 3, 4, 5, 6, 7, 8, 9});
+    test(root3, root4, {2, 3, 4, 5, 6, 7, 8, 9});
 
     TreeNode* root5 = new TreeNode(1);
     TreeNode* root6 = new TreeNode(2);
-    runTest(root5, root6, {1, 2});
+    test(root5, root6, {1, 2});
 
     TreeNode* root7 = new TreeNode(3, new TreeNode(1, nullptr, new TreeNode(2)), new TreeNode(4));
     TreeNode* root8 = new TreeNode(7, new TreeNode(6), nullptr);
-    runTest(root7, root8, {1, 2, 3, 4, 6, 7});
+    test(root7, root8, {1, 2, 3, 4, 6, 7});
 
     TreeNode* root9 = new TreeNode(10, new TreeNode(8, new TreeNode(7), nullptr), new TreeNode(15));
     TreeNode* root10 = new TreeNode(5, new TreeNode(3), new TreeNode(12));
-    runTest(root9, root10, {3, 5, 7, 8, 10, 12, 15});
+    test(root9, root10, {3, 5, 7, 8, 10, 12, 15});
 
     TreeNode* root11 = new TreeNode(1, nullptr, new TreeNode(5));
     TreeNode* root12 = new TreeNode(4, new TreeNode(2, new TreeNode(1), nullptr), new TreeNode(6));
-    runTest(root11, root12, {1, 1, 2, 4, 5, 6});
+    test(root11, root12, {1, 1, 2, 4, 5, 6});
 
     TreeNode* root13 = new TreeNode(2, new TreeNode(1), new TreeNode(3));
     TreeNode* root14 = nullptr;
-    runTest(root13, root14, {1, 2, 3});
+    test(root13, root14, {1, 2, 3});
 
     TreeNode* root15 = nullptr;
     TreeNode* root16 = nullptr;
-    runTest(root15, root16, {});
+    test(root15, root16, {});
 
     return 0;
 }
