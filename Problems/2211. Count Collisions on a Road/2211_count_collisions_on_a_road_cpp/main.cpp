@@ -29,7 +29,7 @@ int countCollisions(string directions) {
     return collisions;
 }
 
-void test(const string& directions, int expected) {
+void test(string directions, int expected) {
     cout << "Cars: " << directions << endl;
 
     cout << "Expected: " << expected << endl;
