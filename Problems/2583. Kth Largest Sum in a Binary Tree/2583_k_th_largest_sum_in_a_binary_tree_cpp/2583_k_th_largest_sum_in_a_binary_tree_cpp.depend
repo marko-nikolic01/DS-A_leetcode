@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1730566893 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2583. Kth Largest Sum in a Binary Tree/2583_k_th_largest_sum_in_a_binary_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+
