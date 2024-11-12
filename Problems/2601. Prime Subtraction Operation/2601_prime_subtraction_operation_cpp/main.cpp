@@ -114,7 +114,8 @@ bool primeSubOperation(vector<int>& nums) {
             }
             nums[i] -= nextGreaterPrimes[nums[i] - nums[i + 1]];
         }
-    }
+
+    break;    }
 
     return true;
 }
