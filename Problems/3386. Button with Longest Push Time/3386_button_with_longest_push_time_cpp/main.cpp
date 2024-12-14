@@ -20,7 +20,7 @@ int buttonWithLongestTime(vector<vector<int>>& events) {
     return button;
 }
 
-void printTestCase(vector<vector<int>>& events, int expected) {
+void test(vector<vector<int>>& events, int expected) {
     cout << "Events: ";
     for (vector<int> event : events) {
         cout << "[" << event[0] << ", " << event[1] << "] ";
@@ -37,27 +37,27 @@ void printTestCase(vector<vector<int>>& events, int expected) {
 int main() {
     vector<vector<int>> test1 = {{1, 2}, {2, 4}, {3, 6}, {4, 8}};
     int expected1 = 1;
-    printTestCase(test1, expected1);
+    test(test1, expected1);
 
     vector<vector<int>> test2 = {{1, 1}, {2, 3}, {3, 7}, {4, 10}};
     int expected2 = 3;
-    printTestCase(test2, expected2);
+    test(test2, expected2);
 
     vector<vector<int>> test3 = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
     int expected3 = 1;
-    printTestCase(test3, expected3);
+    test(test3, expected3);
 
     vector<vector<int>> test4 = {{1, 5}, {2, 7}, {3, 9}, {4, 12}};
     int expected4 = 1;
-    printTestCase(test4, expected4);
+    test(test4, expected4);
 
     vector<vector<int>> test5 = {{1, 5}, {2, 6}, {3, 8}, {4, 11}, {5, 14}};
     int expected5 = 1;
-    printTestCase(test5, expected5);
+    test(test5, expected5);
 
     vector<vector<int>> test6 = {{1, 1}, {2, 3}, {3, 5}, {4, 7}, {5, 9}};
     int expected6 = 2;
-    printTestCase(test6, expected6);
+    test(test6, expected6);
 
     return 0;
 }
