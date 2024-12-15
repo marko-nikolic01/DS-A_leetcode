@@ -13,7 +13,7 @@ int smallestNumber(int n) {
     return number;
 }
 
-void printTestCase(int n, int expected) {
+void test(int n, int expected) {
     cout << "n = " << n << endl;
 
     cout << "Expected: " << expected << endl;
@@ -24,12 +24,12 @@ void printTestCase(int n, int expected) {
 }
 
 int main() {
-    printTestCase(1, 1);
-    printTestCase(2, 3);
-    printTestCase(5, 7);
-    printTestCase(10, 15);
-    printTestCase(20, 31);
-    printTestCase(100, 127);
+    test(1, 1);
+    test(2, 3);
+    test(5, 7);
+    test(10, 15);
+    test(20, 31);
+    test(100, 127);
 
     return 0;
 }
