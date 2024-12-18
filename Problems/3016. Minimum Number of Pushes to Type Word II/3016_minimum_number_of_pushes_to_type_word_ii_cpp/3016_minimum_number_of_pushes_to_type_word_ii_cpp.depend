@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1734544860 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3016. Minimum Number of Pushes to Type Word II/3016_minimum_number_of_pushes_to_type_word_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
