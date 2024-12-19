@@ -20,14 +20,14 @@ int maxBottlesDrunk(int numBottles, int numExchange) {
     return bottlesDrunk;
 }
 
-void test(int bottles, int exchange, int expected) {
-    cout << "Bottles: " << bottles << endl;
+void test(int numBottles, int numExchange, int expected) {
+    cout << "Bottles: " << numBottles << endl;
 
-    cout << "Exchange: " << exchange << endl;
+    cout << "Exchange: " << numExchange << endl;
 
     cout << "Expected: " << expected << endl;
 
-    cout << "Result: " << maxBottlesDrunk(bottles, exchange) << endl;
+    cout << "Result: " << maxBottlesDrunk(numBottles, numExchange) << endl;
 
     cout << endl;
 }
