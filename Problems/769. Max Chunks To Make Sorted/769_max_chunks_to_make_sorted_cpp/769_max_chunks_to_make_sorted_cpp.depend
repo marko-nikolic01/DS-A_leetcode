@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1734623840 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/769. Max Chunks To Make Sorted/769_max_chunks_to_make_sorted_cpp/main.cpp
+	<iostream>
+	<vector>
+

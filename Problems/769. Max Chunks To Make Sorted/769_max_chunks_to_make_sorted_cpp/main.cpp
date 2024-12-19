@@ -23,7 +23,7 @@ int maxChunksToSorted(vector<int>& arr) {
     return chunks;
 }
 
-void runTestCase(vector<int> arr, int expected) {
+void test(vector<int> arr, int expected) {
     cout << "Input: ";
     for (int num : arr) {
         cout << num << " ";
@@ -31,6 +31,7 @@ void runTestCase(vector<int> arr, int expected) {
     cout << endl;
 
     cout << "Expected: " << expected << endl;
+
     cout << "Result: " << maxChunksToSorted(arr) << endl;
 
     cout << endl;
@@ -38,22 +39,22 @@ void runTestCase(vector<int> arr, int expected) {
 
 int main() {
     vector<int> arr1 = {4, 3, 2, 1, 0};
-    runTestCase(arr1, 1);
+    test(arr1, 1);
 
     vector<int> arr2 = {1, 0, 2, 3, 4};
-    runTestCase(arr2, 4);
+    test(arr2, 4);
 
     vector<int> arr3 = {2, 0, 1};
-    runTestCase(arr3, 1);
+    test(arr3, 1);
 
     vector<int> arr4 = {1, 2, 0, 3};
-    runTestCase(arr4, 2);
+    test(arr4, 2);
 
     vector<int> arr5 = {0, 1, 2, 3, 4};
-    runTestCase(arr5, 5);
+    test(arr5, 5);
 
     vector<int> arr6 = {0};
-    runTestCase(arr6, 1);
+    test(arr6, 1);
 
     return 0;
 }
