@@ -10,6 +10,12 @@ int maxKDivisibleComponents(vector<vector<int>>& tree, vector<int>& values, int 
         if(tree[node][i] != parent) {
             value += maxKDivisibleComponents(tree, values, k, tree[node][i], node, components);
             value %= k;
+        } else {
+            for(--i; i > -1; --i) {
+                value += maxKDivisibleComponents(tree, values, k, tree[node][i], node, components);
+                value %= k;
+            }
+            break;
         }
     }
 
@@ -19,6 +25,7 @@ int maxKDivisibleComponents(vector<vector<int>>& tree, vector<int>& values, int 
     }
     return value;
 }
+
 
 int maxKDivisibleComponents(int n, vector<vector<int>>& edges, vector<int>& values, int k) {
     if(n == 1) {
@@ -32,7 +39,7 @@ int maxKDivisibleComponents(int n, vector<vector<int>>& edges, vector<int>& valu
     }
 
     n = 0;
-    maxKDivisibleComponents(tree, values, k, tree[0][0], -1, n);
+    maxKDivisibleComponents(tree, values, k, 0, -1, n);
 
     return n;
 }
