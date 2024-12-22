@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1734781656 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1038. Binary Search Tree to Greater Sum Tree/1038_binary_search_tree_to_greater_sum_tree_cpp/main.cpp
+	<iostream>
+	<queue>
+
