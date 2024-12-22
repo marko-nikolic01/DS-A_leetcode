@@ -115,7 +115,7 @@ void test(TreeNode* root, TreeNode* target, int k, vector<int> expected) {
     }
     cout << endl;
 
-    cout << "Result:   ";
+    cout << "Result: ";
     for (int result : distanceK(root, target, k)) {
         cout << result << " ";
     }
