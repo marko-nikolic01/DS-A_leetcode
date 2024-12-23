@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1734953581 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2610. Convert an Array Into a 2D Array With Conditions/2610_convert_an_array_into_a_2_d_array_with_conditions_cpp/main.cpp
+	<iostream>
+	<vector>
+
