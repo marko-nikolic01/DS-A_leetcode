@@ -53,16 +53,16 @@ vector<vector<string>> solveNQueens(int n) {
     return nQueens;
 }
 
-void printMatrix(const vector<vector<string>>& solutions) {
-    for (const auto& solution : solutions) {
-        for (const auto& row : solution) {
+void printMatrix(vector<vector<string>> solutions) {
+    for (vector<string> solution : solutions) {
+        for (string row : solution) {
             cout << row << endl;
         }
         cout << endl;
     }
 }
 
-void testNQueens(int n, const vector<vector<string>>& expected) {
+void test(int n, vector<vector<string>> expected) {
     cout << "n: " << n << endl;
 
     cout << "Expected:" << endl;
@@ -75,20 +75,20 @@ void testNQueens(int n, const vector<vector<string>>& expected) {
 }
 
 int main() {
-    testNQueens(1, {
+    test(1, {
         {"Q"}}
     );
 
-    testNQueens(2, {});
+    test(2, {});
 
-    testNQueens(3, {});
+    test(3, {});
 
-    testNQueens(4, {
+    test(4, {
         {".Q..", "...Q", "Q...", "..Q."},
         {"..Q.", "Q...", "...Q", ".Q.."}
     });
 
-    testNQueens(5, {
+    test(5, {
         {"Q....", "..Q..", "....Q", ".Q...", "...Q."},
         {"Q....", "...Q.", ".Q...", "....Q", "..Q.."},
         {".Q...", "...Q.", "Q....", "..Q..", "....Q"},
