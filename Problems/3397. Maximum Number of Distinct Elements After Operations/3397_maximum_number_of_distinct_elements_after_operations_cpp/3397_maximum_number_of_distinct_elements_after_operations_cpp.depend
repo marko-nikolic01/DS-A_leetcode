@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1735208993 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3397. Maximum Number of Distinct Elements After Operations/3397_maximum_number_of_distinct_elements_after_operations_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

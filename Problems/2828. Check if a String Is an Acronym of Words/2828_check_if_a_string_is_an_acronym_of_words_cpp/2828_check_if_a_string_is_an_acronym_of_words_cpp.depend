@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735208569 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2828. Check if a String Is an Acronym of Words/2828_check_if_a_string_is_an_acronym_of_words_cpp/main.cpp
+	<iostream>
+	<vector>
+

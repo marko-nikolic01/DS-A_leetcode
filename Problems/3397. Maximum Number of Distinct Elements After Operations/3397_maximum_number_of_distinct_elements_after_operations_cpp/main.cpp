@@ -42,7 +42,7 @@ int maxDistinctElements(vector<int>& nums, int k) {
     return distinctElements;
 }
 
-void runTestCase(vector<int> nums, int k, int expected) {
+void test(vector<int> nums, int k, int expected) {
     cout << "Input: ";
     for (int num : nums) {
         cout << num << " ";
@@ -59,12 +59,12 @@ void runTestCase(vector<int> nums, int k, int expected) {
 }
 
 int main() {
-    runTestCase({1, 2, 2, 3, 3, 4}, 2, 6);
-    runTestCase({4, 4, 4, 4}, 1, 3);
-    runTestCase({56, 56, 54, 54}, 0, 2);
-    runTestCase({6, 7, 6, 6, 7}, 1, 4);
-    runTestCase({31, 31, 30, 31, 30, 29}, 2, 6);
-    runTestCase({10, 10, 10, 5, 10}, 1, 4);
+    test({1, 2, 2, 3, 3, 4}, 2, 6);
+    test({4, 4, 4, 4}, 1, 3);
+    test({56, 56, 54, 54}, 0, 2);
+    test({6, 7, 6, 6, 7}, 1, 4);
+    test({31, 31, 30, 31, 30, 29}, 2, 6);
+    test({10, 10, 10, 5, 10}, 1, 4);
 
     return 0;
 }
