@@ -30,9 +30,9 @@ int minimumDiameterAfterMerge(vector<vector<int>>& tree, int node, int parent, i
 int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
     int n = edges1.size();
     vector<vector<int>> tree(n + 1);
-    for(int i = n - 1; i > -1; --i) {
-        tree[edges1[i][0]].push_back({edges1[i][1]});
-        tree[edges1[i][1]].push_back({edges1[i][0]});
+    for(--n; n > -1; --n) {
+        tree[edges1[n][0]].push_back({edges1[n][1]});
+        tree[edges1[n][1]].push_back({edges1[n][0]});
     }
 
     int diameter1 = 0;
@@ -40,9 +40,9 @@ int minimumDiameterAfterMerge(vector<vector<int>>& edges1, vector<vector<int>>& 
 
     n = edges2.size();
     tree.assign(n + 1, vector<int>());
-    for(int i = n - 1; i > -1; --i) {
-        tree[edges2[i][0]].push_back({edges2[i][1]});
-        tree[edges2[i][1]].push_back({edges2[i][0]});
+    for(--n; n > -1; --n) {
+        tree[edges2[n][0]].push_back({edges2[n][1]});
+        tree[edges2[n][1]].push_back({edges2[n][0]});
     }
 
     int diameter2 = 0;
