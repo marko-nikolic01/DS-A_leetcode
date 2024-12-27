@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1734869459 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/114. Flatten Binary Tree to Linked List/114_flatten_binary_tree_to_linked_list_cpp/main.cpp
+	<iostream>
+	<stack>
+	<queue>
+
