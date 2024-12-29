@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735294984 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/109. Convert Sorted List to Binary Search Tree/109_convert_sorted_list_to_binary_search_tree_cpp/main.cpp
+	<iostream>
+	<queue>
+
