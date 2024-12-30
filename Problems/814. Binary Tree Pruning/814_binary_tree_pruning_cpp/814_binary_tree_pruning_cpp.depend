@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1735579253 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/814. Binary Tree Pruning/814_binary_tree_pruning_cpp/main.cpp
+	<iostream>
+	<queue>
+
