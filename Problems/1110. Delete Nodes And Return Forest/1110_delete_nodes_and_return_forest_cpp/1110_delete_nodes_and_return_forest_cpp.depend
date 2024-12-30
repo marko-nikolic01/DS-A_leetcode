@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1735582228 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1110. Delete Nodes And Return Forest/1110_delete_nodes_and_return_forest_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_set>
+	<queue>
+
