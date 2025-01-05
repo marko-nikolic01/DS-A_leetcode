@@ -37,12 +37,12 @@ void test(string boxes, vector<int> expected) {
     cout << "Boxes: " << boxes << endl;
 
     cout << "Expected: ";
-    for (int i : expected) {
-        cout << i << " ";
+    for (int e : expected) {
+        cout << e << " ";
     }
     cout << endl;
 
-    cout << "Result:   ";
+    cout << "Result: ";
     for (int result : minOperations(boxes)) {
         cout << result << " ";
     }
