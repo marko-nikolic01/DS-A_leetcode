@@ -89,37 +89,37 @@ void test(TreeNode* root, int expected) {
 }
 
 int main() {
-    TreeNode* test1 = new TreeNode(0);
-    test1->left = new TreeNode(0);
-    test1->left->right = new TreeNode(0);
-    test1->left->right->left = new TreeNode(0);
-    test1->left->right->right = new TreeNode(0);
-    test(test1, 2);
+    TreeNode* root1 = new TreeNode(0);
+    root1->left = new TreeNode(0);
+    root1->left->right = new TreeNode(0);
+    root1->left->right->left = new TreeNode(0);
+    root1->left->right->right = new TreeNode(0);
+    test(root1, 2);
 
-    TreeNode* test2 = new TreeNode(0);
-    test2->left = new TreeNode(0);
-    test2->left->right = new TreeNode(0);
-    test2->left->right->right = new TreeNode(0);
-    test2->left->right->right->right = new TreeNode(0);
-    test(test2, 2);
+    TreeNode* root2 = new TreeNode(0);
+    root2->left = new TreeNode(0);
+    root2->left->right = new TreeNode(0);
+    root2->left->right->right = new TreeNode(0);
+    root2->left->right->right->right = new TreeNode(0);
+    test(root2, 2);
 
-    TreeNode* test3 = new TreeNode(0);
-    test(test3, 1);
+    TreeNode* root3 = new TreeNode(0);
+    test(root3, 1);
 
-    TreeNode* test4 = new TreeNode(0);
-    test4->left = new TreeNode(0);
-    test4->right = new TreeNode(0);
-    test4->left->left = new TreeNode(0);
-    test4->left->right = new TreeNode(0);
-    test4->right->left = new TreeNode(0);
-    test4->right->right = new TreeNode(0);
-    test(test4, 2);
+    TreeNode* root4 = new TreeNode(0);
+    root4->left = new TreeNode(0);
+    root4->right = new TreeNode(0);
+    root4->left->left = new TreeNode(0);
+    root4->left->right = new TreeNode(0);
+    root4->right->left = new TreeNode(0);
+    root4->right->right = new TreeNode(0);
+    test(root4, 2);
 
-    TreeNode* test5 = new TreeNode(0);
-    test5->left = new TreeNode(0);
-    test5->right = new TreeNode(0);
-    test5->right->right = new TreeNode(0);
-    test(test5, 2);
+    TreeNode* root5 = new TreeNode(0);
+    root5->left = new TreeNode(0);
+    root5->right = new TreeNode(0);
+    root5->right->right = new TreeNode(0);
+    test(root5, 2);
 
     return 0;
 }
