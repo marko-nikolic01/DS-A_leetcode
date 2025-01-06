@@ -73,7 +73,7 @@ bool checkMove(vector<vector<char>>& board, int rMove, int cMove, char color) {
     return false;
 }
 
-void printMatrix(const vector<vector<char>> matrix) {
+void printMatrix(vector<vector<char>> matrix) {
     for (vector<char> row : matrix) {
         for (char cell : row) {
             cout << cell << " ";
