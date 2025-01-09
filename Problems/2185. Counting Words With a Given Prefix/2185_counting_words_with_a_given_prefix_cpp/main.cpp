@@ -23,7 +23,7 @@ int prefixCount(vector<string>& words, string pref) {
     return prefixes;
 }
 
-void testCase(vector<string> words, string pref, int expected) {
+void test(vector<string> words, string pref, int expected) {
     cout << "Words: ";
     for(string word : words) {
         cout << "\"" << word << "\" ";
@@ -40,11 +40,11 @@ void testCase(vector<string> words, string pref, int expected) {
 }
 
 int main() {
-    testCase({"pay", "attention", "practice", "attend"}, "at", 2);
-    testCase({"leetcode", "win", "loops", "success"}, "code", 0);
-    testCase({"apple", "application", "app", "apricot"}, "app", 3);
-    testCase({"hello", "world", "hell", "helicopter"}, "hel", 3);
-    testCase({"test", "testing", "tester", "team"}, "tes", 3);
-    testCase({"a", "ab", "abc", "abcd"}, "abc", 2);
+    test({"pay", "attention", "practice", "attend"}, "at", 2);
+    test({"leetcode", "win", "loops", "success"}, "code", 0);
+    test({"apple", "application", "app", "apricot"}, "app", 3);
+    test({"hello", "world", "hell", "helicopter"}, "hel", 3);
+    test({"test", "testing", "tester", "team"}, "tes", 3);
+    test({"a", "ab", "abc", "abcd"}, "abc", 2);
     return 0;
 }
