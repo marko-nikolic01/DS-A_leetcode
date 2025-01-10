@@ -5,7 +5,6 @@ using namespace std;
 
 vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
     vector<short> letters2(26, 0);
-
     vector<short> letters(26);
 
     for(short i = words2.size() - 1; i > -1; --i) {
@@ -13,7 +12,7 @@ vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
 
         for(short j = words2[i].length() - 1; j > -1; --j) {
             if(++letters[words2[i][j] - 'a'] > letters2[words2[i][j] - 'a']) {
-                letters2[words2[i][j] - 'a'] = letters[words2[i][j] - 'a'];
+                ++letters2[words2[i][j] - 'a'];
             }
         }
     }
@@ -36,7 +35,7 @@ vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
         }
 
         if(j == 26) {
-            words1[resultN++] = words1[i];
+            words1[resultN++] = ref(words1[i]);
         }
     }
 
@@ -45,7 +44,7 @@ vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
     return words1;
 }
 
-void runTestCase(vector<string> words1, vector<string> words2, vector<string> expected) {
+void test(vector<string> words1, vector<string> words2, vector<string> expected) {
     cout << "Words 1: ";
     for(string word : words1) {
         cout << "\"" << word << "\" ";
@@ -74,13 +73,13 @@ void runTestCase(vector<string> words1, vector<string> words2, vector<string> ex
 }
 
 int main() {
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"e", "o"}, {"facebook", "google", "leetcode"});
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"l", "e"}, {"apple", "google", "leetcode"});
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"a"}, {"amazon", "apple", "facebook"});
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"oo"}, {"facebook", "google"});
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"x"}, {});
-    runTestCase({"amazon", "apple", "facebook", "google", "leetcode"}, {"e", "l", "o"}, {"google", "leetcode"});
-    runTestCase({"hello", "world", "warrior"}, {"w", "r", "l"}, {"world"});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"e", "o"}, {"facebook", "google", "leetcode"});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"l", "e"}, {"apple", "google", "leetcode"});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"a"}, {"amazon", "apple", "facebook"});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"oo"}, {"facebook", "google"});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"x"}, {});
+    test({"amazon", "apple", "facebook", "google", "leetcode"}, {"e", "l", "o"}, {"google", "leetcode"});
+    test({"hello", "world", "warrior"}, {"w", "r", "l"}, {"world"});
 
     return 0;
 }
