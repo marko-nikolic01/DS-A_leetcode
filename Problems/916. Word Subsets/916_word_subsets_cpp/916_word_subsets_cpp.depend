@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1736509667 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/916. Word Subsets/916_word_subsets_cpp/main.cpp
+	<iostream>
+	<vector>
+
