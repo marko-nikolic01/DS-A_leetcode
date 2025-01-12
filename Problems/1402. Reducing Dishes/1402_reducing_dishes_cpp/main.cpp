@@ -14,6 +14,8 @@ int maxSatisfaction(vector<int>& satisfaction) {
         if(satisfactionSum > -satisfaction[i]) {
             satisfactionSum += satisfaction[i];
             maximumSatisfaction += satisfactionSum;
+        } else {
+            break;
         }
     }
 
