@@ -9,43 +9,33 @@ bool canBeValid(string s, string locked) {
     }
 
     int open = 0;
-    int any = 0;
 
     for(int i = 0; i < n; ++i) {
-        if(locked[i] == '0') {
-            ++any;
-        } else if(s[i] == '(') {
-            ++open;
-        } else if(open > 0) {
-            --open;
-        } else if(any > 0) {
-            --any;
+        if(s[i] == ')' && locked[i] == '1') {
+            if(--open < 0) {
+                return false;
+            }
         } else {
-            return false;
+            ++open;
         }
     }
 
     open = 0;
-    any = 0;
 
     for(--n; n > -1; --n) {
-        if(locked[n] == '0') {
-            ++any;
-        } else if(s[n] == ')') {
-            ++open;
-        } else if(open > 0) {
-            --open;
-        } else if(any > 0) {
-            --any;
+        if(s[n] == '(' && locked[n] == '1') {
+            if(--open < 0) {
+                return false;
+            }
         } else {
-            return false;
+            ++open;
         }
     }
 
     return true;
 }
 
-void executeTest(string s, string locked, bool expected) {
+void test(string s, string locked, bool expected) {
     cout << "Parentheses: " << s << endl;
 
     cout << "Locked: " << locked << endl;
@@ -58,13 +48,13 @@ void executeTest(string s, string locked, bool expected) {
 }
 
 int main() {
-    executeTest("()))()", "010100", true);
-    executeTest("()()", "0000", true);
-    executeTest(")", "0", false);
-    executeTest("((()))", "111111", true);
-    executeTest("((())", "11100", false);
-    executeTest("()())(", "000000", true);
-    executeTest("(()))", "01001", false);
+    test("()))()", "010100", true);
+    test("()()", "0000", true);
+    test(")", "0", false);
+    test("((()))", "111111", true);
+    test("((())", "11100", false);
+    test("()())(", "000000", true);
+    test("(()))", "01001", false);
 
     return 0;
 }
