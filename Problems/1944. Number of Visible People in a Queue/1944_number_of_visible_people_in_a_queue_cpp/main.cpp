@@ -27,7 +27,7 @@ vector<int> canSeePersonsCount(vector<int>& heights) {
     return visibility;
 }
 
-void runTest(vector<int> heights, vector<int> expected) {
+void test(vector<int> heights, vector<int> expected) {
     cout << "Heights: ";
     for(int height : heights) {
         cout << height << " ";
@@ -50,12 +50,12 @@ void runTest(vector<int> heights, vector<int> expected) {
 }
 
 int main() {
-    runTest({10, 6, 8, 5, 11, 9}, {3, 1, 2, 1, 1, 0});
-    runTest({5, 1, 2, 3, 10}, {4, 1, 1, 1, 0});
-    runTest({1, 3, 2, 4}, {1, 2, 1, 0});
-    runTest({4, 3, 2, 1}, {1, 1, 1, 0});
-    runTest({1, 2, 3, 4}, {1, 1, 1, 0});
-    runTest({10, 10, 10, 10}, {1,1, 1, 0});
+    test({10, 6, 8, 5, 11, 9}, {3, 1, 2, 1, 1, 0});
+    test({5, 1, 2, 3, 10}, {4, 1, 1, 1, 0});
+    test({1, 3, 2, 4}, {1, 2, 1, 0});
+    test({4, 3, 2, 1}, {1, 1, 1, 0});
+    test({1, 2, 3, 4}, {1, 1, 1, 0});
+    test({10, 10, 10, 10}, {1,1, 1, 0});
 
     return 0;
 }
