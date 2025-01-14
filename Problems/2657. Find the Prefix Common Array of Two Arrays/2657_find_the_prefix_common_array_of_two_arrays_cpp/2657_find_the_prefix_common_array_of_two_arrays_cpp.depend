@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1736854218 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2657. Find the Prefix Common Array of Two Arrays/2657_find_the_prefix_common_array_of_two_arrays_cpp/main.cpp
+	<iostream>
+	<vector>
+
