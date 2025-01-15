@@ -20,19 +20,18 @@ int minimizeXor(int num1, int num2) {
         --shift;
     }
 
-    shift = 0;
     while(ones > 0) {
+        ++shift;
         if((num1 & (1 << shift)) < 1) {
             num2 |= 1 << shift;
             --ones;
         }
-        ++shift;
     }
 
     return num2;
 }
 
-void runTest(int num1, int num2, int expected) {
+void test(int num1, int num2, int expected) {
     cout << "Number 1: " << num1 << endl;
 
     cout << "Number 2: " << num2 << endl;
@@ -45,13 +44,13 @@ void runTest(int num1, int num2, int expected) {
 }
 
 int main() {
-    runTest(3, 5, 3);
-    runTest(1, 12, 3);
-    runTest(7, 15, 15);
-    runTest(10, 4, 8);
-    runTest(17, 7, 19);
-    runTest(28, 19, 28);
-    runTest(0, 1, 1);
+    test(3, 5, 3);
+    test(1, 12, 3);
+    test(7, 15, 15);
+    test(10, 4, 8);
+    test(17, 7, 19);
+    test(28, 19, 28);
+    test(0, 1, 1);
 
     return 0;
 }
