@@ -29,8 +29,7 @@ void test(vector<int> nums, int expected) {
     cout << endl;
 }
 
-int main()
-{
+int main() {
     test({1, 2, 1, 4, 1}, 1);
     test({1, 1, 1}, 0);
     test({1, 4, 2, 4, 1}, 0);
