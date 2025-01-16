@@ -72,40 +72,40 @@ bool isNumber(string s) {
     return i == n;
 }
 
-void runTest(string s, bool expected) {
+void test(string s, bool expected) {
     cout << "Number: " << s << endl;
 
     cout << "Expected: " << (expected ? "true" : "false") << endl;
 
-    cout << "Result:   " << (isNumber(s) ? "true" : "false") << endl;
+    cout << "Result: " << (isNumber(s) ? "true" : "false") << endl;
 
     cout << endl;
 }
 
 int main() {
-    runTest("2", true);
-    runTest("0089", true);
-    runTest("-0.1", true);
-    runTest("+3.14", true);
-    runTest("4.", true);
-    runTest("-.9", true);
-    runTest("2e10", true);
-    runTest("-90E3", true);
-    runTest("3e+7", true);
-    runTest("+6e-1", true);
-    runTest("53.5e93", true);
-    runTest("-123.456e789", true);
-    runTest("abc", false);
-    runTest("1a", false);
-    runTest("1e", false);
-    runTest("e3", false);
-    runTest("99e2.5", false);
-    runTest("--6", false);
-    runTest("-+3", false);
-    runTest("95a54e53", false);
-    runTest("0", true);
-    runTest("e", false);
-    runTest(".", false);
+    test("2", true);
+    test("0089", true);
+    test("-0.1", true);
+    test("+3.14", true);
+    test("4.", true);
+    test("-.9", true);
+    test("2e10", true);
+    test("-90E3", true);
+    test("3e+7", true);
+    test("+6e-1", true);
+    test("53.5e93", true);
+    test("-123.456e789", true);
+    test("abc", false);
+    test("1a", false);
+    test("1e", false);
+    test("e3", false);
+    test("99e2.5", false);
+    test("--6", false);
+    test("-+3", false);
+    test("95a54e53", false);
+    test("0", true);
+    test("e", false);
+    test(".", false);
 
     return 0;
 }
