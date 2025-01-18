@@ -43,7 +43,6 @@ string minWindow(string s, string t) {
         return "";
     }
 
-    length;
     for(int i = 0; i < length; ++i) {
         s[i] = s[start + i];
     }
