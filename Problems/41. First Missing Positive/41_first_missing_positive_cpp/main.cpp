@@ -5,16 +5,20 @@ using namespace std;
 
 int firstMissingPositive(vector<int>& nums) {
     int n = nums.size();
-    vector<bool> occurences(n, false);
+    int temp;
 
     for(int i = 0; i < n; ++i) {
         if(nums[i] > 0 && nums[i] <= n) {
-            occurences[--nums[i]] = true;
+            if(nums[nums[i] - 1] != nums[i]) {
+                temp = nums[nums[i] - 1];
+                nums[nums[i] - 1] = nums[i];
+                nums[i--] = temp;
+            }
         }
     }
 
     for(int i = 0; i < n; ++i) {
-        if(!occurences[i]) {
+        if(nums[i] < 1 || --nums[i] != i) {
             return ++i;
         }
     }
