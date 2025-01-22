@@ -62,7 +62,7 @@ void printMatrix(vector<vector<int>> matrix) {
     }
 }
 
-void runTest(vector<vector<int>> isWater, vector<vector<int>> expected) {
+void test(vector<vector<int>> isWater, vector<vector<int>> expected) {
     cout << "Is water:" << endl;
     printMatrix(isWater);
 
@@ -78,27 +78,27 @@ void runTest(vector<vector<int>> isWater, vector<vector<int>> expected) {
 int main() {
     vector<vector<int>> input1 = {{0, 1}, {0, 0}};
     vector<vector<int>> expected1 = {{1, 0}, {2, 1}};
-    runTest(input1, expected1);
+    test(input1, expected1);
 
     vector<vector<int>> input2 = {{0, 0, 1}, {1, 0, 0}, {0, 0, 0}};
     vector<vector<int>> expected2 = {{1, 1, 0}, {0, 1, 1}, {1, 2, 2}};
-    runTest(input2, expected2);
+    test(input2, expected2);
 
     vector<vector<int>> input3 = {{1, 0, 0}, {0, 0, 0}, {0, 0, 1}};
     vector<vector<int>> expected3 = {{0, 1, 2}, {1, 2, 1}, {2, 1, 0}};
-    runTest(input3, expected3);
+    test(input3, expected3);
 
     vector<vector<int>> input4 = {{1}};
     vector<vector<int>> expected4 = {{0}};
-    runTest(input4, expected4);
+    test(input4, expected4);
 
     vector<vector<int>> input5 = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
     vector<vector<int>> expected5 = {{2, 1, 2}, {1, 0, 1}, {2, 1, 2}};
-    runTest(input5, expected5);
+    test(input5, expected5);
 
     vector<vector<int>> input6 = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
     vector<vector<int>> expected6 = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
-    runTest(input6, expected6);
+    test(input6, expected6);
 
     return 0;
 }
