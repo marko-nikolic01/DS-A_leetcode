@@ -25,23 +25,24 @@ string largestMultipleOfThree(vector<int>& digits) {
         } else if(digitsCount[7] > 0) {
             --digitsCount[7];
             --n;
-        } else if(digitsCount[2] > 1) {
-            digitsCount[2] -= 2;
+        } else if(digitsCount[2] > 0) {
+            if(digitsCount[2] > 1) {
+                digitsCount[2] -= 2;
+            } else if(digitsCount[5] > 0) {
+                --digitsCount[2];
+                --digitsCount[5];
+            } else if(digitsCount[8] > 0) {
+                --digitsCount[2];
+                --digitsCount[8];
+            }
             n -= 2;
-        } else if(digitsCount[2] > 0 && digitsCount[5] > 0) {
-            --digitsCount[2];
-            --digitsCount[5];
-            n -= 2;
-        } else if(digitsCount[5] > 1) {
-            digitsCount[5] -= 2;
-            n -= 2;
-        } else if(digitsCount[2] > 0 && digitsCount[8] > 0) {
-            --digitsCount[2];
-            --digitsCount[8];
-            n -= 2;
-        } else if(digitsCount[5] > 0 && digitsCount[8] > 0) {
-            --digitsCount[5];
-            --digitsCount[8];
+        } else if(digitsCount[5] > 0) {
+            if(digitsCount[5] > 1) {
+                digitsCount[5] -= 2;
+            } else if(digitsCount[8] > 0) {
+                --digitsCount[5];
+                --digitsCount[8];
+            }
             n -= 2;
         } else if(digitsCount[8] > 1) {
             digitsCount[8] -= 2;
@@ -57,23 +58,24 @@ string largestMultipleOfThree(vector<int>& digits) {
         } else if(digitsCount[8] > 0) {
             --digitsCount[8];
             --n;
-        } else if(digitsCount[1] > 1) {
-            digitsCount[1] -= 2;
+        } else if(digitsCount[1] > 0) {
+            if(digitsCount[1] > 1) {
+                digitsCount[1] -= 2;
+            } else if(digitsCount[4] > 0) {
+                --digitsCount[1];
+                --digitsCount[4];
+            } else if(digitsCount[7] > 0) {
+                --digitsCount[1];
+                --digitsCount[7];
+            }
             n -= 2;
-        } else if(digitsCount[1] > 0 && digitsCount[4] > 0) {
-            --digitsCount[1];
-            --digitsCount[4];
-            n -= 2;
-        } else if(digitsCount[4] > 1) {
-            digitsCount[4] -= 2;
-            n -= 2;
-        } else if(digitsCount[1] > 0 && digitsCount[7] > 0) {
-            --digitsCount[1];
-            --digitsCount[7];
-            n -= 2;
-        } else if(digitsCount[4] > 0 && digitsCount[7] > 0) {
-            --digitsCount[4];
-            --digitsCount[7];
+        } else if(digitsCount[4] > 0) {
+            if(digitsCount[4] > 1) {
+                digitsCount[4] -= 2;
+            } else if(digitsCount[7] > 0) {
+                --digitsCount[4];
+                --digitsCount[7];
+            }
             n -= 2;
         } else if(digitsCount[7] > 1) {
             digitsCount[7] -= 2;
