@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1737462975 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3131. Find the Integer Added to Array I/3131_find_the_integer_added_to_array_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
