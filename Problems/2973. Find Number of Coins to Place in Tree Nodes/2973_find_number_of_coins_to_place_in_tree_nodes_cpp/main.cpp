@@ -63,7 +63,7 @@ int placedCoins(vector<vector<int>>& tree, vector<int>& cost, int node, int pare
 vector<long long> placedCoins(vector<vector<int>>& edges, vector<int>& cost) {
     int n = edges.size();
     vector<vector<int>> tree(++n);
-    vector<long long> coins(n, 1);
+    vector<long long> coins(n);
 
     for(n -= 2; n > -1; --n) {
         tree[edges[n][0]].push_back(edges[n][1]);
