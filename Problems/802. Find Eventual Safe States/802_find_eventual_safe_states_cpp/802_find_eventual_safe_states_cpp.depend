@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1737704873 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/802. Find Eventual Safe States/802_find_eventual_safe_states_cpp/main.cpp
+	<iostream>
+	<vector>
+
