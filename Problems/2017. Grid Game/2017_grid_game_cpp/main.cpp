@@ -30,7 +30,7 @@ long long gridGame(vector<vector<int>>& grid) {
     return points;
 }
 
-void printMatrix(vector<vector<int>>& matrix) {
+void printMatrix(vector<vector<int>> matrix) {
     for(vector<int> row : matrix) {
         for(int cell : row) {
             cout << cell << " ";
