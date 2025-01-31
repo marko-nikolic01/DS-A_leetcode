@@ -18,23 +18,19 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         graph[edges[i][1]].push_back(edges[i][0]);
     }
 
-    vector<short> traversal;
-    vector<short> traversalIndexes;
-    vector<short> parents;
-
     visited[0] = true;
-    traversal.push_back(0);
-    traversalIndexes.push_back(-1);
-    parents.push_back(-1);
+    vector<short> traversal = {0, 0};
+    vector<short> traversalIndexes = {-1};
 
+    short nTraversal = 1;
     short node;
 
     while(true) {
-        node = traversal.back();
-        i = ++traversalIndexes.back();
+        node = traversal[nTraversal];
+        i = ++traversalIndexes[nTraversal - 1];
 
-        if(i < graph[node].size() && graph[node][i] == parents.back()) {
-            i = ++traversalIndexes.back();
+        if(i < graph[node].size() && graph[node][i] == traversal[nTraversal - 1]) {
+            i = ++traversalIndexes[nTraversal - 1];
         }
 
         if(i < graph[node].size()) {
@@ -42,7 +38,7 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
                 visited[graph[node][i]] = true;
                 traversal.push_back(graph[node][i]);
                 traversalIndexes.push_back(-1);
-                parents.push_back(node);
+                ++nTraversal;
             } else {
                 i = graph[node][i];
 
@@ -56,7 +52,7 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
                 traversal.pop_back();
 
                 while(true) {
-                    node = traversal.back();
+                    node = traversal[nTraversal--];
 
                     if(node < previousNode) {
                         canEdgeBeDeleted.insert(1000 * node + previousNode);
@@ -69,7 +65,6 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
                     }
 
                     previousNode = node;
-                    traversal.pop_back();
                 }
 
                 for(n; n > -1; --n) {
@@ -83,7 +78,7 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         } else {
             traversal.pop_back();
             traversalIndexes.pop_back();
-            parents.pop_back();
+            --nTraversal;
         }
     }
 
