@@ -5,7 +5,7 @@ using namespace std;
 
 int largestIsland(vector<vector<int>>& grid) {
     vector<short> islands;
-    int islandI = -1;
+    int islandI = 1;
 
     vector<int> traversal;
     int x;
@@ -20,7 +20,7 @@ int largestIsland(vector<vector<int>>& grid) {
                 traversal.push_back(i * n + j);
 
                 islands.push_back(0);
-                grid[i][j] = ++islandI + 2;
+                grid[i][j] = ++islandI;
 
                 while(!traversal.empty()) {
                     x = traversal.back();
@@ -28,33 +28,33 @@ int largestIsland(vector<vector<int>>& grid) {
                     x /= n;
                     traversal.pop_back();
 
-                    ++islands[islandI];
+                    ++islands[islandI - 2];
 
                     if(x > 0 && grid[x - 1][y] == 1) {
                         traversal.push_back((x - 1) * n + y);
-                        grid[x - 1][y] = islandI + 2;
+                        grid[x - 1][y] = islandI;
                     }
 
                     if(x < n - 1 && grid[x + 1][y] == 1) {
                         traversal.push_back((x + 1) * n + y);
-                        grid[x + 1][y] = islandI + 2;
+                        grid[x + 1][y] = islandI;
                     }
 
                     if(y > 0 && grid[x][y - 1] == 1) {
                         traversal.push_back(x * n + y - 1);
-                        grid[x][y - 1] = islandI + 2;
+                        grid[x][y - 1] = islandI;
                     }
 
                     if(y < n - 1 && grid[x][++y] == 1) {
                         traversal.push_back(x * n + y);
-                        grid[x][y] = islandI + 2;
+                        grid[x][y] = islandI;
                     }
                 }
             }
         }
     }
 
-    if(islandI < 0) {
+    if(islandI < 2) {
         return 1;
     }
 
