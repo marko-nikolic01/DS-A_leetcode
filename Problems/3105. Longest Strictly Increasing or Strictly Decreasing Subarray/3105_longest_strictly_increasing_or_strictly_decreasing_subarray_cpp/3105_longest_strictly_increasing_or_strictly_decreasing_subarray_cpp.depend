@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1738573550 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3105. Longest Strictly Increasing or Strictly Decreasing Subarray/3105_longest_strictly_increasing_or_strictly_decreasing_subarray_cpp/main.cpp
+	<iostream>
+	<vector>
+
