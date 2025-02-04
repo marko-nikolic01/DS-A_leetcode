@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1738660953 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1456. Maximum Number of Vowels in a Substring of Given Length/1456_maximum_number_of_vowels_in_a_substring_of_given_length_cpp/main.cpp
+	<iostream>
+	<vector>
+
