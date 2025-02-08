@@ -14,7 +14,7 @@ vector<int> queryResults(int limit, vector<vector<int>>& queries) {
     vector<int> result(limit);
 
     for(int i = 0; i < limit; ++i) {
-        if(balls.find(queries[i][0]) != balls.end() && --colors[balls[queries[i][0]]] < 1) {
+        if(--colors[balls[queries[i][0]]] == 0) {
             --distinctColors;
         }
 
