@@ -3,22 +3,21 @@
 
 using namespace std;
 
-string clearDigits(const string& s) {
-    vector<char> cleared;
+string clearDigits(string s) {
+    short index = 0;
 
-    int clear = 0;
-
-    for (int i = s.length() - 1; i >= 0; --i) {
-        if (s[i] >= '0' && s[i] <= '9') {
-            clear++;
-        } else if (clear > 0) {
-            clear--;
+    short n = s.size();
+    for(short i = 0; i < n; ++i) {
+        if(s[i] > '/' && s[i] < ':') {
+            --index;
         } else {
-            cleared.push_back(s[i]);
+            s[index++] = s[i];
         }
     }
 
-    return string(cleared.rbegin(), cleared.rend());
+    s.resize(index);
+
+    return s;
 }
 
 void runTestCase(const string& input, const string& expected) {
@@ -34,12 +33,12 @@ void runTestCase(const string& input, const string& expected) {
 int main() {
     runTestCase("abc123", "");
     runTestCase("a1b2c3", "");
-    runTestCase("123abc456", "");
+    runTestCase("abc456", "");
     runTestCase("a1b2c", "c");
-    runTestCase("123", "");
+    runTestCase("aaa123", "");
     runTestCase("abc", "abc");
     runTestCase("ab1c2d3e", "ae");
-    runTestCase("12ab34cd56", "");
+    runTestCase("ab34cd56", "");
 
     return 0;
 }

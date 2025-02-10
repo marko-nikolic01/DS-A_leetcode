@@ -61,7 +61,7 @@ TreeNode* reverseOddLevels(TreeNode* root) {
 
 void printTree(TreeNode* root) {
     if (!root) {
-        cout << endl;;
+        cout << endl;
         return;
     }
     queue<TreeNode*> q;
