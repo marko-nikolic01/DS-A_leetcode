@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739267353 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/32. Longest Valid Parentheses/32_longest_valid_parentheses_cpp/main.cpp
+	<iostream>
+	<vector>
+
