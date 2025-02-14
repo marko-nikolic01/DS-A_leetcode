@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1739007488 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2349. Design a Number Container System/2349_design_a_number_container_system_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<set>
+
