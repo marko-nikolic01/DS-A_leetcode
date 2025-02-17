@@ -54,11 +54,9 @@ string numberToWords(int num) {
             word.push_back(' ');
 
             temp %= 10;
-            if(temp > 0) {
-                word.append(digits[temp - 1]);
-                word.push_back(' ');
-            }
-        } else if(temp > 0) {
+        }
+
+        if(temp > 0) {
             word.append(digits[temp - 1]);
             word.push_back(' ');
         }
@@ -81,11 +79,9 @@ string numberToWords(int num) {
             word.push_back(' ');
 
             temp %= 10;
-            if(temp > 0) {
-                word.append(digits[temp - 1]);
-                word.push_back(' ');
-            }
-        } else if(temp > 0) {
+        }
+
+        if(temp > 0) {
             word.append(digits[temp - 1]);
             word.push_back(' ');
         }
@@ -115,11 +111,9 @@ string numberToWords(int num) {
             word.push_back(' ');
 
             temp %= 10;
-            if(temp > 0) {
-                word.append(digits[temp - 1]);
-                word.push_back(' ');
-            }
-        } else if(temp > 0) {
+        }
+
+        if(temp > 0) {
             word.append(digits[temp - 1]);
             word.push_back(' ');
         }
@@ -142,11 +136,9 @@ string numberToWords(int num) {
             word.push_back(' ');
 
             temp %= 10;
-            if(temp > 0) {
-                word.append(digits[temp - 1]);
-                word.push_back(' ');
-            }
-        } else if(temp > 0) {
+        }
+
+        if(temp > 0) {
             word.append(digits[temp - 1]);
             word.push_back(' ');
         }
@@ -173,11 +165,9 @@ string numberToWords(int num) {
             word.append(tens[num / 10 - 2]);
 
             num %= 10;
-            if(num > 0) {
-                word.push_back(' ');
-                word.append(digits[num - 1]);
-            }
-        } else if(num > 0) {
+        }
+
+        if(num > 0) {
             word.push_back(' ');
             word.append(digits[num - 1]);
         }
