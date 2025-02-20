@@ -10,13 +10,16 @@ int uniqueLetterString(string s) {
     int previous = 1;
     int uniqueLetters = 1;
 
+    short j;
     int n = s.length();
     for(int i = 1; i < n; ++i) {
-        previous = previous + i - 2 * letters[s[i] - 'A'][0] + letters[s[i] - 'A'][1];
+        j = s[i] - 'A';
+
+        previous += i - 2 * letters[j][0] + letters[j][1];
         uniqueLetters += previous;
 
-        letters[s[i] - 'A'][1] = letters[s[i] - 'A'][0];
-        letters[s[i] - 'A'][0] = i;
+        letters[j][1] = letters[j][0];
+        letters[j][0] = i;
     }
 
     return uniqueLetters;

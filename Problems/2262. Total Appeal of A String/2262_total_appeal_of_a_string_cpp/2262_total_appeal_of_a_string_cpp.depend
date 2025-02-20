@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740069975 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2262. Total Appeal of A String/2262_total_appeal_of_a_string_cpp/main.cpp
+	<iostream>
+	<vector>
+
