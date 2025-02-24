@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1740402818 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/297. Serialize and Deserialize Binary Tree/297_serialize_and_deserialize_binary_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
