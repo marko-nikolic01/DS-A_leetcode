@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740478501 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1524. Number of Sub-arrays With Odd Sum/1524_number_of_sub_arrays_with_odd_sum_cpp/main.cpp
+	<iostream>
+	<vector>
+
