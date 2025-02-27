@@ -16,7 +16,7 @@ int numOfSubarrays(vector<int>& arr) {
             currentOdd = ++currentEven;
             currentEven = previousOdd;
         } else {
-            currentEven = ++currentEven;
+            ++currentEven;
         }
 
         odd = (odd + currentOdd) % 1000000007;
