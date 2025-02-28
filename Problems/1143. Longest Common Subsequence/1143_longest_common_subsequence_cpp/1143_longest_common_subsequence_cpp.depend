@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1740755320 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1143. Longest Common Subsequence/1143_longest_common_subsequence_cpp/main.cpp
+	<iostream>
+	<vector>
+

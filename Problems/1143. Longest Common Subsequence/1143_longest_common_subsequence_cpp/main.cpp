@@ -57,7 +57,7 @@ int longestCommonSubsequence(string text1, string text2) {
     return longestSubsequence;
 }
 
-void runTest(string text1, string text2, int expected) {
+void test(string text1, string text2, int expected) {
     cout << "String 1: " << "\"" << text1 << "\"" << endl;
 
     cout << "String 2: " << "\"" << text2 << "\"" << endl;
@@ -70,11 +70,11 @@ void runTest(string text1, string text2, int expected) {
 }
 
 int main() {
-    runTest("abcde", "ace", 3);
-    runTest("abc", "abc", 3);
-    runTest("abc", "def", 0);
-    runTest("bluemoon", "lmoon", 5);
-    runTest("abcdef", "fbdamnce", 3);
+    test("abcde", "ace", 3);
+    test("abc", "abc", 3);
+    test("abc", "def", 0);
+    test("bluemoon", "lmoon", 5);
+    test("abcdef", "fbdamnce", 3);
 
     return 0;
 }
