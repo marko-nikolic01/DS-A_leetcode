@@ -31,32 +31,32 @@ string shortestCommonSupersequence(string str1, string str2) {
         }
     }
 
-    string shortestSupersequence = "";
-
     i = --n1;
     j = --n2;
+
+    n1 = longestSubsequences[i][j];
+    str1.resize(n1);
+
     while(i > 0 && j > 0) {
         if(str1[i - 1] == str2[j - 1]) {
-            shortestSupersequence.push_back(str1[--i]);
+            str1[--n1] = str1[--i];
             --j;
         } else if(longestSubsequences[i - 1][j] < longestSubsequences[i][j - 1]) {
-            shortestSupersequence.push_back(str1[--i]);
+            str1[--n1] = str1[--i];
         } else {
-            shortestSupersequence.push_back(str2[--j]);
+            str1[--n1] = str2[--j];
         }
     }
 
     while(i > 0) {
-        shortestSupersequence.push_back(str1[--i]);
+        str1[--n1] = str1[--i];
     }
 
     while(j > 0) {
-        shortestSupersequence.push_back(str2[--j]);
+        str1[--n1] = str2[--j];
     }
 
-    reverse(shortestSupersequence.begin(), shortestSupersequence.end());
-
-    return shortestSupersequence;
+    return str1;
 }
 
 void test(string str1, string str2, string expected) {
