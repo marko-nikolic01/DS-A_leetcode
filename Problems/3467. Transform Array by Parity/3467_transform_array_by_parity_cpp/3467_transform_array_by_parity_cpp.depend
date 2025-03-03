@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741020312 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3467. Transform Array by Parity/3467_transform_array_by_parity_cpp/main.cpp
+	<iostream>
+	<vector>
+
