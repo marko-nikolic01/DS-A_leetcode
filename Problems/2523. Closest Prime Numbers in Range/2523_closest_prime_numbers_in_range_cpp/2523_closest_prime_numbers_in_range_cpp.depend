@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741337789 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2523. Closest Prime Numbers in Range/2523_closest_prime_numbers_in_range_cpp/main.cpp
+	<iostream>
+	<vector>
+

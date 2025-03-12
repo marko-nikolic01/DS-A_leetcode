@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741767432 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2529. Maximum Count of Positive Integer and Negative Integer/2529_maximum_count_of_positive_integer_and_negative_integer_cpp/main.cpp
+	<iostream>
+	<vector>
+
