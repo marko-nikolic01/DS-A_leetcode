@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742656680 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2560. House Robber IV/2560_house_robber_iv_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
