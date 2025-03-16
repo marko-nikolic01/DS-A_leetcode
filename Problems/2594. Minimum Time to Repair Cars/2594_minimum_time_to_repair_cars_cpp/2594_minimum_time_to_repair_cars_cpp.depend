@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1742656954 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2594. Minimum Time to Repair Cars/2594_minimum_time_to_repair_cars_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<queue>
+
