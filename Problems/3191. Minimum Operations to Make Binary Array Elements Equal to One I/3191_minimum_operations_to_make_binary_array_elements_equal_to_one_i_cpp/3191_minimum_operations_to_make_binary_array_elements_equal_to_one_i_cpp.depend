@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1742377580 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3191. Minimum Operations to Make Binary Array Elements Equal to One I/3191_minimum_operations_to_make_binary_array_elements_equal_to_one_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
