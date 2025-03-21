@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1742556265 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2115. Find All Possible Recipes from Given Supplies/2115_find_all_possible_recipes_from_given_supplies_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+
