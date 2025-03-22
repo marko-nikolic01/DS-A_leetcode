@@ -5,14 +5,16 @@
 using namespace std;
 
 long long maxSum(vector<vector<int>>& grid, vector<int>& limits, int k) {
-    vector<pair<int, short>> elements;
-
-    int i = 0;
     short m = grid.size();
-    long n = grid[0].size() - 1;
+    long n = grid[0].size();
+    vector<pair<int, short>> elements(m * n--);
+
+    int i;
+    int j = 0;
     for(--m; m > -1; --m) {
         for(i = n; i > -1; --i) {
-            elements.push_back({grid[m][i], m});
+            elements[j].first = grid[m][i];
+            elements[j++].second = m;
         }
     }
 
