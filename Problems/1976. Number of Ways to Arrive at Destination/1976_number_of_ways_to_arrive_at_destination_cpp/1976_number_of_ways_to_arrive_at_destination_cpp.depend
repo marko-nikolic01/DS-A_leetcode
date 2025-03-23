@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742725035 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1976. Number of Ways to Arrive at Destination/1976_number_of_ways_to_arrive_at_destination_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
