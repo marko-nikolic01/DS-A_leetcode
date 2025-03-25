@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742886010 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3394. Check if Grid can be Cut into Sections/3394_check_if_grid_can_be_cut_into_sections_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
