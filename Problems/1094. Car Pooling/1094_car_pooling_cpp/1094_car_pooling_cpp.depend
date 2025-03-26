@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743004456 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1094. Car Pooling/1094_car_pooling_cpp/main.cpp
+	<iostream>
+	<vector>
+
