@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743093476 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2876. Count Visited Nodes in a Directed Graph/2876_count_visited_nodes_in_a_directed_graph_cpp/main.cpp
+	<iostream>
+	<vector>
+
