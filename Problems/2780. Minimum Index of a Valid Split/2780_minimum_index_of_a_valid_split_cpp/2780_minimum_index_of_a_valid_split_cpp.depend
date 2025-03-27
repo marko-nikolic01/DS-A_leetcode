@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743067789 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2780. Minimum Index of a Valid Split/2780_minimum_index_of_a_valid_split_cpp/main.cpp
+	<iostream>
+	<vector>
+
