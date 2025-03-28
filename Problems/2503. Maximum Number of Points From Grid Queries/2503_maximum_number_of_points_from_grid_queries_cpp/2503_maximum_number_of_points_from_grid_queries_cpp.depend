@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1743156079 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2503. Maximum Number of Points From Grid Queries/2503_maximum_number_of_points_from_grid_queries_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+
