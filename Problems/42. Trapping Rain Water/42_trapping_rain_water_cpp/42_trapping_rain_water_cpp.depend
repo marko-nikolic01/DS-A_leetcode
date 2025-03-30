@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743362531 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/42. Trapping Rain Water/42_trapping_rain_water_cpp/main.cpp
+	<iostream>
+	<vector>
+
