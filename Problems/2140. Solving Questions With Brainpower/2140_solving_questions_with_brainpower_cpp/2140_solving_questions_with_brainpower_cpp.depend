@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743517509 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2140. Solving Questions With Brainpower/2140_solving_questions_with_brainpower_cpp/main.cpp
+	<iostream>
+	<vector>
+
