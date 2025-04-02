@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743610433 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/331. Verify Preorder Serialization of a Binary Tree/331_verify_preorder_serialization_of_a_binary_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+
