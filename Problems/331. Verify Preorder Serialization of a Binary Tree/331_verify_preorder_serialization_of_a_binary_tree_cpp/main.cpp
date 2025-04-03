@@ -4,44 +4,28 @@
 using namespace std;
 
 bool isValidSerialization(string preorder) {
-    vector<bool> traversal = {true};
-    short nTraversal = 0;
+        short capacity = 1;
 
-    short i = 0;
-    short n = preorder.length();
-    while(i < n) {
-        if(nTraversal < 0) {
-            return false;
-        }
-
-        if(preorder[i] != '#') {
-            while(++i < n && preorder[i] != ',') {}
-
-            if(traversal[nTraversal]) {
-                traversal.pop_back();
-                --nTraversal;
-            } else {
-                traversal[nTraversal] = true;
+        short i = 0;
+        short n = preorder.length();
+        while(i < n) {
+            if(capacity < 1) {
+                return false;
             }
 
-            traversal.push_back(false);
-            ++nTraversal;
+            if(preorder[i] != '#') {
+                while(++i < n && preorder[i] != ',') {}
 
-            ++i;
-        } else {
-            if(traversal[nTraversal]) {
-                traversal.pop_back();
-                --nTraversal;
+                ++capacity;
+                ++i;
             } else {
-                traversal[nTraversal] = true;
+                --capacity;
+                i += 2;
             }
-
-            i += 2;
         }
+
+        return capacity < 1;
     }
-
-    return nTraversal < 0;
-}
 
 void test(string preorder, bool expected) {
     cout << "Preorder traversal: " << preorder << endl;
