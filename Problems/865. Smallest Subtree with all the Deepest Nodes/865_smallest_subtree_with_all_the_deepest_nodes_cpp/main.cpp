@@ -12,17 +12,17 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-void lcaDeepestLeaves(TreeNode* root, TreeNode*& child, short& depth) {
+void subtreeWithAllDeepest(TreeNode* root, TreeNode*& child, short& depth) {
     TreeNode* leftChild = nullptr;
     short leftDepth = 0;
     if(root->left) {
-        lcaDeepestLeaves(root->left, leftChild, leftDepth);
+        subtreeWithAllDeepest(root->left, leftChild, leftDepth);
     }
 
     TreeNode* rightChild = nullptr;
     short rightDepth = 0;
     if(root->right) {
-        lcaDeepestLeaves(root->right, rightChild, rightDepth);
+        subtreeWithAllDeepest(root->right, rightChild, rightDepth);
     }
 
     if(leftDepth > rightDepth) {
@@ -37,11 +37,11 @@ void lcaDeepestLeaves(TreeNode* root, TreeNode*& child, short& depth) {
     }
 }
 
-TreeNode* lcaDeepestLeaves(TreeNode* root) {
+TreeNode* subtreeWithAllDeepest(TreeNode* root) {
     TreeNode* child = nullptr;
     short depth = 0;
 
-    lcaDeepestLeaves(root, child, depth);
+    subtreeWithAllDeepest(root, child, depth);
 
     return child;
 }
@@ -79,7 +79,7 @@ void test(TreeNode* root, TreeNode* expected) {
     printTree(expected);
 
     cout << "Result:";
-    printTree(lcaDeepestLeaves(root));
+    printTree(subtreeWithAllDeepest(root));
 
     cout << endl;
 }
