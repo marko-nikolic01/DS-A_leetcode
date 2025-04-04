@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743756274 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1123. Lowest Common Ancestor of Deepest Leaves/1123_lowest_common_ancestor_of_deepest_leaves_cpp/main.cpp
+	<iostream>
+	<queue>
+
