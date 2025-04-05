@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743582433 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2873. Maximum Value of an Ordered Triplet I/2873_maximum_value_of_an_ordered_triplet_i_cpp/main.cpp
+	<iostream>
+	<vector>
+

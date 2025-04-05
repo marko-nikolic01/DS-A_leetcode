@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1743838334 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1863. Sum of All Subset XOR Totals/1863_sum_of_all_subset_xor_totals_cpp/main.cpp
+	<iostream>
+	<vector>
+
