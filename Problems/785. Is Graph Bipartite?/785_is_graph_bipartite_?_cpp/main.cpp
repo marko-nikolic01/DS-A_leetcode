@@ -11,23 +11,23 @@ bool isBipartite(vector<vector<int>>& graph) {
     vector<short> traversal;
     short node;
 
-    short j;
-    for(short i = --n; i > -1; --i) {
-        if(!isColored[i]) {
-            traversal.push_back(i);
-            isColored[i] = true;
-            colors[i] = false;
+    short i;
+    for(--n; n > -1; --n) {
+        if(!isColored[n]) {
+            traversal.push_back(n);
+            isColored[n] = true;
+            colors[n] = false;
 
             while(!traversal.empty()) {
                 node = traversal.back();
                 traversal.pop_back();
 
-                for(j = graph[node].size() - 1; j > -1; --j) {
-                    if(!isColored[graph[node][j]]) {
-                        traversal.push_back(graph[node][j]);
-                        isColored[graph[node][j]] = true;
-                        colors[graph[node][j]] = !colors[node];
-                    } else if(colors[graph[node][j]] == colors[node]) {
+                for(i = graph[node].size() - 1; i > -1; --i) {
+                    if(!isColored[graph[node][i]]) {
+                        traversal.push_back(graph[node][i]);
+                        isColored[graph[node][i]] = true;
+                        colors[graph[node][i]] = !colors[node];
+                    } else if(colors[graph[node][i]] == colors[node]) {
                         return false;
                     }
                 }
