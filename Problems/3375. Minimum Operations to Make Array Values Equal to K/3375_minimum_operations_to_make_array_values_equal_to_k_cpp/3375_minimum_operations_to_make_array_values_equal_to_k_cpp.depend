@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1744185720 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3375. Minimum Operations to Make Array Values Equal to K/3375_minimum_operations_to_make_array_values_equal_to_k_cpp/main.cpp
+	<iostream>
+	<vector>
+	<bitset>
+
