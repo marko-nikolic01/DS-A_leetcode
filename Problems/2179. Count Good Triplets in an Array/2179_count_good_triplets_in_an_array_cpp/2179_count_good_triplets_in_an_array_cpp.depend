@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1745404247 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2179. Count Good Triplets in an Array/2179_count_good_triplets_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
