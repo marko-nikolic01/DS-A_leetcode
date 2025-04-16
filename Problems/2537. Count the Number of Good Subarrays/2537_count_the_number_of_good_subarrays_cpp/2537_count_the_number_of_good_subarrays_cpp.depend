@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1744821328 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2537. Count the Number of Good Subarrays/2537_count_the_number_of_good_subarrays_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
