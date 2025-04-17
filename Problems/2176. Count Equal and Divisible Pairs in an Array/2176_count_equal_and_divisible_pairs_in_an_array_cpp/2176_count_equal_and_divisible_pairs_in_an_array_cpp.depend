@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1744879782 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2176. Count Equal and Divisible Pairs in an Array/2176_count_equal_and_divisible_pairs_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
