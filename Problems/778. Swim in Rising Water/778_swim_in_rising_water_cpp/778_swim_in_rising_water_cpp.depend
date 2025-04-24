@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1745506755 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/778. Swim in Rising Water/778_swim_in_rising_water_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
