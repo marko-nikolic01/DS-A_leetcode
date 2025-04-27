@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1745748359 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/230. Kth Smallest Element in a BST/230_kth_smallest_element_in_a_bst_cpp/main.cpp
+	<iostream>
+	<queue>
+
