@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1745993463 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1295. Find Numbers with Even Number of Digits/1295_find_numbers_with_even_number_of_digits_cpp/main.cpp
+	<iostream>
+	<vector>
+
