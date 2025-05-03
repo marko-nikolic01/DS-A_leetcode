@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746295955 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1128. Number of Equivalent Domino Pairs/1128_number_of_equivalent_domino_pairs_cpp/main.cpp
+	<iostream>
+	<vector>
+
