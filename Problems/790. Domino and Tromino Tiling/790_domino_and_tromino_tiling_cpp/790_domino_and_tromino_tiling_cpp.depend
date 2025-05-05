@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746429001 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/790. Domino and Tromino Tiling/790_domino_and_tromino_tiling_cpp/main.cpp
+	<iostream>
+	<vector>
+
