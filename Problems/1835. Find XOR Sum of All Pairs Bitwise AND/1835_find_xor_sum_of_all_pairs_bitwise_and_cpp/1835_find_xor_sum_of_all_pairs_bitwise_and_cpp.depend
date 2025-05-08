@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746649220 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1835. Find XOR Sum of All Pairs Bitwise AND/1835_find_xor_sum_of_all_pairs_bitwise_and_cpp/main.cpp
+	<iostream>
+	<vector>
+

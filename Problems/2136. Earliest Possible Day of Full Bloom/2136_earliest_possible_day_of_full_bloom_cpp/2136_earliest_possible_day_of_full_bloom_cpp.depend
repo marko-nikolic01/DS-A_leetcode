@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1746732574 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2136. Earliest Possible Day of Full Bloom/2136_earliest_possible_day_of_full_bloom_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
