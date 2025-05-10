@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1746886965 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2251. Number of Flowers in Full Bloom/2251_number_of_flowers_in_full_bloom_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+
