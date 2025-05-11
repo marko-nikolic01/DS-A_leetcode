@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1747000302 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1441. Build an Array With Stack Operations/1441_build_an_array_with_stack_operations_cpp/main.cpp
+	<iostream>
+	<vector>
+
