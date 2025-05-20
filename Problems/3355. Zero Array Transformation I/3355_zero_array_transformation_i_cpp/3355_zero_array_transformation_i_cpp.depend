@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1747751431 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3355. Zero Array Transformation I/3355_zero_array_transformation_i_cpp/main.cpp
+	<iostream>
+	<vector>
+

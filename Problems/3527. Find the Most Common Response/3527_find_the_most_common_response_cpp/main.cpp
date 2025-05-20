@@ -33,8 +33,7 @@ string findCommonResponse(vector<vector<string>>& responses) {
         for(j = responses[i].size() - 1; j > -1; --j) {
             responseOccurence = responseOccurences.find(responses[i][j]);
             if(responseOccurence == responseOccurences.end()) {
-                responseOccurences[responses[i][j]] = {-1, 0};
-                responseOccurence = responseOccurences.find(responses[i][j]);
+                responseOccurence = responseOccurences.insert({responses[i][j], {-1, 0}}).first;
             }
 
             if(responseOccurence->second.first != i) {
