@@ -39,8 +39,7 @@ string findCommonResponse(vector<vector<string>>& responses) {
             if(responseOccurence->second.first != i) {
                 responseOccurence->second.first = i;
 
-                responseOccurence->second.second = responseOccurence->second.second + 1;
-                if(responseOccurence->second.second > maxResponses) {
+                if(++responseOccurence->second.second > maxResponses) {
                     maxResponses = responseOccurence->second.second;
                     mostCommonResponses.resize(0);
                     mostCommonResponses.push_back({i, j});
