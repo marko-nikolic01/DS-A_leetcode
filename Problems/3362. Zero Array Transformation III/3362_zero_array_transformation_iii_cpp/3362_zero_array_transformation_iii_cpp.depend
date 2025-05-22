@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1747920115 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3362. Zero Array Transformation III/3362_zero_array_transformation_iii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+
