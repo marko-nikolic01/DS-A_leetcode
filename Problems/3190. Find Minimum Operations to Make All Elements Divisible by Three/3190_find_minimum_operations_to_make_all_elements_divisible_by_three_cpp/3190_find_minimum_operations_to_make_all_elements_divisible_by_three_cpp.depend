@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1748086054 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3190. Find Minimum Operations to Make All Elements Divisible by Three/3190_find_minimum_operations_to_make_all_elements_divisible_by_three_cpp/main.cpp
+	<iostream>
+	<vector>
+
