@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1747222336 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3337. Total Characters in String After Transformations II/3337_total_characters_in_string_after_transformations_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cstring>
+
