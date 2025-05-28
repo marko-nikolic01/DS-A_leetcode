@@ -58,13 +58,6 @@ int largestPathValue(string colors, vector<vector<int>>& edges) {
     return nodes > n ? pathValue : -1;
 }
 
-void printArray(vector<int> array) {
-    for(int a : array) {
-        cout << a << " ";
-    }
-    cout << endl;
-}
-
 void test(string colors, vector<vector<int>> edges, int expected) {
     cout << "Colors: " << colors << endl;
 
