@@ -134,7 +134,7 @@ void test(vector<vector<int>> edges1, vector<vector<int>> edges2, vector<int> ex
     cout << "Expected: ";
     printArray(expected);
 
-    cout << "Result:   ";
+    cout << "Result: ";
     printArray(maxTargetNodes(edges1, edges2));
 
     cout << endl;

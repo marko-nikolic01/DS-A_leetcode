@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1748592083 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2359. Find Closest Node to Given Two Nodes/2359_find_closest_node_to_given_two_nodes_cpp/main.cpp
+	<iostream>
+	<vector>
+
