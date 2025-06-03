@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1748965946 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1298. Maximum Candies You Can Get from Boxes/1298_maximum_candies_you_can_get_from_boxes_cpp/main.cpp
+	<iostream>
+	<vector>
+
