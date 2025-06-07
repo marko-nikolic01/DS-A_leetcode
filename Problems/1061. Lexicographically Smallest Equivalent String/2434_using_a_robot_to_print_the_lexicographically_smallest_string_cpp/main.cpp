@@ -19,7 +19,7 @@ string robotWithString(string s) {
         stack.push_back(c);
         --occurences[c - 'a'];
 
-        while (minCharacter != 'z' && occurences[minCharacter - 'a'] == 0) {
+        while(minCharacter != 'z' && occurences[minCharacter - 'a'] == 0) {
             minCharacter++;
         }
 
