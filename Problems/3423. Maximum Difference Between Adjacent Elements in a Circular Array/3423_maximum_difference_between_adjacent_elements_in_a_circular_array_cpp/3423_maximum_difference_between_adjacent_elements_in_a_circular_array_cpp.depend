@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1749708548 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3423. Maximum Difference Between Adjacent Elements in a Circular Array/3423_maximum_difference_between_adjacent_elements_in_a_circular_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
