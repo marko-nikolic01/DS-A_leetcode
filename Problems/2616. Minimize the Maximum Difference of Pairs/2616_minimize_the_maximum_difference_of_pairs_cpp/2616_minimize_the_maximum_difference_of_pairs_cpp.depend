@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1749807837 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2616. Minimize the Maximum Difference of Pairs/2616_minimize_the_maximum_difference_of_pairs_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
