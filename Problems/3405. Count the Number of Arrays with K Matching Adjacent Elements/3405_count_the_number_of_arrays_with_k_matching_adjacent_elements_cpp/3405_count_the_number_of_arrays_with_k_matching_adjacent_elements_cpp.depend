@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1750156234 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3405. Count the Number of Arrays with K Matching Adjacent Elements/3405_count_the_number_of_arrays_with_k_matching_adjacent_elements_cpp/main.cpp
+	<iostream>
+	<vector>
+
