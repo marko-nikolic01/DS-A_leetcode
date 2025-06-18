@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1750234768 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2966. Divide Array Into Arrays With Max Difference/2966_divide_array_into_arrays_with_max_difference_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
