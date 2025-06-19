@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1750311602 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2294. Partition Array Such That Maximum Difference Is K/2294_partition_array_such_that_maximum_difference_is_k_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

@@ -43,7 +43,7 @@ void test(vector<int> nums, int k, vector<vector<int>> expected) {
     }
     cout << endl;
 
-    cout << "Result:   ";
+    cout << "Result: ";
     for(vector<int> result : divideArray(nums, k)) {
         cout << "[" << result[0] << ", " << result[1] << ", " << result[2] << "] ";
     }
