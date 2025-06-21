@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1750501455 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3085. Minimum Deletions to Make String K-Special/3085_minimum_deletions_to_make_string_k_special_cpp/main.cpp
+	<iostream>
+	<vector>
+
