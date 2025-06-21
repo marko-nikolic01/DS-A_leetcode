@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1750502561 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1647. Minimum Deletions to Make Character Frequencies Unique/1647_minimum_deletions_to_make_character_frequencies_unique_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_set>
+
