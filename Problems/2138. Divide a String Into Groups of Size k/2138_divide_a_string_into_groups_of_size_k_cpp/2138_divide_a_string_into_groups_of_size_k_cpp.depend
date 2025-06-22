@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1750583749 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2138. Divide a String Into Groups of Size k/2138_divide_a_string_into_groups_of_size_k_cpp/main.cpp
+	<iostream>
+	<vector>
+
