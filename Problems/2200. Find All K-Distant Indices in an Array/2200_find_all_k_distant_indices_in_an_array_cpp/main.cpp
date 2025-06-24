@@ -6,16 +6,11 @@ using namespace std;
 vector<int> findKDistantIndices(vector<int>& nums, int key, int k) {
     short iIndicies = 0;
 
-    short left = 0;
+    int left = 0;
     short n = nums.size();
     for(short right = 0; right < n; ++right) {
         if(nums[right] == key) {
-            right -= k;
-            while(left < right) {
-                ++left;
-            }
-
-            right += k;
+            left = max(left, right - k);
             while(left < n && left <= right + k) {
                 if(nums[left] == key) {
                     right = left;
