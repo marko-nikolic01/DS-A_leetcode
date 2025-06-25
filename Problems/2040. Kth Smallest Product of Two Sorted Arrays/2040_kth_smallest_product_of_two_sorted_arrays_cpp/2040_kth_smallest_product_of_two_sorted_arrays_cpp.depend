@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1750853519 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2040. Kth Smallest Product of Two Sorted Arrays/2040_kth_smallest_product_of_two_sorted_arrays_cpp/main.cpp
+	<iostream>
+	<vector>
+
