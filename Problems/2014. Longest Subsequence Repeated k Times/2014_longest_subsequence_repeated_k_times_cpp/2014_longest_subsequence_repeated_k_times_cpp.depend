@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1751037052 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2014. Longest Subsequence Repeated k Times/2014_longest_subsequence_repeated_k_times_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
