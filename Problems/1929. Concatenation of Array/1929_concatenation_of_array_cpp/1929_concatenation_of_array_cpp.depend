@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1751273411 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1929. Concatenation of Array/1929_concatenation_of_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
