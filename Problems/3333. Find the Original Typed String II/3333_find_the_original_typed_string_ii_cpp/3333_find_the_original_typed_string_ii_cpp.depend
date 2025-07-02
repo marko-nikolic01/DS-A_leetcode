@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1751461695 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3333. Find the Original Typed String II/3333_find_the_original_typed_string_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+
