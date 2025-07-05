@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1751727334 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1394. Find Lucky Integer in an Array/1394_find_lucky_integer_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
