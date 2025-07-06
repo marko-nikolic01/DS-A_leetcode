@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1751810933 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/84. Largest Rectangle in Histogram/84_largest_rectangle_in_histogram_cpp/main.cpp
+	<iostream>
+	<vector>
+
