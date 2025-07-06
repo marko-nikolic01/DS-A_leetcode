@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1751798696 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3604. Minimum Time to Reach Destination in Directed Graph/3604_minimum_time_to_reach_destination_in_directed_graph_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
