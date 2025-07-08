@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1751981425 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1353. Maximum Number of Events That Can Be Attended/1353_maximum_number_of_events_that_can_be_attended_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+
