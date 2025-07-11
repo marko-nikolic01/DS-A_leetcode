@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1752237910 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2402. Meeting Rooms III/2402_meeting_rooms_iii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<set>
+	<queue>
+	<algorithm>
+
