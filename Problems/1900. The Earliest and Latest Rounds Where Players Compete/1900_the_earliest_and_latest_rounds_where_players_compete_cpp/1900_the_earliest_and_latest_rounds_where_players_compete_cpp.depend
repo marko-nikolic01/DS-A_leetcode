@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1752420915 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1900. The Earliest and Latest Rounds Where Players Compete/1900_the_earliest_and_latest_rounds_where_players_compete_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
