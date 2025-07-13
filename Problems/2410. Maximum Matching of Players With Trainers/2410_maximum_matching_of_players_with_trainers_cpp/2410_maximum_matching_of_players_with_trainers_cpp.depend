@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1752421803 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2410. Maximum Matching of Players With Trainers/2410_maximum_matching_of_players_with_trainers_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
