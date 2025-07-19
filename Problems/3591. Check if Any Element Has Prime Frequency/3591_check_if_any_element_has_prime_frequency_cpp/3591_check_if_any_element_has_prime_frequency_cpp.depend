@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1752936614 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3591. Check if Any Element Has Prime Frequency/3591_check_if_any_element_has_prime_frequency_cpp/main.cpp
+	<iostream>
+	<vector>
+

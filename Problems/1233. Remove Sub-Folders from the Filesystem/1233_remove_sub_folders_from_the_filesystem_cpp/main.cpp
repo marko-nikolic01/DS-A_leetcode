@@ -6,22 +6,27 @@ using namespace std;
 
 vector<string> removeSubfolders(vector<string>& folder) {
     unordered_set<string> folders;
+
     for(int i = folder.size() - 1; i > -1; --i) {
         folders.insert(folder[i]);
     }
 
     vector<string> mainFolders;
+    string currentFolder = "/";
 
+    short j;
+    short n;
     for(int i = folder.size() - 1; i > -1; --i) {
-        string currentFolder = "/";
+        currentFolder.resize(1);
 
-        int n = folder[i].size();
-        int j = 1;
+        n = folder[i].size();
+        j = 1;
         for(j; j < n; ++j) {
             if(folder[i][j] == '/' && folders.find(currentFolder) != folders.end()) {
                 break;
             }
-            currentFolder += folder[i][j];
+
+            currentFolder.push_back(folder[i][j]);
         }
 
         if(j == n) {
