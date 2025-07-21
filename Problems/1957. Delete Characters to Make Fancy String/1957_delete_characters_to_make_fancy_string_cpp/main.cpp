@@ -3,31 +3,34 @@
 using namespace std;
 
 string makeFancyString(string s) {
-    string fancyString = "";
+    int iFancy = 0;
 
-    int n = s.length();
+    int n = s.size();
     for(int i = 0; i < n; ++i) {
-        fancyString.push_back(s[i]);
+        s[iFancy++] = s[i];
 
-        if(++i < n && s[i] == s[i - 1]) {
-            fancyString.push_back(s[i]);
+        if(++i < n && s[i - 1] == s[i]) {
+            s[iFancy++] = s[i++];
+
+            while(i < n && s[i - 1] == s[i]) {
+                ++i;
+            }
         }
 
-        while(i < n && s[i] == s[i - 1]) {
-            i++;
-        }
-        i--;
+        --i;
     }
 
-    return fancyString;
+    s.resize(iFancy);
+
+    return s;
 }
 
 void test(string input, string expected) {
-    cout << "Input: \"" << input << "\"" << endl;
+    cout << "Input: " << "\"" << input << "\"" << endl;
 
-    cout << "Expected: \"" << expected << "\"" << endl;
+    cout << "Expected: " << "\"" << expected << "\"" << endl;
 
-    cout << "Result: \"" << makeFancyString(input) << "\"" << endl;
+    cout << "Result: " << "\"" << makeFancyString(input) << "\"" << endl;
 
     cout << endl;
 }
