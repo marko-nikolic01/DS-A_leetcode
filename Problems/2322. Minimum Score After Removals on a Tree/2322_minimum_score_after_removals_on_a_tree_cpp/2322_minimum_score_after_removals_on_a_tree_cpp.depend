@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1753362421 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2322. Minimum Score After Removals on a Tree/2322_minimum_score_after_removals_on_a_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+	<functional>
+

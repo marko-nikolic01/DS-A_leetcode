@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1753430516 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3487. Maximum Unique Subarray Sum After Deletion/3487_maximum_unique_subarray_sum_after_deletion_cpp/main.cpp
+	<iostream>
+	<vector>
+
