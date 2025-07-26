@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1753519307 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3480. Maximize Subarrays After Removing One Conflicting Pair/3480_maximize_subarrays_after_removing_one_conflicting_pair_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<climits>
+
