@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1753885120 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2419. Longest Subarray With Maximum Bitwise AND/2419_longest_subarray_with_maximum_bitwise_and_cpp/main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1753807308 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2411. Smallest Subarrays With Maximum Bitwise OR/2411_smallest_subarrays_with_maximum_bitwise_or_cpp/main.cpp
+	<iostream>
+	<vector>
+
