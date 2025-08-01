@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1754038074 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3627. Maximum Median Sum of Subsequences of Size 3/3627_maximum_median_sum_of_subsequences_of_size_3_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
