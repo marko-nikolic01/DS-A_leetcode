@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1754039029 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3619. Count Islands With Total Value Divisible by K/3619_count_islands_with_total_value_divisible_by_k_cpp/main.cpp
+	<iostream>
+	<vector>
+
