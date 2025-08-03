@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1754210328 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2106. Maximum Fruits Harvested After at Most K Steps/2106_maximum_fruits_harvested_after_at_most_k_steps_cpp/main.cpp
+	<iostream>
+	<vector>
+
