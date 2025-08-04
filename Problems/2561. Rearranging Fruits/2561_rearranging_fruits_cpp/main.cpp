@@ -53,7 +53,6 @@ long long minCost(vector<int>& basket1, vector<int>& basket2) {
         }
     }
 
-
     n1 = fruitDifferences1.size();
     if(n1 < 1) {
         return 0;
