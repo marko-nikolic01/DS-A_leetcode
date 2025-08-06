@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1754506787 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3479. Fruits Into Baskets III/3479_fruits_into_baskets_iii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+
