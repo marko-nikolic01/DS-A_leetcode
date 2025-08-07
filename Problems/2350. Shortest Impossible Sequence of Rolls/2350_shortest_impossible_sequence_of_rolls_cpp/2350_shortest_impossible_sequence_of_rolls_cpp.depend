@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1754852263 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2350. Shortest Impossible Sequence of Rolls/2350_shortest_impossible_sequence_of_rolls_cpp/main.cpp
+	<iostream>
+	<vector>
+
