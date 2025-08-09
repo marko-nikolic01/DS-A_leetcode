@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1754739121 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3640. Trionic Array II/3640_trionic_array_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
