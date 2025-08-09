@@ -3,28 +3,30 @@
 using namespace std;
 
 bool isPowerOfTwo(int n) {
-    return n > 0 && (n & (n - 1)) == 0;
+    return n > 0 && (n & (n - 1)) < 1;
 }
 
-void printTestCase(int n, bool expected) {
-    bool result = isPowerOfTwo(n);
+void test(int n, bool expected) {
+    cout << "n: " << n << endl;
 
-    cout << "Test case: " << n << endl;
     cout << "Expected: " << (expected ? "true" : "false") << endl;
-    cout << "Result: " << (result ? "true" : "false") << endl << endl;
+
+    cout << "Result: " << (isPowerOfTwo(n) ? "true" : "false") << endl;
+
+    cout << endl;
 }
 
 int main() {
-    printTestCase(1, true);
-    printTestCase(2, true);
-    printTestCase(3, false);
-    printTestCase(4, true);
-    printTestCase(5, false);
-    printTestCase(16, true);
-    printTestCase(31, false);
-    printTestCase(64, true);
-    printTestCase(0, false);
-    printTestCase(-16, false);
+    test(1, true);
+    test(2, true);
+    test(3, false);
+    test(4, true);
+    test(5, false);
+    test(16, true);
+    test(31, false);
+    test(64, true);
+    test(0, false);
+    test(-16, false);
 
     return 0;
 }
