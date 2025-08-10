@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1754814316 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/869. Reordered Power of 2/869_reordered_power_of_2_cpp/main.cpp
+	<iostream>
+	<vector>
+
