@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1754899817 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2438. Range Product Queries of Powers/2438_range_product_queries_of_powers_cpp/main.cpp
+	<iostream>
+	<vector>
+
