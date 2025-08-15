@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1755589402 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/679. 24 Game/679_24_game_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+
