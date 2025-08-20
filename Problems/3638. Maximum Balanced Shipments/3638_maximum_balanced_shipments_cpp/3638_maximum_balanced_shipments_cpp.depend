@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1755683019 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3638. Maximum Balanced Shipments/3638_maximum_balanced_shipments_cpp/main.cpp
+	<iostream>
+	<vector>
+
