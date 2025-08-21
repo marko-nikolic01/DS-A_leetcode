@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1755788593 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1504. Count Submatrices With All Ones/1504_count_submatrices_with_all_ones_cpp/main.cpp
+	<iostream>
+	<vector>
+	<stack>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1755591730 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3643. Flip Square Submatrix Vertically/3643_flip_square_submatrix_vertically_cpp/main.cpp
+	<iostream>
+	<vector>
+
