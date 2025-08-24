@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1756029406 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/773. Sliding Puzzle/773_sliding_puzzle_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
