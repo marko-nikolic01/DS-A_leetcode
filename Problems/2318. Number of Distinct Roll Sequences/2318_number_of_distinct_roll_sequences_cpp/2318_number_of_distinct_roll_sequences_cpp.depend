@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1756655244 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2318. Number of Distinct Roll Sequences/2318_number_of_distinct_roll_sequences_cpp/main.cpp
+	<iostream>
+	<vector>
+
