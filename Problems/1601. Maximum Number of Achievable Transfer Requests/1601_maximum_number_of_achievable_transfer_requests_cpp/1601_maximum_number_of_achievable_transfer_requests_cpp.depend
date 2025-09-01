@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1756495188 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1601. Maximum Number of Achievable Transfer Requests/1601_maximum_number_of_achievable_transfer_requests_cpp/main.cpp
+	<iostream>
+	<vector>
+
