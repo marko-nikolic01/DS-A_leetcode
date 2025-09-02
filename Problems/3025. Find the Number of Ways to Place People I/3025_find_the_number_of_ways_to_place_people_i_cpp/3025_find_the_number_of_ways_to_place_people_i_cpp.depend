@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1756836497 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3025. Find the Number of Ways to Place People I/3025_find_the_number_of_ways_to_place_people_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
