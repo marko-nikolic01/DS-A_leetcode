@@ -42,7 +42,7 @@ int numberOfPairs(vector<vector<int>>& points) {
     return pairs;
 }
 
-void test(vector<vector<int>> points, double expected) {
+void test(vector<vector<int>> points, int expected) {
     cout << "Points: ";
     for(vector<int> point : points) {
         cout << "[" << point[0] << ", " << point[1] << "] ";
