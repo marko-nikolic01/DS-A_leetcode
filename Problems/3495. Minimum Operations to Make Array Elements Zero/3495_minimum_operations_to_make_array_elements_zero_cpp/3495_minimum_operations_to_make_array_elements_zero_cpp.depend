@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757145691 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3495. Minimum Operations to Make Array Elements Zero/3495_minimum_operations_to_make_array_elements_zero_cpp/main.cpp
+	<iostream>
+	<vector>
+
