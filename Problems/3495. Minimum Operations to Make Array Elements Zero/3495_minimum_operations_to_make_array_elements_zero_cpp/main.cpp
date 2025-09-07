@@ -6,22 +6,22 @@ using namespace std;
 long long minOperations(vector<vector<int>>& queries) {
     long operations = 0;
     long currentOperations;
-    vector<pair<int, int>> operationsPerPowerOf4 = {
-        {3, 1},
-        {15, 2},
-        {63, 3},
-        {255, 4},
-        {1023, 5},
-        {4095, 6},
-        {16383, 7},
-        {65535, 8},
-        {262143, 9},
-        {1048575, 10},
-        {4194303, 11},
-        {16777215, 12},
-        {67108863, 13},
-        {268435455, 14},
-        {1073741823, 15}
+    vector<int> operationsPerPowerOf4 = {
+        3,
+        15,
+        63,
+        255,
+        1023,
+        4095,
+        16383,
+        65535,
+        262143,
+        1048575,
+        4194303,
+        16777215,
+        67108863,
+        268435455,
+        1073741823
     };
 
     short o;
@@ -29,14 +29,14 @@ long long minOperations(vector<vector<int>>& queries) {
         currentOperations = 0;
 
         for(o = 0; o < 14; ++o) {
-            if(queries[i][0] <= operationsPerPowerOf4[o].first) {
+            if(queries[i][0] <= operationsPerPowerOf4[o]) {
                 break;
             }
         }
 
         do {
-            currentOperations += (long)(min(queries[i][1], operationsPerPowerOf4[o].first) - queries[i][0] + 1) * operationsPerPowerOf4[o].second;
-            queries[i][0] = operationsPerPowerOf4[o++].first + 1;
+            currentOperations += (long)(min(queries[i][1], operationsPerPowerOf4[o]) - queries[i][0] + 1) * (o + 1);
+            queries[i][0] = operationsPerPowerOf4[o++] + 1;
         } while(queries[i][0] <= queries[i][1]);
 
         operations += ++currentOperations >> 1;
