@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757358594 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1317. Convert Integer to the Sum of Two No-Zero Integers/1317_convert_integer_to_the_sum_of_two_no_zero_integers_cpp/main.cpp
+	<iostream>
+	<vector>
+
