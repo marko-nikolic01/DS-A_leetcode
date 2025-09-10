@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757522525 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1733. Minimum Number of People to Teach/1733_minimum_number_of_people_to_teach_cpp/main.cpp
+	<iostream>
+	<vector>
+
