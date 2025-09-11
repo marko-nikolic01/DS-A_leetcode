@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1758379075 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3684. Maximize Sum of At Most K Distinct Elements/3684_maximize_sum_of_at_most_k_distinct_elements_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
