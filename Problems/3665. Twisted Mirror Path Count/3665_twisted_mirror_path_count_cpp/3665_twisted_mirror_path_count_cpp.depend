@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1758386798 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3665. Twisted Mirror Path Count/3665_twisted_mirror_path_count_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
