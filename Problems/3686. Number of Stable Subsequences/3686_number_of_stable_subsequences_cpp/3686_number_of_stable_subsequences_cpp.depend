@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1758233157 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3686. Number of Stable Subsequences/3686_number_of_stable_subsequences_cpp/main.cpp
+	<iostream>
+	<vector>
+
