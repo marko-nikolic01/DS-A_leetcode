@@ -93,7 +93,7 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
     cout << "Expected: ";
     printArray(expected);
 
-    cout << "Results:  ";
+    cout << "Results: ";
     printArray(results);
 
     cout << endl;
@@ -105,7 +105,7 @@ int main() {
     test({"FoodRatings", "highestRated", "changeRating", "highestRated"}, {{{"b", "c"}, {"y", "y"}, {"2", "3"}}, {{"y"}}, {{"b", "4"}}, {{"y"}}}, {"null", "c", "null", "b"});
     test({"FoodRatings", "highestRated"}, {{{"d"}, {"z"}, {"5"}}, {{"z"}}}, {"null", "d"});
     test({"FoodRatings", "highestRated", "changeRating", "highestRated"}, {{{"e", "f"}, {"w", "w"}, {"1", "1"}}, {{"w"}}, {{"e", "2"}}, {{"w"}}}, {"null", "e", "null", "e"});
-
     test({"FoodRatings", "highestRated"}, {{{"g"}, {"v"}, {"7"}}, {{"v"}}}, {"null", "g"});
+
     return 0;
 }
