@@ -51,18 +51,17 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
 
     cout << "Inputs: ";
     for (int i = 0; i < inputs.size(); i++) {
-        const auto& groups = inputs[i];
         cout << "[";
-        for (int j = 0; j < groups.size(); j++) {
+        for (int j = 0; j < inputs[i].size(); j++) {
             cout << "[";
-            for (int k = 0; k < groups[j].size(); k++) {
-                cout << groups[j][k];
-                if (k != groups[j].size() - 1) {
+            for (int k = 0; k < inputs[i][j].size(); k++) {
+                cout << inputs[i][j][k];
+                if (k != inputs[i][j].size() - 1) {
                     cout << ",";
                 }
             }
             cout << "]";
-            if (j != groups.size() - 1) {
+            if (j != inputs[i].size() - 1) {
                 cout << ", ";
             }
         }
