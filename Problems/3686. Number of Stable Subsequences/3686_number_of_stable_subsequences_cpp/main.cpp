@@ -40,7 +40,6 @@ void test(vector<int> nums, int expected) {
     cout << endl;
 }
 
-
 int main() {
     test({1, 3, 5}, 6);
     test({2, 3, 4, 2}, 14);
