@@ -74,18 +74,20 @@ void testTaskManager(vector<string> commands, vector<vector<vector<int>>> inputs
     printArray(commands);
 
     cout << "Inputs: ";
-    for (int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); i++) {
         cout << "[";
-        for (int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); j++) {
             cout << "[";
-            for (int k = 0; k < inputs[i][j].size(); k++) {
+            for(int k = 0; k < inputs[i][j].size(); k++) {
                 cout << inputs[i][j][k];
-                if (k != inputs[i][j].size() - 1) {
+                if(k != inputs[i][j].size() - 1) {
                     cout << ", ";
                 }
             }
             cout << "]";
-            if (j != inputs[i].size() - 1) cout << ", ";
+            if(j != inputs[i].size() - 1) {
+                cout << ", ";
+            }
         }
         cout << "] ";
     }
@@ -94,20 +96,20 @@ void testTaskManager(vector<string> commands, vector<vector<vector<int>>> inputs
     TaskManager* taskManager;
 
     vector<string> results;
-    for (int i = 0; i < commands.size(); i++) {
-        if (commands[i] == "TaskManager") {
+    for(int i = 0; i < commands.size(); i++) {
+        if(commands[i] == "TaskManager") {
             taskManager = new TaskManager(inputs[i]);
             results.push_back("null");
-        } else if (commands[i] == "add") {
+        } else if(commands[i] == "add") {
             taskManager->add(inputs[i][0][0], inputs[i][0][1], inputs[i][0][2]);
             results.push_back("null");
-        } else if (commands[i] == "edit") {
+        } else if(commands[i] == "edit") {
             taskManager->edit(inputs[i][0][0], inputs[i][0][1]);
             results.push_back("null");
-        } else if (commands[i] == "rmv") {
+        } else if(commands[i] == "rmv") {
             taskManager->rmv(inputs[i][0][0]);
             results.push_back("null");
-        } else if (commands[i] == "execTop") {
+        } else if(commands[i] == "execTop") {
             results.push_back(to_string(taskManager->execTop()));
         }
     }

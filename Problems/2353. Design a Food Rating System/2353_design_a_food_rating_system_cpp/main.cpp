@@ -50,18 +50,18 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
     printArray(commands);
 
     cout << "Inputs: ";
-    for (int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); i++) {
         cout << "[";
-        for (int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); j++) {
             cout << "[";
-            for (int k = 0; k < inputs[i][j].size(); k++) {
+            for(int k = 0; k < inputs[i][j].size(); k++) {
                 cout << inputs[i][j][k];
-                if (k != inputs[i][j].size() - 1) {
+                if(k != inputs[i][j].size() - 1) {
                     cout << ",";
                 }
             }
             cout << "]";
-            if (j != inputs[i].size() - 1) {
+            if(j != inputs[i].size() - 1) {
                 cout << ", ";
             }
         }
@@ -72,19 +72,19 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
     FoodRatings* foodRatings;
 
     vector<string> results;
-    for (int i = 0; i < commands.size(); i++) {
-        if (commands[i] == "FoodRatings") {
+    for(int i = 0; i < commands.size(); i++) {
+        if(commands[i] == "FoodRatings") {
             vector<int> ratings;
-            for (int j = 0; j < inputs[i][2].size(); j++) {
+            for(int j = 0; j < inputs[i][2].size(); j++) {
                 ratings.push_back(stoi(inputs[i][2][j]));
             }
 
             foodRatings = new FoodRatings(inputs[i][0], inputs[i][1], ratings);
             results.push_back("null");
-        } else if (commands[i] == "changeRating") {
+        } else if(commands[i] == "changeRating") {
             foodRatings->changeRating(inputs[i][0][0], stoi(inputs[i][0][1]));
             results.push_back("null");
-        } else if (commands[i] == "highestRated") {
+        } else if(commands[i] == "highestRated") {
             results.push_back(foodRatings->highestRated(inputs[i][0][0]));
         }
     }

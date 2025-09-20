@@ -71,11 +71,11 @@ void test(vector<string> commands, vector<vector<string>> inputs, vector<string>
     printArray(commands);
 
     cout << "Inputs: ";
-    for (int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); i++) {
         cout << "[";
-        for (int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); j++) {
             cout << inputs[i][j];
-            if (j != inputs[i].size() - 1) {
+            if(j != inputs[i].size() - 1) {
                 cout << ", ";
             }
         }
@@ -86,17 +86,17 @@ void test(vector<string> commands, vector<vector<string>> inputs, vector<string>
     Spreadsheet* spreadsheet;
 
     vector<string> results;
-    for (int i = 0; i < commands.size(); i++) {
-        if (commands[i] == "Spreadsheet") {
+    for(int i = 0; i < commands.size(); i++) {
+        if(commands[i] == "Spreadsheet") {
             spreadsheet = new Spreadsheet(stoi(inputs[i][0]));
             results.push_back("null");
-        } else if (commands[i] == "setCell") {
+        } else if(commands[i] == "setCell") {
             spreadsheet->setCell(inputs[i][0], stoi(inputs[i][1]));
             results.push_back("null");
-        } else if (commands[i] == "resetCell") {
+        } else if(commands[i] == "resetCell") {
             spreadsheet->resetCell(inputs[i][0]);
             results.push_back("null");
-        } else if (commands[i] == "getValue") {
+        } else if(commands[i] == "getValue") {
             results.push_back(to_string(spreadsheet->getValue(inputs[i][0])));
         }
     }
@@ -104,7 +104,7 @@ void test(vector<string> commands, vector<vector<string>> inputs, vector<string>
     cout << "Expected: ";
     printArray(expected);
 
-    cout << "Results:  ";
+    cout << "Results: ";
     printArray(results);
 
     cout << endl;
