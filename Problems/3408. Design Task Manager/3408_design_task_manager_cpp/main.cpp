@@ -69,16 +69,16 @@ void printArray(vector<string> array) {
     cout << endl;
 }
 
-void testTaskManager(vector<string> commands, vector<vector<vector<int>>> inputs, vector<string> expected) {
+void test(vector<string> commands, vector<vector<vector<int>>> inputs, vector<string> expected) {
     cout << "Commands: ";
     printArray(commands);
 
     cout << "Inputs: ";
-    for(int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); ++i) {
         cout << "[";
-        for(int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); ++j) {
             cout << "[";
-            for(int k = 0; k < inputs[i][j].size(); k++) {
+            for(int k = 0; k < inputs[i][j].size(); ++k) {
                 cout << inputs[i][j][k];
                 if(k != inputs[i][j].size() - 1) {
                     cout << ", ";
@@ -124,11 +124,11 @@ void testTaskManager(vector<string> commands, vector<vector<vector<int>>> inputs
 }
 
 int main() {
-    testTaskManager({"TaskManager", "add", "edit", "execTop", "rmv", "add", "execTop"}, {{{1, 101, 10}, {2, 102, 20}, {3, 103, 15}}, {{4, 104, 5}}, {{102, 8}}, {}, {{101}}, {{5, 105, 15}}, {}}, {"null", "null", "null", "3", "null", "null", "5"});
-    testTaskManager({"TaskManager", "execTop"}, {{{1, 100, 10}}, {}}, {"null", "1"});
-    testTaskManager({"TaskManager", "add", "execTop"}, {{}, {{1, 101, 5}}, {}}, {"null", "null", "1"});
-    testTaskManager({"TaskManager", "add", "rmv", "execTop"}, {{}, {{2, 102, 8}}, {{102}}, {}}, {"null", "null", "null", "-1"});
-    testTaskManager({"TaskManager", "add", "add", "execTop"}, {{}, {{1, 101, 10}}, {{2, 102, 10}}, {}}, {"null", "null", "null", "2"});
+    test({"TaskManager", "add", "edit", "execTop", "rmv", "add", "execTop"}, {{{1, 101, 10}, {2, 102, 20}, {3, 103, 15}}, {{4, 104, 5}}, {{102, 8}}, {}, {{101}}, {{5, 105, 15}}, {}}, {"null", "null", "null", "3", "null", "null", "5"});
+    test({"TaskManager", "execTop"}, {{{1, 100, 10}}, {}}, {"null", "1"});
+    test({"TaskManager", "add", "execTop"}, {{}, {{1, 101, 5}}, {}}, {"null", "null", "1"});
+    test({"TaskManager", "add", "rmv", "execTop"}, {{}, {{2, 102, 8}}, {{102}}, {}}, {"null", "null", "null", "-1"});
+    test({"TaskManager", "add", "add", "execTop"}, {{}, {{1, 101, 10}}, {{2, 102, 10}}, {}}, {"null", "null", "null", "2"});
 
     return 0;
 }

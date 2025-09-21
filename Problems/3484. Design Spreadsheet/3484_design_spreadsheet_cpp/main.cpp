@@ -71,9 +71,9 @@ void test(vector<string> commands, vector<vector<string>> inputs, vector<string>
     printArray(commands);
 
     cout << "Inputs: ";
-    for(int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); ++i) {
         cout << "[";
-        for(int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); ++j) {
             cout << inputs[i][j];
             if(j != inputs[i].size() - 1) {
                 cout << ", ";

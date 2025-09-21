@@ -50,11 +50,11 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
     printArray(commands);
 
     cout << "Inputs: ";
-    for(int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); ++i) {
         cout << "[";
-        for(int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); ++j) {
             cout << "[";
-            for(int k = 0; k < inputs[i][j].size(); k++) {
+            for(int k = 0; k < inputs[i][j].size(); ++k) {
                 cout << inputs[i][j][k];
                 if(k != inputs[i][j].size() - 1) {
                     cout << ",";
@@ -75,7 +75,7 @@ void test(vector<string> commands, vector<vector<vector<string>>> inputs, vector
     for(int i = 0; i < commands.size(); i++) {
         if(commands[i] == "FoodRatings") {
             vector<int> ratings;
-            for(int j = 0; j < inputs[i][2].size(); j++) {
+            for(int j = 0; j < inputs[i][2].size(); ++j) {
                 ratings.push_back(stoi(inputs[i][2][j]));
             }
 

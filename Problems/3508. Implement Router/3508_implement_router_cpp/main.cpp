@@ -91,14 +91,14 @@ void printArray(vector<string> array) {
     cout << endl;
 }
 
-void testTaskManager(vector<string> commands, vector<vector<int>> inputs, vector<string> expected) {
+void test(vector<string> commands, vector<vector<int>> inputs, vector<string> expected) {
     cout << "Commands: ";
     printArray(commands);
 
     cout << "Inputs: ";
-    for(int i = 0; i < inputs.size(); i++) {
+    for(int i = 0; i < inputs.size(); ++i) {
         cout << "[";
-        for(int j = 0; j < inputs[i].size(); j++) {
+        for(int j = 0; j < inputs[i].size(); ++j) {
             cout << inputs[i][j];
             if(j != inputs[i].size() - 1) {
                 cout << ", ";
@@ -139,12 +139,12 @@ void testTaskManager(vector<string> commands, vector<vector<int>> inputs, vector
 }
 
 int main() {
-    testTaskManager({"Router", "addPacket", "addPacket", "addPacket", "addPacket", "addPacket", "forwardPacket", "addPacket", "getCount"}, {{3}, {1, 4, 90}, {2, 5, 90}, {1, 4, 90}, {3, 5, 95}, {4, 5, 105}, {}, {5, 2, 110}, {5, 100, 110}}, {"null", "true", "true", "false", "true", "true", "[2, 5, 90]", "true", "1"});
-    testTaskManager({"Router", "addPacket", "forwardPacket", "forwardPacket"}, {{2}, {7, 4, 90}, {}, {}}, {"null", "true", "[7, 4, 90]", "[]"});
-    testTaskManager({"Router", "addPacket", "addPacket", "getCount"}, {{4}, {4, 2, 1}, {3, 2, 1}, {2, 1, 1}}, {"null", "true", "true", "2"});
-    testTaskManager({"Router", "addPacket", "addPacket", "forwardPacket", "getCount"}, {{2}, {5, 2, 4}, {4, 2, 4}, {}, {2, 4, 4}}, {"null", "true", "true", "[5, 2, 4]", "1"});
-    testTaskManager({"Router", "addPacket", "addPacket", "addPacket", "getCount", "getCount", "addPacket", "forwardPacket", "addPacket"}, {{5}, {2, 3, 1}, {5, 2, 5}, {2, 3, 5}, {3, 4, 4}, {3, 5, 5}, {3, 2, 5}, {}, {2, 3, 5}}, {"null", "true", "true", "true", "0", "1", "true", "[2, 3, 1]", "false"});
-    testTaskManager({"Router", "addPacket", "getCount", "forwardPacket", "getCount", "addPacket", "getCount"}, {{5}, {4, 2, 1}, {2, 1, 1}, {}, {2, 1, 1}, {4, 2, 1}, {2, 1, 1}}, {"null", "true", "1", "[4, 2, 1]", "0", "true", "1"});
+    test({"Router", "addPacket", "addPacket", "addPacket", "addPacket", "addPacket", "forwardPacket", "addPacket", "getCount"}, {{3}, {1, 4, 90}, {2, 5, 90}, {1, 4, 90}, {3, 5, 95}, {4, 5, 105}, {}, {5, 2, 110}, {5, 100, 110}}, {"null", "true", "true", "false", "true", "true", "[2, 5, 90]", "true", "1"});
+    test({"Router", "addPacket", "forwardPacket", "forwardPacket"}, {{2}, {7, 4, 90}, {}, {}}, {"null", "true", "[7, 4, 90]", "[]"});
+    test({"Router", "addPacket", "addPacket", "getCount"}, {{4}, {4, 2, 1}, {3, 2, 1}, {2, 1, 1}}, {"null", "true", "true", "2"});
+    test({"Router", "addPacket", "addPacket", "forwardPacket", "getCount"}, {{2}, {5, 2, 4}, {4, 2, 4}, {}, {2, 4, 4}}, {"null", "true", "true", "[5, 2, 4]", "1"});
+    test({"Router", "addPacket", "addPacket", "addPacket", "getCount", "getCount", "addPacket", "forwardPacket", "addPacket"}, {{5}, {2, 3, 1}, {5, 2, 5}, {2, 3, 5}, {3, 4, 4}, {3, 5, 5}, {3, 2, 5}, {}, {2, 3, 5}}, {"null", "true", "true", "true", "0", "1", "true", "[2, 3, 1]", "false"});
+    test({"Router", "addPacket", "getCount", "forwardPacket", "getCount", "addPacket", "getCount"}, {{5}, {4, 2, 1}, {2, 1, 1}, {}, {2, 1, 1}, {4, 2, 1}, {2, 1, 1}}, {"null", "true", "1", "[4, 2, 1]", "0", "true", "1"});
 
     return 0;
 }
