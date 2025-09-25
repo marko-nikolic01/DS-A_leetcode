@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1758526369 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3688. Bitwise OR of Even Numbers in an Array/3688_bitwise_or_of_even_numbers_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
