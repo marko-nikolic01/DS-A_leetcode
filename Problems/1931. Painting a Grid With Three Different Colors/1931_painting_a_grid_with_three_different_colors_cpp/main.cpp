@@ -1,74 +1,90 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
-#include <cmath>
 
 using namespace std;
 
+void colorTheGrid(vector<vector<short>>& columns, vector<short>& column, int& m, short& i) {
+    if(i == m) {
+        columns.push_back(column);
+    } else {
+        for(short color = 0; color < 3; ++color) {
+            if(i < 1 || column[i - 1] != color) {
+                column[i] = color;
+                colorTheGrid(columns, column, m, ++i);
+            }
+        }
+    }
+
+    --i;
+}
+
+void colorTheGrid(vector<int>& ways, vector<int>& previousWays, vector<vector<short>>& previousValidColumns, short& n) {
+    short i;
+    for(i = 0; i < n; ++i) {
+        ways[i] = 0;
+    }
+
+    short j;
+    for(i = 0; i < n; ++i) {
+        for(j = previousValidColumns[i].size() - 1; j > -1; --j) {
+            ways[i] = (ways[i] + previousWays[previousValidColumns[i][j]]) % 1000000007;
+        }
+    }
+}
+
+int colorTheGrid(vector<int>& ways, short& n) {
+    int wayCount = 0;
+
+    for(--n; n > -1; --n) {
+        wayCount = (wayCount + ways[n]) % 1000000007;
+    }
+
+    return wayCount;
+}
+
 int colorTheGrid(int m, int n) {
-    unordered_map<int, vector<int>> valid;
+    vector<vector<short>> columns;
+    vector<short> column(m);
 
-    int mask_end = pow(3, m);
-    for (int mask = 0; mask < mask_end; ++mask) {
-        vector<int> color;
-        int mm = mask;
-        for (int i = 0; i < m; ++i) {
-            color.push_back(mm % 3);
-            mm /= 3;
-        }
-        bool check = true;
-        for (int i = 0; i < m - 1; ++i) {
-            if (color[i] == color[i + 1]) {
-                check = false;
-                break;
-            }
-        }
-        if (check) {
-            valid[mask] = move(color);
-        }
-    }
+    short i = 0;
+    colorTheGrid(columns, column, m, i);
 
-    unordered_map<int, vector<int>> adjacent;
-    for (const auto& [mask1, color1] : valid) {
-        for (const auto& [mask2, color2] : valid) {
-            bool check = true;
-            for (int i = 0; i < m; ++i) {
-                if (color1[i] == color2[i]) {
-                    check = false;
-                    break;
-                }
+    short nColumns = columns.size();
+    vector<vector<short>> previousValidColumns(nColumns--);
+    bool isPrevious;
+
+    short j;
+    short k;
+    for(i = 0; i < nColumns; ++i) {
+        for(j = i + 1; j <= nColumns; ++j) {
+            isPrevious = true;
+
+            for(k = 0; k < m; ++k) {
+                isPrevious &= columns[i][k] != columns[j][k];
             }
-            if (check) {
-                adjacent[mask1].push_back(mask2);
+
+            if(isPrevious) {
+                previousValidColumns[i].push_back(j);
+                previousValidColumns[j].push_back(i);
             }
         }
     }
 
-    vector<int> f(mask_end);
-    for (const auto& [mask, _] : valid) {
-        f[mask] = 1;
-    }
-    for (int i = 1; i < n; ++i) {
-        vector<int> g(mask_end);
-        for (const auto& [mask2, _] : valid) {
-            for (int mask1 : adjacent[mask2]) {
-                g[mask2] += f[mask1];
-                if (g[mask2] >= 1000000007) {
-                    g[mask2] -= 1000000007;
-                }
-            }
+    vector<int> ways(++nColumns);
+    vector<int> previousWays(nColumns, 1);
+    isPrevious = true;
+
+    while(--n > 0) {
+        if(isPrevious) {
+            colorTheGrid(ways, previousWays, previousValidColumns, nColumns);
+        } else {
+            colorTheGrid(previousWays, ways, previousValidColumns, nColumns);
         }
-        f = move(g);
+
+        isPrevious = !isPrevious;
     }
 
-    int ans = 0;
-    for (int num : f) {
-        ans += num;
-        if (ans >= 1000000007) {
-            ans -= 1000000007;
-        }
-    }
-    return ans;
+    return isPrevious ? colorTheGrid(previousWays, nColumns) : colorTheGrid(ways, nColumns);
 }
 
 void runTest(int m, int n, int expected) {
