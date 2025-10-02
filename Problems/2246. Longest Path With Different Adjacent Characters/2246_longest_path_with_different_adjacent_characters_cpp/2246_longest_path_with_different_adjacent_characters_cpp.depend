@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1759403308 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2246. Longest Path With Different Adjacent Characters/2246_longest_path_with_different_adjacent_characters_cpp/main.cpp
+	<iostream>
+	<vector>
+
