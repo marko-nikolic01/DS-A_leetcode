@@ -66,7 +66,7 @@ void test(vector<int> nums, TreeNode* expected) {
     cout << "Array: ";
     printArray(nums);
 
-    cout << "Expected";
+    cout << "Expected:";
     printTree(expected);
 
     cout << "Result:";
