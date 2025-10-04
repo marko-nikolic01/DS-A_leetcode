@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1759485126 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1877. Minimize Maximum Pair Sum in Array/1877_minimize_maximum_pair_sum_in_array_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

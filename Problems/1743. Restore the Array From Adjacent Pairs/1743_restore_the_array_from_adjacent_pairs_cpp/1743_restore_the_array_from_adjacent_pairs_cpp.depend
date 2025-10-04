@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1759600365 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1743. Restore the Array From Adjacent Pairs/1743_restore_the_array_from_adjacent_pairs_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
