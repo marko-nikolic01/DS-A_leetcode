@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1759598067 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/841. Keys and Rooms/841_keys_and_rooms_cpp/main.cpp
+	<iostream>
+	<vector>
+
