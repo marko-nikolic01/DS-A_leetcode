@@ -4,7 +4,7 @@
 using namespace std;
 
 void letterCasePermutation(vector<string>& permutations, string& permutation, short i) {
-    if(i == permutation.size()) {
+    if(i == permutation.length()) {
         permutations.push_back(permutation);
         return;
     }
