@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760001036 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3494. Find the Minimum Amount of Time to Brew Potions/3494_find_the_minimum_amount_of_time_to_brew_potions_cpp/main.cpp
+	<iostream>
+	<vector>
+
