@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760083712 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3147. Taking Maximum Energy From the Mystic Dungeon/3147_taking_maximum_energy_from_the_mystic_dungeon_cpp/main.cpp
+	<iostream>
+	<vector>
+
