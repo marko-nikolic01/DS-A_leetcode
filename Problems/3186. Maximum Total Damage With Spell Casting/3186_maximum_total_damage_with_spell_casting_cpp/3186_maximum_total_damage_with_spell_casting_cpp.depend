@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1760171770 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3186. Maximum Total Damage With Spell Casting/3186_maximum_total_damage_with_spell_casting_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<algorithm>
+
