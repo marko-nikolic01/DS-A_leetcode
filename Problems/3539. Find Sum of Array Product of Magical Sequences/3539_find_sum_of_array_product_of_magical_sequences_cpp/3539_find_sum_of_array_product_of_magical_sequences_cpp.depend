@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760270176 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3539. Find Sum of Array Product of Magical Sequences/3539_find_sum_of_array_product_of_magical_sequences_cpp/main.cpp
+	<iostream>
+	<vector>
+
