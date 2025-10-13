@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1760380973 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2126. Destroying Asteroids/2126_destroying_asteroids_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
