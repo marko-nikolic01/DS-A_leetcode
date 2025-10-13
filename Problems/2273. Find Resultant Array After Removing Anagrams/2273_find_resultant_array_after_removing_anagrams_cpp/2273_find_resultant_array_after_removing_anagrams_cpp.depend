@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760344587 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2273. Find Resultant Array After Removing Anagrams/2273_find_resultant_array_after_removing_anagrams_cpp/main.cpp
+	<iostream>
+	<vector>
+
