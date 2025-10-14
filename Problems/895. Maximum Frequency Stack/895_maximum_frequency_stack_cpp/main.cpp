@@ -1,57 +1,40 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-#include <map>
 
 using namespace std;
 
 class FreqStack {
     private:
-        map<short, map<short, int>> frequencies;
-        unordered_map<int, short> elements;
-        unordered_map<int, vector<short>> positions;
-        short position;
+        vector<vector<int>> values;
+        unordered_map<int, short> frequencies;
 
     public:
-        FreqStack() : position(-1) {}
+        FreqStack() {}
 
         void push(int val) {
-            short frequency = ++elements[val];
+            short frequency = ++frequencies[val];
 
-            if(frequency > 1) {
-                frequencies[frequency - 1].erase(positions[val].back());
-
-                if(frequencies[frequency - 1].empty()) {
-                    frequencies.erase(frequency - 1);
-                }
+            if(frequency > values.size()) {
+                values.push_back({val});
+            } else {
+                values[--frequency].push_back(val);
             }
-
-            frequencies[frequency][++position] =val;
-            positions[val].push_back(position);
         }
 
         int pop() {
-            int val = frequencies.rbegin()->second.rbegin()->second;
-            short frequency = --elements[val];
-            short previousPosition = positions[val].back();
+            int value = values.back().back();
 
-            frequencies[frequency + 1].erase(previousPosition);
-
-            if(frequencies[frequency + 1].empty()) {
-                frequencies.erase(frequency + 1);
+            values.back().pop_back();
+            if(values.back().empty()) {
+                values.pop_back();
             }
 
-            if(frequency < 1) {
-                elements.erase(val);
-                positions.erase(val);
-            } else {
-                positions[val].pop_back();
-                previousPosition = positions[val].back();
-
-                frequencies[frequency][previousPosition] = val;
+            if(--frequencies[value] < 1) {
+                frequencies.erase(value);
             }
 
-            return val;
+            return value;
         }
 };
 
