@@ -84,7 +84,7 @@ void test(vector<string> commands, vector<vector<int>> inputs, vector<string> ex
     cout << "Expected: ";
     printArray(expected);
 
-    cout << "Results:  ";
+    cout << "Results: ";
     printArray(results);
 
     cout << endl;

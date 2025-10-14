@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1760454482 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/895. Maximum Frequency Stack/895_maximum_frequency_stack_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<map>
+
