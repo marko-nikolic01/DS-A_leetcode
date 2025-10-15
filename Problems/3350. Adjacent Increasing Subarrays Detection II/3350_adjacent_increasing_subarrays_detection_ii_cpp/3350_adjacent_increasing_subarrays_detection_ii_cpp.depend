@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760514879 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3350. Adjacent Increasing Subarrays Detection II/3350_adjacent_increasing_subarrays_detection_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+
