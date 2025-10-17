@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1760620113 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/514. Freedom Trail/514_freedom_trail_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
