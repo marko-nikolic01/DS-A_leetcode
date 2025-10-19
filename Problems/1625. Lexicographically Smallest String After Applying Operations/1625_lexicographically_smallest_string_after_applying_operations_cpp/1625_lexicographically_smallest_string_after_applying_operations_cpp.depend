@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1760883091 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1625. Lexicographically Smallest String After Applying Operations/1625_lexicographically_smallest_string_after_applying_operations_cpp/main.cpp
+	<iostream>
+	<unordered_set>
+	<algorithm>
+
