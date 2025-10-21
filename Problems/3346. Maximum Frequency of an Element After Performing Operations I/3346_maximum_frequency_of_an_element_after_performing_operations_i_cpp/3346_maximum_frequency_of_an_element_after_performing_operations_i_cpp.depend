@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1761047356 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3346. Maximum Frequency of an Element After Performing Operations I/3346_maximum_frequency_of_an_element_after_performing_operations_i_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<algorithm>
+
