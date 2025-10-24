@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761310554 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3425. Longest Special Path/3425_longest_special_path_cpp/main.cpp
+	<iostream>
+	<vector>
+
