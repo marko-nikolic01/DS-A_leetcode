@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761327501 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1557. Minimum Number of Vertices to Reach All Nodes/1557_minimum_number_of_vertices_to_reach_all_nodes_cpp/main.cpp
+	<iostream>
+	<vector>
+
