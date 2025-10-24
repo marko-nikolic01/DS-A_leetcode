@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761290907 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2048. Next Greater Numerically Balanced Number/2048_next_greater_numerically_balanced_number_cpp/main.cpp
+	<iostream>
+	<vector>
+
