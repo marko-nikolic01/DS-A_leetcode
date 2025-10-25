@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761408980 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/956. Tallest Billboard/956_tallest_billboard_cpp/main.cpp
+	<iostream>
+	<vector>
+
