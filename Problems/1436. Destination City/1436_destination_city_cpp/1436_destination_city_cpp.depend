@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1761556502 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1436. Destination City/1436_destination_city_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
