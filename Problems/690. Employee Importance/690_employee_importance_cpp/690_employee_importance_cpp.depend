@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1761673521 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/690. Employee Importance/690_employee_importance_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
