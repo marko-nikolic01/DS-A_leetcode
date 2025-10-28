@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761638280 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3354. Make Array Elements Equal to Zero/3354_make_array_elements_equal_to_zero_cpp/main.cpp
+	<iostream>
+	<vector>
+
