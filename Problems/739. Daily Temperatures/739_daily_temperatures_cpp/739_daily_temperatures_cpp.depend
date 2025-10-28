@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761685454 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/739. Daily Temperatures/739_daily_temperatures_cpp/main.cpp
+	<iostream>
+	<vector>
+

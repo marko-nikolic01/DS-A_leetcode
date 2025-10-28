@@ -36,13 +36,6 @@ int getImportance(vector<Employee*> employees, int id) {
     return importance;
 }
 
-void printArray(vector<int> array) {
-    for(int a : array) {
-        cout << a << " ";
-    }
-    cout << endl;
-}
-
 void test(vector<Employee*> employees, int id, int expected) {
     cout << "Employees: ";
     for(Employee* employee : employees) {

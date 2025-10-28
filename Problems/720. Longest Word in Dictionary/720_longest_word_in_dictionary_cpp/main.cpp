@@ -50,7 +50,7 @@ string longestWord(vector<string>& words) {
 
 void printArray(vector<string> array) {
     for(string a : array) {
-        cout << a << " ";
+        cout << "\"" << a << "\"" << " ";
     }
     cout << endl;
 }
