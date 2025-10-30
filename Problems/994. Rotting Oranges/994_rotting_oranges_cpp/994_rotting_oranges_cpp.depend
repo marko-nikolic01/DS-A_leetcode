@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1761844845 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/994. Rotting Oranges/994_rotting_oranges_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
