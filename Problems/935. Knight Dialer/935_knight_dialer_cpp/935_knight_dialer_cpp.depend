@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761837336 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/935. Knight Dialer/935_knight_dialer_cpp/main.cpp
+	<iostream>
+	<vector>
+
