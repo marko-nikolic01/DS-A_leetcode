@@ -24,6 +24,8 @@ int orangesRotting(vector<vector<int>>& grid) {
     }
 
     short i;
+    --m;
+    --n;
     while(freshOranges > 0 && !rottenOranges.empty()) {
         ++time;
 
@@ -38,7 +40,7 @@ int orangesRotting(vector<vector<int>>& grid) {
                 rottenOranges.push({x - 1, y});
             }
 
-            if(x < m - 1 && grid[x + 1][y] == 1) {
+            if(x < m && grid[x + 1][y] == 1) {
                 --freshOranges;
                 ++grid[x + 1][y];
                 rottenOranges.push({x + 1, y});
@@ -50,7 +52,7 @@ int orangesRotting(vector<vector<int>>& grid) {
                 rottenOranges.push({x, y - 1});
             }
 
-            if(y < n - 1 && grid[x][y + 1] == 1) {
+            if(y < n && grid[x][y + 1] == 1) {
                 --freshOranges;
                 ++grid[x][y + 1];
                 rottenOranges.push({x, y + 1});

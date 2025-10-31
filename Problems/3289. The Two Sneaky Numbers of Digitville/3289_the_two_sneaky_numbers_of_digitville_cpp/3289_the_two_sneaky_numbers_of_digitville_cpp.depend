@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1761893044 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3289. The Two Sneaky Numbers of Digitville/3289_the_two_sneaky_numbers_of_digitville_cpp/main.cpp
+	<iostream>
+	<vector>
+
