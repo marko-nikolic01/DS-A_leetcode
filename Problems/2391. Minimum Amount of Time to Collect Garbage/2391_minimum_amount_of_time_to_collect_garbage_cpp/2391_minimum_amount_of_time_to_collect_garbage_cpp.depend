@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1762110451 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2391. Minimum Amount of Time to Collect Garbage/2391_minimum_amount_of_time_to_collect_garbage_cpp/main.cpp
+	<iostream>
+	<vector>
+
