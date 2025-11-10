@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1763032535 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3542. Minimum Operations to Convert All Elements to Zero/3542_minimum_operations_to_convert_all_elements_to_zero_cpp/main.cpp
+	<iostream>
+	<vector>
+
