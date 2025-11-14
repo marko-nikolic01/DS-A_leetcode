@@ -5,25 +5,26 @@ using namespace std;
 
 vector<vector<int>> rangeAddQueries(int n, vector<vector<int>>& queries) {
     vector<vector<int>> matrix(n, vector<int>(n, 0));
-    vector<vector<pair<short, short>>> ranges(n, vector<pair<short, short>>(n, {0, 0}));
-    short value;
+    vector<vector<short>> ranges(n, vector<short>(n + 1, 0));
+    short cell;
 
     short i = queries.size();
-    short j = queries.size();
     for(--i; i > -1; --i) {
-        for(j = queries[i][0]; j <= queries[i][2]; ++j) {
-            ++ranges[j][queries[i][1]].first;
-            ++ranges[j][queries[i][3]].second;
+        ++queries[i][3];
+
+        for(queries[i][0]; queries[i][0] <= queries[i][2]; ++queries[i][0]) {
+            ++ranges[queries[i][0]][queries[i][3]];
+            --ranges[queries[i][0]][queries[i][1]];
         }
     }
 
+    short j;
     for(i = --n; i > -1; --i) {
-        value = 0;
+        cell = 0;
 
         for(j = n; j > -1; --j) {
-            value += ranges[i][j].second;
-            matrix[i][j] = value;
-            value -= ranges[i][j].first;
+            cell += ranges[i][j + 1];
+            matrix[i][j] = cell;
         }
     }
 
