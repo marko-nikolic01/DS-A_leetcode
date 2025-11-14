@@ -1,26 +1,26 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
 #include <climits>
 
 using namespace std;
 
 int minimumDistance(vector<int>& nums) {
-    unordered_map<int, vector<int>> occurences;
-    int distance = INT_MAX;
+    short n = nums.size();
+    vector<vector<short>> occurences(++n);
+    short distance = SHRT_MAX;
 
-    int i;
-    for(i = nums.size() - 1; i > -1; --i) {
+    short i;
+    for(i = n - 2; i > -1; --i) {
         occurences[nums[i]].push_back(i);
     }
 
-    for(unordered_map<int, vector<int>>::iterator it = occurences.begin(); it != occurences.end(); ++it) {
-        for(i = it->second.size() - 1; i > 1; --i) {
-            distance = min(distance, it->second[i - 2] - it->second[i]);
+    for(--n; n > 0; --n) {
+        for(i = occurences[n].size() - 1; i > 1; --i) {
+            distance = min((int)distance, occurences[n][i - 2] - occurences[n][i]);
         }
     }
 
-    return distance < INT_MAX ? distance << 1 : -1;
+    return distance < SHRT_MAX ? distance << 1 : -1;
 }
 
 void printArray(vector<int> array) {

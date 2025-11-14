@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1763120761 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3740. Minimum Distance Between Three Equal Elements I/3740_minimum_distance_between_three_equal_elements_i_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
