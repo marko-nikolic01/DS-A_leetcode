@@ -39,7 +39,9 @@ void test(vector<int> nums, int k, bool expected) {
     printArray(nums);
 
     cout << "k: " << k << endl;
+
     cout << "Expected: " << (expected ? "true" : "false") << endl;
+
     cout << "Result: " << (kLengthApart(nums, k) ? "true" : "false") << endl;
 
     cout << endl;
