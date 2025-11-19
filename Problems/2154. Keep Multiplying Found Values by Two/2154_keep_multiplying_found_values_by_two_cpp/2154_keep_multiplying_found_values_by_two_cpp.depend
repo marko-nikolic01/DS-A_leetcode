@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1763580044 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2154. Keep Multiplying Found Values by Two/2154_keep_multiplying_found_values_by_two_cpp/main.cpp
+	<iostream>
+	<vector>
+
