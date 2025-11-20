@@ -10,6 +10,9 @@ int minSteps(string s, string t) {
     int i;
     for(i = s.length() - 1; i > -1; --i) {
         ++letters[s[i] - 'a'];
+    }
+
+    for(i = t.length() - 1; i > -1; --i) {
         --letters[t[i] - 'a'];
     }
 
@@ -17,7 +20,7 @@ int minSteps(string s, string t) {
         steps += abs(letters[i]);
     }
 
-    return ++steps >> 1;
+    return steps;
 }
 
 void test(string s, string t, int expected) {
@@ -33,11 +36,11 @@ void test(string s, string t, int expected) {
 }
 
 int main() {
-    test("bab", "aba", 1);
-    test("leetcode", "practice", 5);
-    test("anagram", "mangaar", 0);
-    test("xxyyzz", "zzxxyy", 0);
-    test("aaaaab", "bbbbba", 4);
+    test("leetcode", "coats", 7);
+    test("night", "thing", 0);
+    test("aab", "bb", 3);
+    test("abc", "def", 6);
+    test("xxyyzz", "xyz", 3);
 
     return 0;
 }
