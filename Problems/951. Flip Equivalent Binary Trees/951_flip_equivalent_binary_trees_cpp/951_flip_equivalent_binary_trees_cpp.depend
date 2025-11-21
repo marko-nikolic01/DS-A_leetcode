@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1763754486 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/951. Flip Equivalent Binary Trees/951_flip_equivalent_binary_trees_cpp/main.cpp
+	<iostream>
+	<queue>
+
