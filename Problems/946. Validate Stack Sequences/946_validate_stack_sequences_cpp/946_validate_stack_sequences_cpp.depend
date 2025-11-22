@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1763825276 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/946. Validate Stack Sequences/946_validate_stack_sequences_cpp/main.cpp
+	<iostream>
+	<vector>
+
