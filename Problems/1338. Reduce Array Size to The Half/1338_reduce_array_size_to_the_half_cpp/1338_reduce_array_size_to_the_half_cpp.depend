@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1763911354 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1338. Reduce Array Size to The Half/1338_reduce_array_size_to_the_half_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<algorithm>
+
