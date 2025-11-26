@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1764196707 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2435. Paths in Matrix Whose Sum Is Divisible by K/2435_paths_in_matrix_whose_sum_is_divisible_by_k_cpp/main.cpp
+	<iostream>
+	<vector>
+
