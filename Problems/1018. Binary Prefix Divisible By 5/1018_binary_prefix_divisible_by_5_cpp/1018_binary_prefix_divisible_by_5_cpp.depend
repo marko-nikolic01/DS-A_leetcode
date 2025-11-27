@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1764013768 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1018. Binary Prefix Divisible By 5/1018_binary_prefix_divisible_by_5_cpp/main.cpp
+	<iostream>
+	<vector>
+
