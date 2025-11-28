@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1764421090 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1615. Maximal Network Rank/1615_maximal_network_rank_cpp/main.cpp
+	<iostream>
+	<vector>
+
