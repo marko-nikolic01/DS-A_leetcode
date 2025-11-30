@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1764505204 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1590. Make Sum Divisible by P/1590_make_sum_divisible_by_p_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
