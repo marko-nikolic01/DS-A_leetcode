@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1764505932 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2575. Find the Divisibility Array of a String/2575_find_the_divisibility_array_of_a_string_cpp/main.cpp
+	<iostream>
+	<vector>
+
