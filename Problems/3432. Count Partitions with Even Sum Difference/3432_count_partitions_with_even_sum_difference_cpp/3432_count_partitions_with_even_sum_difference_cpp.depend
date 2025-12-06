@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1765021593 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3432. Count Partitions with Even Sum Difference/3432_count_partitions_with_even_sum_difference_cpp/main.cpp
+	<iostream>
+	<vector>
+
