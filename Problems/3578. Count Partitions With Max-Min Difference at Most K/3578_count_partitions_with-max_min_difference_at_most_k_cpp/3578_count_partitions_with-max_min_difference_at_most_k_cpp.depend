@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1765024432 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3578. Count Partitions With Max-Min Difference at Most K/3578_count_partitions_with-max_min_difference_at_most_k_cpp/main.cpp
+	<iostream>
+	<vector>
+	<deque>
+
