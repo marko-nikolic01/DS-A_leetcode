@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1763927615 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2285. Maximum Total Importance of Roads/2285_maximum_total_importance_of_roads_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
