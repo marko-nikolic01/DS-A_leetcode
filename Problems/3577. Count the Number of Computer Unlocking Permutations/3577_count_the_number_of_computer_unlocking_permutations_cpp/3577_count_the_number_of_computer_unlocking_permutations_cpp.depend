@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1765401569 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3577. Count the Number of Computer Unlocking Permutations/3577_count_the_number_of_computer_unlocking_permutations_cpp/main.cpp
+	<iostream>
+	<vector>
+
