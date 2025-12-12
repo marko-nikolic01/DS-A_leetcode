@@ -15,10 +15,8 @@ vector<int> relocateMarbles(vector<int>& nums, vector<int>& moveFrom, vector<int
 
     n = moveFrom.size();
     for(int i = 0; i < n; ++i) {
-        if(moveFrom[i] != moveTo[i] && marbles.find(moveFrom[i]) != marbles.end()) {
-            marbles.insert(moveTo[i]);
-            marbles.erase(moveFrom[i]);
-        }
+        marbles.erase(moveFrom[i]);
+        marbles.insert(moveTo[i]);
     }
 
     nums.resize(marbles.size());
