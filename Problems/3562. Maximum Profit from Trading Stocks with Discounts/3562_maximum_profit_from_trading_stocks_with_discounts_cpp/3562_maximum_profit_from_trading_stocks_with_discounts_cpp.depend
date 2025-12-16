@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1765916171 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3562. Maximum Profit from Trading Stocks with Discounts/3562_maximum_profit_from_trading_stocks_with_discounts_cpp/main.cpp
+	<iostream>
+	<vector>
+
