@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766144834 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3652. Best Time to Buy and Sell Stock using Strategy/3652_best_time_to_buy_and_sell_stock_using_strategy_cpp/main.cpp
+	<iostream>
+	<vector>
+
