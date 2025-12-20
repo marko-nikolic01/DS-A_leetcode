@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766253091 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3780. Maximum Sum of Three Numbers Divisible by Three/3780_maximum_sum_of_three_numbers_divisible_by_three_cpp/main.cpp
+	<iostream>
+	<vector>
+
