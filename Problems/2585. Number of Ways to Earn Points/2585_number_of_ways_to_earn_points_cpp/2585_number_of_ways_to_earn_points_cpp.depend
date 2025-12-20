@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766262128 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2585. Number of Ways to Earn Points/2585_number_of_ways_to_earn_points_cpp/main.cpp
+	<iostream>
+	<vector>
+
