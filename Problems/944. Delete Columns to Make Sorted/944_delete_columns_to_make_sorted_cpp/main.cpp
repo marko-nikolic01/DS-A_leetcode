@@ -41,7 +41,6 @@ void test(vector<string> strs, int expected) {
     cout << endl;
 }
 
-
 int main() {
     test({"cba", "daf", "ghi"}, 1);
     test({"a", "b"}, 0);
