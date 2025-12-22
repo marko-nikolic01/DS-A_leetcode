@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766438236 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/960. Delete Columns to Make Sorted III/960_delete_columns_to_make_sorted_iii_cpp/main.cpp
+	<iostream>
+	<vector>
+
