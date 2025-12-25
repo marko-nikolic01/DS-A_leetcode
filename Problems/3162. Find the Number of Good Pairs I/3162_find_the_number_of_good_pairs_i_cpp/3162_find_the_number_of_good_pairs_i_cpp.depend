@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766145540 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3162. Find the Number of Good Pairs I/3162_find_the_number_of_good_pairs_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
