@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1766704797 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2442. Count Number of Distinct Integers After Reverse Operations/2442_count_number_of_distinct_integers_after_reverse_operations_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_set>
+
