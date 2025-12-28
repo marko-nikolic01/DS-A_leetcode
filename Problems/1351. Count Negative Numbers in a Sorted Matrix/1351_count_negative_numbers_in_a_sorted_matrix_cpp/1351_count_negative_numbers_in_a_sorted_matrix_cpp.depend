@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1766926163 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1351. Count Negative Numbers in a Sorted Matrix/1351_count_negative_numbers_in_a_sorted_matrix_cpp/main.cpp
+	<iostream>
+	<vector>
+
