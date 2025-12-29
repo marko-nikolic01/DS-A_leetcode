@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1766863876 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/648. Replace Words/648_replace_words_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_set>
+

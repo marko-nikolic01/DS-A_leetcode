@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1767041299 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/756. Pyramid Transition Matrix/756_pyramid_transition_matrix_cpp/main.cpp
+	<iostream>
+	<vector>
+
