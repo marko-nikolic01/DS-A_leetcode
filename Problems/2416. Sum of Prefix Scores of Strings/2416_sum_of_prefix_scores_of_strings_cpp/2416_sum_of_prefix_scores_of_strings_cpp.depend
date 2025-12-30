@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1767125656 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2416. Sum of Prefix Scores of Strings/2416_sum_of_prefix_scores_of_strings_cpp/main.cpp
+	<iostream>
+	<vector>
+
