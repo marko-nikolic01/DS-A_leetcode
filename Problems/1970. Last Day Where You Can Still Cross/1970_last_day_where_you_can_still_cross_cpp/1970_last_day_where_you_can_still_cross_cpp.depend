@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1767280452 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1970. Last Day Where You Can Still Cross/1970_last_day_where_you_can_still_cross_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<climits>
+
