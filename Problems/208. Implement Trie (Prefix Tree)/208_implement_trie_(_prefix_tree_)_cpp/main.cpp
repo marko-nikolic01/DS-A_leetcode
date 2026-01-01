@@ -33,7 +33,7 @@ class Trie {
         }
 
         bool search(string& word, short i) {
-            return i == word.size() ? isWord : (nodes[word[i] - 'a'] ? nodes[word[i] - 'a']->search(word, ++i) : false);
+            return i == word.length() ? isWord : (nodes[word[i] - 'a'] ? nodes[word[i] - 'a']->search(word, ++i) : false);
         }
 
         bool search(string word) {
@@ -41,7 +41,7 @@ class Trie {
         }
 
         bool startsWith(string& prefix, short i) {
-            return i == prefix.size() ? true : (nodes[prefix[i] - 'a'] ? nodes[prefix[i] - 'a']->startsWith(prefix, ++i) : false);
+            return i == prefix.length() ? true : (nodes[prefix[i] - 'a'] ? nodes[prefix[i] - 'a']->startsWith(prefix, ++i) : false);
         }
 
         bool startsWith(string prefix) {

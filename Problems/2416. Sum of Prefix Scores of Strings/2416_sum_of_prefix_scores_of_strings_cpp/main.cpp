@@ -16,7 +16,7 @@ class TrieNode {
         void insert(string& word, short i) {
             ++score;
 
-            if(i == word.size()) {
+            if(i == word.length()) {
                 return;
             }
 
@@ -38,7 +38,7 @@ class TrieNode {
         }
 
         int getScore(string& word, short i) {
-            return i == word.size() - 1 ? score : score + nodes[word[++i]]->getScore(word, i);
+            return i == word.length() - 1 ? score : score + nodes[word[++i]]->getScore(word, i);
         }
 
         int getScore(string& word) {

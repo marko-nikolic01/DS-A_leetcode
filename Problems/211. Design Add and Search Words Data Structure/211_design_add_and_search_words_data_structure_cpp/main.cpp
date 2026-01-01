@@ -33,7 +33,7 @@ class WordDictionary {
         }
 
         bool search(string& word, short i) {
-            if(i == word.size()) {
+            if(i == word.length()) {
                 return isWord;
             } else if(word[i] == '.') {
                 ++i;
