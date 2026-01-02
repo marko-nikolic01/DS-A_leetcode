@@ -1,31 +1,32 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
 
 using namespace std;
 
 int repeatedNTimes(vector<int>& nums) {
-    int n = nums.size();
-
-    unordered_map<int, int> occurences;
-
-    for(int i = 0; i < n; ++i) {
-        if(occurences.find(nums[i]) == occurences.end()) {
-            occurences[nums[i]] = 1;
-        } else if(++occurences[nums[i]] == n / 2) {
+    for(short i = nums.size() - 4; i > -1; --i) {
+        if(nums[i] == nums[i + 1] || nums[i] == nums[i + 2] || nums[i] == nums[i + 3]) {
             return nums[i];
+        } else if(nums[i + 1] == nums[i + 2] || nums[i + 1] == nums[i + 3]) {
+            return nums[++i];
+        } else if(nums[i + 2] == nums[i + 3]) {
+            return nums[i + 2];
         }
     }
 
     return 0;
 }
 
-void test(vector<int> nums, int expected) {
-    cout << "Input: ";
-    for (int num : nums) {
-        cout << num << " ";
+void printArray(vector<int> array) {
+    for(int a : array) {
+        cout << a << " ";
     }
     cout << endl;
+}
+
+void test(vector<int> nums, int expected) {
+    cout << "Array: ";
+    printArray(nums);
 
     cout << "Expected: " << expected << endl;
 
