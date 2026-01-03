@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1767528959 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1390. Four Divisors/1390_four_divisors_cpp/main.cpp
+	<iostream>
+	<vector>
+
