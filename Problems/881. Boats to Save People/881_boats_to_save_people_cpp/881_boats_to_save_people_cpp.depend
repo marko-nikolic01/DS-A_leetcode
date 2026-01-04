@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1767561762 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/881. Boats to Save People/881_boats_to_save_people_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
