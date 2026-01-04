@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1767532088 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/791. Custom Sort String/791_custom_sort_string_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
