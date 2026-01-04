@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1767531459 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/995. Minimum Number of K Consecutive Bit Flips/995_minimum_number_of_k_consecutive_bit_flips_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
