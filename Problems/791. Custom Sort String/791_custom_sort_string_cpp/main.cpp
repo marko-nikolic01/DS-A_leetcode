@@ -19,8 +19,8 @@ string customSortString(string order, string s) {
 }
 
 void test(string order, string s, string expected) {
-    cout << "Order: " << "\"" << order << "\"" << endl
-    ;
+    cout << "Order: " << "\"" << order << "\"" << endl;
+
     cout << "String: " << "\"" << s << "\"" << endl;
 
     cout << "Expected: " << "\"" << expected << "\"" << endl;
