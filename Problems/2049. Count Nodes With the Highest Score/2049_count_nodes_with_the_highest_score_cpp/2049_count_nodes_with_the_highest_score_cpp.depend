@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1767807054 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2049. Count Nodes With the Highest Score/2049_count_nodes_with_the_highest_score_cpp/main.cpp
+	<iostream>
+	<vector>
+
