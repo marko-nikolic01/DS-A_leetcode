@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1767909127 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1335. Minimum Difficulty of a Job Schedule/1335_minimum_difficulty_of_a_job_schedule_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
