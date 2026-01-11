@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1768126351 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/221. Maximal Square/221_maximal_square_cpp/main.cpp
+	<iostream>
+	<vector>
+

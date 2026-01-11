@@ -3,12 +3,13 @@
 
 using namespace std;
 
-int maximalRectangle(vector<vector<char>>& matrix) {
-    int area = 0;
+int maximalSquare(vector<vector<char>>& matrix) {
+    short area = 0;
     short m = matrix.size();
     short n = matrix[0].size();
     vector<vector<short>> streaks(m + 1, vector<short> (n));
     short streak;
+    short side;
 
     short i;
     short j;
@@ -36,9 +37,10 @@ int maximalRectangle(vector<vector<char>>& matrix) {
 
             while(!currentStreaks.empty() && streaks[i][j] < currentStreaks.back().first) {
                 streak = currentStreaks.back().second;
+                side = min((short)(i - streak), currentStreaks.back().first);
 
-                if((i - streak) * currentStreaks.back().first > area) {
-                    area = (i - streak) * currentStreaks.back().first;
+                if(side > area) {
+                    area = side;
                 }
 
                 currentStreaks.pop_back();
@@ -50,7 +52,7 @@ int maximalRectangle(vector<vector<char>>& matrix) {
         }
     }
 
-    return area;
+    return area * area;
 }
 
 void printMatrix(vector<vector<char>> matrix) {
@@ -68,17 +70,18 @@ void test(vector<vector<char>> matrix, int expected) {
 
     cout << "Expected: " << expected << endl;
 
-    cout << "Result: " << maximalRectangle(matrix) << endl;
+    cout << "Result: " << maximalSquare(matrix) << endl;
 
     cout << endl;
 }
 
 int main() {
-    test({{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}}, 6);
+    test({{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}}, 4);
+    test({{'0', '1'}, {'1', '0'}}, 1);
     test({{'0'}}, 0);
     test({{'1'}}, 1);
-    test({{'1', '0', '1', '1', '0', '1'}, {'1', '1', '1', '1', '1', '1'}, {'0', '1', '1', '0', '1', '1'}, {'1', '1', '1', '0', '1', '0'}, {'0', '1', '1', '1', '1', '1'}, {'1', '1', '0', '1', '1', '1'}}, 8);
-    test({{'1', '1', '1', '1'}, {'1', '1', '1', '1'}, {'1', '1', '1', '1'}}, 12);
+    test({{'1', '0', '1', '1', '0', '1'}, {'1', '1', '1', '1', '1', '1'}, {'0', '1', '1', '0', '1', '1'}, {'1', '1', '1', '0', '1', '0'}, {'0', '1', '1', '1', '1', '1'}, {'1', '1', '0', '1', '1', '1'}}, 4);
+    test({{'1', '1', '1', '1'}, {'1', '1', '1', '1'}, {'1', '1', '1', '1'}}, 9);
     test({{'0', '0', '0', '0'}, {'0', '0', '0', '0'}, {'0', '0', '0', '0'}}, 0);
 
     return 0;
