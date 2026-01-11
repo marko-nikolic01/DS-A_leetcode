@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1768125768 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/85. Maximal Rectangle/85_maximal_rectangle_cpp/main.cpp
+	<iostream>
+	<vector>
+
