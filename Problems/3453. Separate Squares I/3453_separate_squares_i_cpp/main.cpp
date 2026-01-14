@@ -25,10 +25,10 @@ double separateSquares(vector<vector<int>>& squares) {
     });
 
     n = events.size();
-    for (i = 0; i < n; ++i) {
+    for(i = 0; i < n; ++i) {
         tempArea = coveredWidth * (get<0>(events[i]) - previousHeight);
 
-        if (2LL * ((long)currentArea + tempArea) >= area) {
+        if(2LL * ((long)currentArea + tempArea) >= area) {
             return previousHeight + (area - 2.0 * currentArea) / (2.0 * coveredWidth);
         }
 
@@ -55,10 +55,10 @@ void test(vector<vector<int>> squares, double expected) {
 }
 
 int main() {
-    test({{0, 0, 1}, {2, 2, 1}}, 1.0);
+    test({{0, 0, 1}, {2, 2, 1}}, 1);
     test({{0, 0, 2}, {1, 1, 1}}, 1.16667);
     test({{0, 0, 2}}, 1);
-    test({{0, 0, 2}, {0, 2, 2}}, 2.0);
+    test({{0, 0, 2}, {0, 2, 2}}, 2);
     test({{0, 0, 10}, {3, 3, 2}}, 4.83333);
 
     return 0;
