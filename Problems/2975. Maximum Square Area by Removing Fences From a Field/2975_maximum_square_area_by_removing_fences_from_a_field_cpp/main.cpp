@@ -28,8 +28,9 @@ int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences)
     n = vFences.size();
     for(i = 0; i < n; ++i){
         for(m = i + 1; m < n; ++m){
-            if(fences.count(vFences[m] - vFences[i]))
+            if(fences.count(vFences[m] - vFences[i])) {
                 length = max(length, (long)vFences[m] - vFences[i]);
+            }
         }
     }
 
