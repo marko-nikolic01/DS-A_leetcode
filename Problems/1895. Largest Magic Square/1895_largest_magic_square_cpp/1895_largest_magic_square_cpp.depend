@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1768736431 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1895. Largest Magic Square/1895_largest_magic_square_cpp/main.cpp
+	<iostream>
+	<vector>
+
