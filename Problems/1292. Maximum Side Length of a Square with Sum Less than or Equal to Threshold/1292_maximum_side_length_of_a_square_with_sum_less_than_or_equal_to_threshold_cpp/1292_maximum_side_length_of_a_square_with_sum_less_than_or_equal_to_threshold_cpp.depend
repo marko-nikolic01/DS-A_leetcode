@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1768856754 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold/1292_maximum_side_length_of_a_square_with_sum_less_than_or_equal_to_threshold_cpp/main.cpp
+	<iostream>
+	<vector>
+
