@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1769281955 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3812. Minimum Edge Toggles on a Tree/3812_minimum_edge_toggles_on_a_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

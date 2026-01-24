@@ -37,7 +37,7 @@ void test(vector<vector<int>> towers, vector<int> center, int radius, vector<int
 
     cout << "Radius: " << radius << endl;
 
-    cout << "expected: ";
+    cout << "Expected: ";
     printArray(expected);
 
     cout << "Result: ";
