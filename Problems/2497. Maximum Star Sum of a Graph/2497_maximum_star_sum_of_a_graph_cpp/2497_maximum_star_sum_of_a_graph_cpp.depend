@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1769290714 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2497. Maximum Star Sum of a Graph/2497_maximum_star_sum_of_a_graph_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<climits>
+
