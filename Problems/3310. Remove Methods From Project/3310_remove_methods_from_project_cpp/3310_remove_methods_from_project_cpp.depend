@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1769354763 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3310. Remove Methods From Project/3310_remove_methods_from_project_cpp/main.cpp
+	<iostream>
+	<vector>
+
