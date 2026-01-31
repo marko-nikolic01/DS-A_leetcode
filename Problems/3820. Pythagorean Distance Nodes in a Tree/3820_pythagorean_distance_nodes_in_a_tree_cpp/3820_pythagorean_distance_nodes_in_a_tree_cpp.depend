@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1769855359 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3820. Pythagorean Distance Nodes in a Tree/3820_pythagorean_distance_nodes_in_a_tree_cpp/main.cpp
+	<iostream>
+	<vector>
+

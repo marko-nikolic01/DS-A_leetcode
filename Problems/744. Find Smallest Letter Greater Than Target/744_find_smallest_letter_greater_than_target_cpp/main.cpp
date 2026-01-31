@@ -4,11 +4,12 @@
 using namespace std;
 
 char nextGreatestLetter(vector<char>& letters, char target) {
-    int a = 0;
-    int b = letters.size() - 1;
+    short a = 0;
+    short b = letters.size() - 1;
+    short c;
 
     while(a <= b) {
-        int c = (a + b) / 2;
+        c = (a + b) / 2;
 
         if(letters[c] <= target) {
             a = ++c;
@@ -22,12 +23,16 @@ char nextGreatestLetter(vector<char>& letters, char target) {
     return letters[0];
 }
 
-void printTestCase(vector<char> letters, char target, char expected) {
-    cout << "Input: ";
-    for (char ch : letters) {
-        cout << ch << " ";
+void printArray(vector<char> array) {
+    for(char a : array) {
+        cout << a << " ";
     }
     cout << endl;
+}
+
+void printTestCase(vector<char> letters, char target, char expected) {
+    cout << "Letters: ";
+    printArray(letters);
 
     cout << "Target: " << target << endl;
 
@@ -39,30 +44,12 @@ void printTestCase(vector<char> letters, char target, char expected) {
 }
 
 int main() {
-    vector<char> letters1 = {'c', 'f', 'j'};
-    char target1 = 'a';
-    char expected1 = 'c';
-    printTestCase(letters1, target1, expected1);
-
-    vector<char> letters2 = {'c', 'f', 'j'};
-    char target2 = 'c';
-    char expected2 = 'f';
-    printTestCase(letters2, target2, expected2);
-
-    vector<char> letters3 = {'c', 'f', 'j'};
-    char target3 = 'd';
-    char expected3 = 'f';
-    printTestCase(letters3, target3, expected3);
-
-    vector<char> letters4 = {'c', 'f', 'j'};
-    char target4 = 'j';
-    char expected4 = 'c';
-    printTestCase(letters4, target4, expected4);
-
-    vector<char> letters5 = {'a', 'b', 'c', 'd'};
-    char target5 = 'd';
-    char expected5 = 'a';
-    printTestCase(letters5, target5, expected5);
+    printTestCase({'c', 'f', 'j'}, 'a', 'c');
+    printTestCase({'c', 'f', 'j'}, 'c', 'f');
+    printTestCase({'c', 'f', 'j'}, 'd', 'f');
+    printTestCase({'c', 'f', 'j'}, 'j', 'c');
+    printTestCase({'a', 'b', 'c', 'd'}, 'd', 'a');
 
     return 0;
 }
+

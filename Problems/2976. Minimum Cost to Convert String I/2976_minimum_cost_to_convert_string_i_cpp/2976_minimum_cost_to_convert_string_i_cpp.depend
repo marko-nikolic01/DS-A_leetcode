@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1769853998 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2976. Minimum Cost to Convert String I/2976_minimum_cost_to_convert_string_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
