@@ -75,7 +75,7 @@ void printArray(vector<int> array) {
     cout << endl;
 }
 
-void test(vector<int> nums, int k, int dist, int expected) {
+void test(vector<int> nums, int k, int dist, long long expected) {
     cout << "Array: ";
     printArray(nums);
 
