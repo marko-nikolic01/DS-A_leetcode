@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1770149538 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3013. Divide an Array Into Subarrays With Minimum Cost II/3013_divide_an_array_into_subarrays_with_minimum_cost_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<climits>
+	<cstring>
+
