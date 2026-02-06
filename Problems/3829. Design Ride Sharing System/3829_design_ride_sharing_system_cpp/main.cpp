@@ -11,9 +11,13 @@ class RideSharingSystem {
         vector<bool> cancellations;
 
     public:
-        RideSharingSystem() : cancellations(1001, false) {}
+        RideSharingSystem() {}
 
         void addRider(int riderId) {
+            if(riderId >= cancellations.size()) {
+                cancellations.resize(riderId + 1);
+            }
+
             riders.push(riderId);
             cancellations[riderId] = false;
         }
@@ -39,6 +43,10 @@ class RideSharingSystem {
         }
 
         void cancelRider(int riderId) {
+            if(riderId >= cancellations.size()) {
+                cancellations.resize(riderId + 1);
+            }
+
             cancellations[riderId] = true;
         }
 };
