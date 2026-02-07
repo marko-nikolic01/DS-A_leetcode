@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1770455303 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2124. Check if All As Appears Before All Bs/2124_check_if_all_as_appears_before_all_bs_cpp/main.cpp
+	<iostream>
+	<string>
+
