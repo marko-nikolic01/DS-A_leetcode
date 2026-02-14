@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1771081096 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/799. Champagne Tower/799_champagne_tower_cpp/main.cpp
+	<iostream>
+	<vector>
+
