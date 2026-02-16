@@ -22,7 +22,6 @@ vector<long long> mergeAdjacent(vector<int>& nums) {
     return merged;
 }
 
-
 void printArray(vector<int> array) {
     for(int a : array) {
         cout << a << " ";

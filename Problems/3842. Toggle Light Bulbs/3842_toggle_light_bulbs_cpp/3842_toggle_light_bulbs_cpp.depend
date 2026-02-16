@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1771262117 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3842. Toggle Light Bulbs/3842_toggle_light_bulbs_cpp/main.cpp
+	<iostream>
+	<vector>
+
