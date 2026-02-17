@@ -36,7 +36,7 @@ void printArray(vector<long long> array) {
     cout << endl;
 }
 
-void test(vector<int> nums, vector<int> expected) {
+void test(vector<int> nums, vector<long long> expected) {
     cout << "Array: ";
     printArray(nums);
 
