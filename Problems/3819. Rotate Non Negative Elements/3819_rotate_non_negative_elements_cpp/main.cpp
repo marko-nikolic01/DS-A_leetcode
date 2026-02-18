@@ -15,12 +15,12 @@ vector<int> rotateElements(vector<int>& nums, int k) {
     }
 
     n = nonNegative.size();
+
     if(n > 0) {
-        int j;
         k %= n;
+
         for(i = 0; i < n; ++i) {
-            j = (n + i - k) % n;
-            nums[nonNegative[j].second] = nonNegative[i].first;
+            nums[nonNegative[(n + i - k) % n].second] = nonNegative[i].first;
         }
     }
 

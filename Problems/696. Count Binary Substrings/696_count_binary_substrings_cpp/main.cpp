@@ -18,10 +18,10 @@ int countBinarySubstrings(string s) {
             }
 
             previous = false;
-            zeros++;
+            ++zeros;
 
             if(zeros <= ones) {
-                count++;
+                ++count;
             }
         } else {
             if(!previous) {
@@ -29,10 +29,10 @@ int countBinarySubstrings(string s) {
             }
 
             previous = true;
-            ones++;
+            ++ones;
 
             if(ones <= zeros) {
-                count++;
+                ++count;
             }
         }
     }
@@ -40,20 +40,22 @@ int countBinarySubstrings(string s) {
     return count;
 }
 
-void runTest(string binary, int expected) {
-    int result = countBinarySubstrings(binary);
-    cout << "Binary: " << binary << endl;
+void test(string s, int expected) {
+    cout << "s: " << s << endl;
+
     cout << "Expected: " << expected << endl;
-    cout << "Result: " << result << endl;
+
+    cout << "Result: " << countBinarySubstrings(s) << endl;
+
     cout << endl;
 }
 
 int main() {
-    runTest("00110011", 6);
-    runTest("10101", 4);
-    runTest("000111", 3);
-    runTest("0000", 0);
-    runTest("1111", 0);
+    test("00110011", 6);
+    test("10101", 4);
+    test("000111", 3);
+    test("0000", 0);
+    test("1111", 0);
 
     return 0;
 }
