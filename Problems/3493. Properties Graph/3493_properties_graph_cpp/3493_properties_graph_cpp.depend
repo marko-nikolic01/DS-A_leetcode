@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1771608237 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3493. Properties Graph/3493_properties_graph_cpp/main.cpp
+	<iostream>
+	<vector>
+
