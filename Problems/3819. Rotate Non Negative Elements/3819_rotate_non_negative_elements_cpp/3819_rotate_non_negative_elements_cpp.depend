@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1771349775 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3819. Rotate Non Negative Elements/3819_rotate_non_negative_elements_cpp/main.cpp
+	<iostream>
+	<vector>
+
