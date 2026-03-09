@@ -49,7 +49,7 @@ void test(int zero, int one, int limit, int expected) {
 
     cout << "Expected: " << expected << endl;
 
-    cout << "Result:   " << numberOfStableArrays(zero, one, limit) << endl;
+    cout << "Result: " << numberOfStableArrays(zero, one, limit) << endl;
 
     cout << endl;
 }
