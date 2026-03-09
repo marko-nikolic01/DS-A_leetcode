@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1773089210 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/560. Subarray Sum Equals K/560_subarray_sum_equals_k_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
