@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1773677594 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1209. Remove All Adjacent Duplicates in String II/1209_remove_all_adjacent_duplicates_in_string_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+
