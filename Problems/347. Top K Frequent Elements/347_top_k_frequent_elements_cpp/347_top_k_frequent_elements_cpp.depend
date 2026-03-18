@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1773837515 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/347. Top K Frequent Elements/347_top_k_frequent_elements_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<queue>
+

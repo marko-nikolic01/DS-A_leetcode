@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1773836885 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3070. Count Submatrices with Top-Left Element and Sum Less Than k/3070_count_submatrices_with_top_left_element_and_sum_less_than_k_cpp/main.cpp
+	<iostream>
+	<vector>
+

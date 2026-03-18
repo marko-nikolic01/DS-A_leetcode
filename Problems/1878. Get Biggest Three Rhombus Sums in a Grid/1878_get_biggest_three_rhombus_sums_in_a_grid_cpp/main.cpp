@@ -107,7 +107,7 @@ void test(vector<vector<int>> grid, vector<int> expected) {
     cout << "Expected: ";
     printArray(expected);
 
-    cout << "Result:   ";
+    cout << "Result: ";
     printArray(getBiggestThree(grid));
 
     cout << endl;
