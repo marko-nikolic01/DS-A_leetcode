@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1774183498 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1886. Determine Whether Matrix Can Be Obtained By Rotation/1886_determine_whether_matrix_can_be_obtained_by_rotation_cpp/main.cpp
+	<iostream>
+	<vector>
+
