@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1775071048 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1845. Seat Reservation Manager/1845_seat_reservation_manager_cpp/main.cpp
+	<iostream>
+	<vector>
+	<set>
+
