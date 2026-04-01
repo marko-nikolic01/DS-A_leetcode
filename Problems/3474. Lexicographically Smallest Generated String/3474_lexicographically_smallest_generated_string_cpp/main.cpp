@@ -55,13 +55,13 @@ string generateString(string str1, string str2) {
 }
 
 void test(string str1, string str2, string expected) {
-    cout << "String 1: " << str1 << endl;
+    cout << "String 1: " << "\"" << str1 << "\"" << endl;
 
-    cout << "String 2: " << str2 << endl;
+    cout << "String 2: " << "\"" << str2 << "\"" << endl;
 
-    cout << "Expected: " << expected << endl;
+    cout << "Expected: " << "\"" << expected << "\"" << endl;
 
-    cout << "Result: " << generateString(str1, str2) << endl;
+    cout << "Result: " << "\"" << generateString(str1, str2) << "\"" << endl;
 
     cout << endl;
 }

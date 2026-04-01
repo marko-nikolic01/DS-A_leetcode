@@ -14,7 +14,7 @@ int firstMatchingIndex(string s) {
 }
 
 void test(string s, int expected) {
-    cout << "String: " << s << endl;
+    cout << "String: " << "\"" << s << "\"" << endl;
 
     cout << "Expected: " << expected << endl;
 

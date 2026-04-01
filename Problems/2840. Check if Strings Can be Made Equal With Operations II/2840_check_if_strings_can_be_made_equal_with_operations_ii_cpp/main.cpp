@@ -26,9 +26,9 @@ bool checkStrings(string s1, string s2) {
 }
 
 void test(string s1, string s2, bool expected) {
-    cout << "String 1: " << s1 << endl;
+    cout << "String 1: " << "\"" << s1 << "\"" << endl;
 
-    cout << "String 2: " << s2 << endl;
+    cout << "String 2: " << "\"" << s2 << "\"" << endl;
 
     cout << "Expected: " << (expected ? "true" : "false") << endl;
 
