@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1775119614 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3418. Maximum Amount of Money Robot Can Earn/3418_maximum_amount_of_money_robot_can_earn_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<climits>
+
