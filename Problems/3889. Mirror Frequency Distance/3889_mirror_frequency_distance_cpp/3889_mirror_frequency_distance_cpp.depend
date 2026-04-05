@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1775385231 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3889. Mirror Frequency Distance/3889_mirror_frequency_distance_cpp/main.cpp
+	<iostream>
+	<vector>
+
