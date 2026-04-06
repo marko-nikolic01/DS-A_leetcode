@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1775502331 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/874. Walking Robot Simulation/874_walking_robot_simulation_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+

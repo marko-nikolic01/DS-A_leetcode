@@ -20,13 +20,6 @@ double averageWaitingTime(vector<vector<int>>& customers) {
     return waitingTime / n;
 }
 
-void printArray(vector<int> array) {
-    for(int a : array) {
-        cout << a << " ";
-    }
-    cout << endl;
-}
-
 void test(vector<vector<int>> customers, double expected) {
     cout << "Customers: ";
     for(vector<int> customer : customers) {
