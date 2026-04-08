@@ -4,21 +4,21 @@
 using namespace std;
 
 int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {
+    int xorSum = 0;
+
     short i;
-    int n = queries.size();
+    short n = queries.size();
     for(i = 0; i < n; ++i) {
         for(queries[i][0]; queries[i][0] <= queries[i][1]; queries[i][0] += queries[i][2]) {
-            nums[queries[i][0]] = ((long)nums[queries[i][0]] * queries[i][3]) % 1000000007;
+            nums[queries[i][0]] = (long)nums[queries[i][0]] * queries[i][3] % 1000000007;
         }
     }
 
-    n = nums[0];
-
-    for(i = nums.size() - 1; i > 0; --i) {
-        n ^= nums[i];
+    for(i = nums.size() - 1; i > -1; --i) {
+        xorSum ^= nums[i];
     }
 
-    return n;
+    return xorSum;
 }
 
 void printArray(vector<int> array) {
