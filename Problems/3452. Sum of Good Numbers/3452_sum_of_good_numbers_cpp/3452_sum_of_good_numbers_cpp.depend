@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1775826556 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3452. Sum of Good Numbers/3452_sum_of_good_numbers_cpp/main.cpp
+	<iostream>
+	<vector>
+
