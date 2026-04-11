@@ -38,7 +38,6 @@ void test(int n, string expected) {
     cout << endl;
 }
 
-
 int main() {
     test(13, "A91P1");
     test(36, "5101000");
