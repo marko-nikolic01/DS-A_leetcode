@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1775727638 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3655. XOR After Range Multiplication Queries II/3655_xor_after_range_multiplication_queries_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+
