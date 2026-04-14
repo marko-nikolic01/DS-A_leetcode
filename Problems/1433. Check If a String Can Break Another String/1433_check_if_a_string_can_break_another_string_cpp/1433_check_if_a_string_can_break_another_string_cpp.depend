@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1776173131 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1433. Check If a String Can Break Another String/1433_check_if_a_string_can_break_another_string_cpp/main.cpp
+	<iostream>
+	<algorithm>
+
