@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1776782281 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1722. Minimize Hamming Distance After Swap Operations/1722_minimize_hamming_distance_after_swap_operations_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
