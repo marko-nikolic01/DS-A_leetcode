@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1776961056 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/554. Brick Wall/554_brick_wall_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
