@@ -5,11 +5,11 @@
 using namespace std;
 
 int firstStableIndex(vector<int>& nums, int k) {
-    int n = nums.size();
+    short n = nums.size();
     vector<int> stability(n);
     int minMax = INT_MAX;
 
-    int i;
+    short i;
     for(i = --n; i > -1; --i) {
         if(nums[i] < minMax) {
             minMax = nums[i];

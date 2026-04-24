@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1777041638 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3903. Smallest Stable Index I/3903_smallest_stable_index_i_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
