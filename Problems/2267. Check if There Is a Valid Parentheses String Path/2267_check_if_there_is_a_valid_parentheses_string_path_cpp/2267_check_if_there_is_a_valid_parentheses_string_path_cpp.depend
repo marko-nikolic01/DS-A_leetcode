@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1777318056 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2267. Check if There Is a Valid Parentheses String Path/2267_check_if_there_is_a_valid_parentheses_string_path_cpp/main.cpp
+	<iostream>
+	<vector>
+

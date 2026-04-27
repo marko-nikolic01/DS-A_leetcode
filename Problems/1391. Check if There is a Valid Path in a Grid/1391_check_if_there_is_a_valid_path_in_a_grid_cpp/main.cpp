@@ -13,9 +13,9 @@ bool hasValidPath(vector<vector<int>>& grid) {
     vector<vector<tuple<bool, bool, bool, bool>>> transitions = {
         {{false, true, false, true}, {false, false, false, false}, {false, true, false, false}, {false, false, false, true}, {false, true, false, false}, {false, false, false, true}},
         {{false, false, false, false}, {true, false, true, false}, {true, false, false, false}, {true, false, false, false}, {false, false, true, false}, {false, false, true, false}},
-        {{false, false, false, true}, {false, false, true, false}, {false, false, false, true}, {false, false, false, true}, {false, false, true, false}, {false, false, true, true}},
+        {{false, false, false, true}, {false, false, true, false}, {false, false, false, false}, {false, false, false, true}, {false, false, true, false}, {false, false, true, true}},
         {{false, true, false, false}, {false, false, true, false}, {false, true, false, false}, {false, false, false, false}, {false, true, true, false}, {false, false, true, false}},
-        {{false, false, false, true}, {true, false, false, false}, {true, false, false, false}, {true, false, false, true}, {false, false, false, true}, {false, false, false, false}},
+        {{false, false, false, true}, {true, false, false, false}, {true, false, false, false}, {true, false, false, true}, {false, false, false, false}, {false, false, false, true}},
         {{false, true, false, false}, {true, false, false, false}, {true, true, false, false}, {true, false, false, false}, {false, true, false, false}, {false, false, false, false}}
     };
     vector<pair<short, short>> traversal;
