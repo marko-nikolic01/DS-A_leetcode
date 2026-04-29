@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1777488990 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1451. Rearrange Words in a Sentence/1451_rearrange_words_in_a_sentence_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
