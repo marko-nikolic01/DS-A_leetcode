@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1777559338 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3742. Maximum Path Score in a Grid/3742_maximum_path_score_in_a_grid_cpp/main.cpp
+	<iostream>
+	<vector>
+
