@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1777576238 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3868. Minimum Cost to Equalize Arrays Using Swaps/3868_minimum_cost_to_equalize_arrays_using_swaps_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
