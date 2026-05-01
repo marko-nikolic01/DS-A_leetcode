@@ -18,10 +18,10 @@ int minCost(vector<int>& nums1, vector<int>& nums2) {
             return -1;
         }
 
-        i += abs(it->second) >> 1;
+        i += abs(it->second);
     }
 
-    return ++i >> 1;
+    return ++i >> 2;
 }
 
 void printArray(vector<int> array) {
