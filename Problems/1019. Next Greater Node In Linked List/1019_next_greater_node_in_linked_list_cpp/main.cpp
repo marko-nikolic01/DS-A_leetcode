@@ -37,7 +37,7 @@ void printArray(vector<int> array) {
 }
 
 void printList(ListNode* head) {
-    while (head) {
+    while(head) {
         cout << head->val << " -> ";
         head = head->next;
     }
@@ -61,14 +61,14 @@ int main() {
     ListNode* head1 = new ListNode(2);
     head1->next = new ListNode(1);
     head1->next->next = new ListNode(5);
-    test(head1, {5,5,0});
+    test(head1, {5, 5, 0});
 
     ListNode* head2 = new ListNode(2);
     head2->next = new ListNode(7);
     head2->next->next = new ListNode(4);
     head2->next->next->next = new ListNode(3);
     head2->next->next->next->next = new ListNode(5);
-    test(head2, {7,0,5,5,0});
+    test(head2, {7, 0, 5, 5, 0});
 
     ListNode* head3 = new ListNode(42);
     test(head3, {0});
@@ -78,14 +78,14 @@ int main() {
     head4->next->next = new ListNode(3);
     head4->next->next->next = new ListNode(2);
     head4->next->next->next->next = new ListNode(1);
-    test(head4, {0,0,0,0,0});
+    test(head4, {0, 0, 0, 0, 0});
 
     ListNode* head5 = new ListNode(1);
     head5->next = new ListNode(2);
     head5->next->next = new ListNode(3);
     head5->next->next->next = new ListNode(4);
     head5->next->next->next->next = new ListNode(5);
-    test(head5, {2,3,4,5,0});
+    test(head5, {2, 3, 4, 5, 0});
 
     return 0;
 }
