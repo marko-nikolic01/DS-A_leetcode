@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1777811658 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1019. Next Greater Node In Linked List/1019_next_greater_node_in_linked_list_cpp/main.cpp
+	<iostream>
+	<vector>
+
