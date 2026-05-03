@@ -7,24 +7,20 @@ vector<int> baseUnitConversions(vector<vector<int>>& conversions) {
     int n = conversions.size();
     vector<int> unitConversions(++n, 1);
     vector<vector<pair<int, int>>> graph(n--);
-    vector<pair<int, int>> traversal;
+    vector<int> traversal(1, 0);
     int unit;
-    long factor;
 
     while(--n > -1) {
         graph[conversions[n][0]].push_back({conversions[n][1], conversions[n][2]});
     }
 
-    traversal.push_back({0, 1});
-
     while(!traversal.empty()) {
-        unit = traversal.back().first;
-        factor = traversal.back().second;
+        unit = traversal.back();
         traversal.pop_back();
 
         for(n = graph[unit].size() - 1; n > -1; --n) {
-            unitConversions[graph[unit][n].first] = (factor * graph[unit][n].second) % 1000000007;
-            traversal.push_back({graph[unit][n].first, unitConversions[graph[unit][n].first]});
+            unitConversions[graph[unit][n].first] = ((long)unitConversions[unit] * graph[unit][n].second) % 1000000007;
+            traversal.push_back(graph[unit][n].first);
         }
     }
 

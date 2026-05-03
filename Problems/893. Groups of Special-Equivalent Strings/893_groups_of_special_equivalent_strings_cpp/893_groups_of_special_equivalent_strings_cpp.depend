@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1777797394 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/893. Groups of Special-Equivalent Strings/893_groups_of_special_equivalent_strings_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_set>
+	<algorithm>
+
