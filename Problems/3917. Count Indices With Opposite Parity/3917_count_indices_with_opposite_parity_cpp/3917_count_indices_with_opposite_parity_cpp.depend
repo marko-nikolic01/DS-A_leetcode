@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778051264 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3917. Count Indices With Opposite Parity/3917_count_indices_with_opposite_parity_cpp/main.cpp
+	<iostream>
+	<vector>
+
