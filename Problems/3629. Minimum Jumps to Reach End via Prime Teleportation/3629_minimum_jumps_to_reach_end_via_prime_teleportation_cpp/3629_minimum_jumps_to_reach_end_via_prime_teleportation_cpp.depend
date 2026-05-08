@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1778271076 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3629. Minimum Jumps to Reach End via Prime Teleportation/3629_minimum_jumps_to_reach_end_via_prime_teleportation_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
