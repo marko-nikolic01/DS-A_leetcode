@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778360240 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/851. Loud and Rich/851_loud_and_rich_cpp/main.cpp
+	<iostream>
+	<vector>
+
