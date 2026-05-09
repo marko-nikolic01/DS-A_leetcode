@@ -11,17 +11,15 @@ vector<int> loudAndRich(vector<vector<int>>& richer, vector<int>& quiet) {
     vector<short> traversal;
 
     short i;
-    for(short i = 0; i < n; ++i) {
-        loud[i] = quiet[i];
-        quiet[i] = i;
-    }
-
     for(i = richer.size() - 1; i > -1; --i) {
         richerGraph[richer[i][0]].push_back(richer[i][1]);
         ++richerLeft[richer[i][1]];
     }
 
     while(--n > -1) {
+        loud[n] = quiet[n];
+        quiet[n] = n;
+
         if(richerLeft[n] < 1) {
             traversal.push_back(n);
         }
