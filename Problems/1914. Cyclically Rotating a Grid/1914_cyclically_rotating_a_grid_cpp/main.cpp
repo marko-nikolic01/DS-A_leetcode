@@ -3,72 +3,65 @@
 
 using namespace std;
 
-void rotateGrid(vector<vector<int>>& grid, vector<vector<int>>& rotatedGrid, vector<int>& rotatedLayer, int& k, short& x1, short& x2, short& y1, short& y2) {
-    if(x1 > x2 || y1 > y2) {
-        return;
-    }
-
-    short n = (x2 - x1 + y2 - y1) << 1;
-    int rotation = k % n;
-
-    rotatedLayer.resize(n);
-
-    short i = x1;
-    short j = y1;
-    short iRotated = -1;
-    for(i; i <= x2; ++i) {
-        rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
-    }
-
-    --i;
-    while(++j <= y2) {
-        rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
-    }
-
-    --j;
-    while(--i >= x1) {
-        rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
-    }
-
-    ++i;
-    while(--j > y1) {
-        rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
-    }
-
-    iRotated = -1;
-    for(i; i <= x2; ++i) {
-        rotatedGrid[i][j] = rotatedLayer[++iRotated];
-    }
-
-    --i;
-    while(++j <= y2) {
-        rotatedGrid[i][j] = rotatedLayer[++iRotated];
-    }
-
-    --j;
-    while(--i >= x1) {
-        rotatedGrid[i][j] = rotatedLayer[++iRotated];
-    }
-
-    ++i;
-    while(--j > y1) {
-        rotatedGrid[i][j] = rotatedLayer[++iRotated];
-    }
-
-    rotateGrid(grid, rotatedGrid, rotatedLayer, k, ++x1, --x2, ++y1, --y2);
-}
-
 vector<vector<int>> rotateGrid(vector<vector<int>>& grid, int k) {
     short x1 = -1;
     short x2 = grid.size();
     short y1 = -1;
     short y2 = grid[0].size();
-    vector<vector<int>> rotatedGrid(x2, vector<int>(y2));
     vector<int> rotatedLayer;
+    short rotation;
 
-    rotateGrid(grid, rotatedGrid, rotatedLayer, k, ++x1, --x2, ++y1, --y2);
+    short i;
+    short j;
+    short iRotated;
+    short n;
+    while(++x1 <= --x2 && ++y1 <= --y2) {
+        n = (x2 - x1 + y2 - y1) << 1;
+        rotation = k % n;
+        rotatedLayer.resize(n);
 
-    return rotatedGrid;
+        j = y1;
+        iRotated = -1;
+        for(i = x1; i <= x2; ++i) {
+            rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
+        }
+
+        --i;
+        while(++j <= y2) {
+            rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
+        }
+
+        --j;
+        while(--i >= x1) {
+            rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
+        }
+
+        ++i;
+        while(--j > y1) {
+            rotatedLayer[(++iRotated + rotation) % n] = grid[i][j];
+        }
+
+        for(iRotated = -1; i <= x2; ++i) {
+            grid[i][j] = rotatedLayer[++iRotated];
+        }
+
+        --i;
+        while(++j <= y2) {
+            grid[i][j] = rotatedLayer[++iRotated];
+        }
+
+        --j;
+        while(--i >= x1) {
+            grid[i][j] = rotatedLayer[++iRotated];
+        }
+
+        ++i;
+        while(--j > y1) {
+            grid[i][j] = rotatedLayer[++iRotated];
+        }
+    }
+
+    return grid;
 }
 
 void printMatrix(vector<vector<int>> matrix) {
