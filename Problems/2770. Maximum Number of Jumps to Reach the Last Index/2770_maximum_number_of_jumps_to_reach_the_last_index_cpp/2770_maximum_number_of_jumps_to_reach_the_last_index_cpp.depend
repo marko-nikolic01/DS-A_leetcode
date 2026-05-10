@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778403463 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2770. Maximum Number of Jumps to Reach the Last Index/2770_maximum_number_of_jumps_to_reach_the_last_index_cpp/main.cpp
+	<iostream>
+	<vector>
+
