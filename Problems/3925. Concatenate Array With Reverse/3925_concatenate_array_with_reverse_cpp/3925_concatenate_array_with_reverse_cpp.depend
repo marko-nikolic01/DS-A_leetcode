@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778615509 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3925. Concatenate Array With Reverse/3925_concatenate_array_with_reverse_cpp/main.cpp
+	<iostream>
+	<vector>
+
