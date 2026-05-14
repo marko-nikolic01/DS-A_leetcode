@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778787990 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2784. Check if Array is Good/2784_check_if_array_is_good_cpp/main.cpp
+	<iostream>
+	<vector>
+

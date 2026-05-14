@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1778705900 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3912. Valid Elements in an Array/3912_valid_elements_in_an_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
