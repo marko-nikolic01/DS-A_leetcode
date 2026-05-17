@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1779030430 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1345. Jump Game IV/1345_jump_game_iv_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<queue>
+
