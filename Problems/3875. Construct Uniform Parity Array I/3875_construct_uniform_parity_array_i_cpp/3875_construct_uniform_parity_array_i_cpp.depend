@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1779137577 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3875. Construct Uniform Parity Array I/3875_construct_uniform_parity_array_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
