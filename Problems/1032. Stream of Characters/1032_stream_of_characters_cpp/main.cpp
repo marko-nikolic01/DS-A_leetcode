@@ -9,7 +9,7 @@ class TrieNode {
         bool isWord;
 
     public:
-        TrieNode() : nodes(26, nullptr), isWord(false) {}
+        TrieNode() : isWord(false) {}
 
         void insert(string& word, short i) {
             if(--i < 0) {
@@ -18,9 +18,13 @@ class TrieNode {
                 return;
             }
 
-            short c = word[i] - 'a';
+            short c = word[i] - '`';
 
-            if(!nodes[c]) {
+            if(nodes.size() < c) {
+                nodes.resize(c);
+            }
+
+            if(!nodes[--c]) {
                 nodes[c] = new TrieNode();
             }
 
@@ -36,7 +40,7 @@ class TrieNode {
 
             short c = query[i] - 'a';
 
-            return nodes[c] ? nodes[c]->search(query, i) : false;
+            return nodes.size() > c && nodes[c] ? nodes[c]->search(query, i) : false;
         }
 };
 
