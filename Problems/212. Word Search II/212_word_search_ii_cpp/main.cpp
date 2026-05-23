@@ -6,14 +6,14 @@ using namespace std;
 class TrieNode {
     private:
         vector<TrieNode*> nodes;
-        vector<short> wordEnds;
+        short wordIndex;
 
     public:
-        TrieNode() {}
+        TrieNode() : wordIndex(-1) {}
 
         void insert(string& word, short index, short i) {
             if(--i < 0) {
-                wordEnds.push_back(index);
+                wordIndex = index;
 
                 return;
             }
@@ -32,9 +32,9 @@ class TrieNode {
         }
 
         void search(vector<vector<char>>& board, vector<string>& words, vector<string>& searchResults, short x, short y) {
-            while(!wordEnds.empty()) {
-                searchResults.push_back(words[wordEnds.back()]);
-                wordEnds.pop_back();
+            if(wordIndex > -1) {
+                searchResults.push_back(words[wordIndex]);
+                wordIndex = -1;
             }
 
             if(x > -1 && x < board.size() && y > -1 && y < board[0].size()) {

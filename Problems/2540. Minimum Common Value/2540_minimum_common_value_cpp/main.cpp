@@ -32,8 +32,8 @@ void test(vector<int> nums1, vector<int> nums2, int expected) {
     cout << "Array 1: ";
     printArray(nums1);
 
-    cout << "Array 1: ";
-    printArray(nums1);
+    cout << "Array 2: ";
+    printArray(nums2);
 
     cout << "Expected: " << expected << endl;
 
