@@ -59,10 +59,12 @@ void test(vector<int> hand, int groupSize, bool expected) {
     cout << endl;
 }
 
-
 int main() {
     test({1, 2, 3, 6, 2, 3, 4, 7, 8}, 3, true);
     test({1, 2, 3, 4, 5}, 4, false);
+    test({1, 2, 3, 3, 4, 4, 5, 6}, 4, true);
+    test({3, 2, 1, 2, 3, 4, 3, 4, 5, 9, 10, 11}, 3, true);
+    test({1, 2, 3, 4}, 3, false);
     test({1, 2, 3}, 1, true);
     test({1, 1, 2, 2, 3, 3}, 3, true);
     test({1, 2, 3, 4, 5, 6}, 4, false);
