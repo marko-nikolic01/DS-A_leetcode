@@ -5,7 +5,11 @@ using namespace std;
 
 bool canReach(string s, int minJump, int maxJump) {
     int n = s.length();
-    vector<int> jumps(n--, 0);
+    if(s[--n] > '0') {
+        return false;
+    }
+
+    vector<int> jumps(n + 1, 0);
     int canJump = 1;
 
     --jumps[0];
@@ -20,7 +24,7 @@ bool canReach(string s, int minJump, int maxJump) {
         canJump += jumps[i];
     }
 
-    return s[n] < '1' && canJump > 0;
+    return canJump > 0;
 }
 
 void test(string s, int minJump, int maxJump, bool expected) {
