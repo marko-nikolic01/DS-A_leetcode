@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1779914921 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/745. Prefix and Suffix Search/745_prefix_and_suffix_search_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<unordered_set>
+

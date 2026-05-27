@@ -108,7 +108,7 @@ void test(vector<string> commands, vector<vector<string>> inputs, vector<string>
     vector<string> results;
     for(int i = 0; i < commands.size(); i++) {
         if(commands[i] == "StreamChecker") {
-            streamChecker = new StreamChecker(inputs[0]);
+            streamChecker = new StreamChecker(inputs[i]);
             results.push_back("null");
         } else if(commands[i] == "query") {
             results.push_back(streamChecker->query(inputs[i][0][0]) ? "true" : "false");
