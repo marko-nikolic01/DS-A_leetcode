@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1780084895 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3300. Minimum Element After Replacement With Digit Sum/3300_minimum_element_after_replacement_with_digit_sum_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
