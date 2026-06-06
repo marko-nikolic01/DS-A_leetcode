@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1780758091 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/539. Minimum Time Difference/539_minimum_time_difference_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
