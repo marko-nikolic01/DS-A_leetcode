@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1780756770 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2070. Most Beautiful Item for Each Query/2070_most_beautiful_item_for_each_query_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
