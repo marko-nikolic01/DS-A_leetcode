@@ -24,7 +24,7 @@ long long minEnergy(int n, int brightness, vector<vector<int>>& intervals) {
         i += ++intervals[iCurrent][1] - intervals[iCurrent--][0];
     }
 
-    return i * (brightness / 3 + (brightness % 3 > 0 ? 1 : 0));
+    return i * ((brightness + 2) / 3);
 }
 
 void test(int n, int brightness, vector<vector<int>> intervals, long long expected) {

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1780928595 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/216. Combination Sum III/216_combination_sum_iii/main.cpp
+	<iostream>
+	<vector>
+
