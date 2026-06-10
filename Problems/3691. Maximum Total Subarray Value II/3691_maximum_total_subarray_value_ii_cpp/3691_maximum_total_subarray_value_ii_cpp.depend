@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1781094471 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3691. Maximum Total Subarray Value II/3691_maximum_total_subarray_value_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
