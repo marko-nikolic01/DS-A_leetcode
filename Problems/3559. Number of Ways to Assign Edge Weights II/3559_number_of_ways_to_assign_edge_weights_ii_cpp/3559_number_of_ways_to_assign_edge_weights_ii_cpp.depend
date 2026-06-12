@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1781299898 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3559. Number of Ways to Assign Edge Weights II/3559_number_of_ways_to_assign_edge_weights_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+
