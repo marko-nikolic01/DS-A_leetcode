@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1781555656 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3952. Maximum Total Value of Covered Indices/3952_maximum_total_value_of_covered_indices_cpp/main.cpp
+	<iostream>
+	<vector>
+
