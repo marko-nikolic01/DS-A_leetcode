@@ -43,7 +43,7 @@ char processStr(string s, long long k) {
 }
 
 void test(string s, long long k, char expected) {
-    cout << "s: " << "\"" << s << "\"" << endl;
+    cout << "String: " << "\"" << s << "\"" << endl;
 
     cout << "k: " << k << endl;
 
