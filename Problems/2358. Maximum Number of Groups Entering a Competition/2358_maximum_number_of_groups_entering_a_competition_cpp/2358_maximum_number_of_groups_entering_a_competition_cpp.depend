@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1781885793 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2358. Maximum Number of Groups Entering a Competition/2358_maximum_number_of_groups_entering_a_competition_cpp/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+
