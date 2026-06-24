@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1782325013 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3700. Number of ZigZag Arrays II/3700_number_of_zig_zag_arrays_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+
