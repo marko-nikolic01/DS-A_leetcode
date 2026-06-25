@@ -78,7 +78,7 @@ void test(int n, int l, int r, int expected) {
 
     cout << "Expected: " << expected << endl;
 
-    cout << "Result:   " << zigZagArrays(n, l, r) << endl;
+    cout << "Result: " << zigZagArrays(n, l, r) << endl;
 
     cout << endl;
 }
