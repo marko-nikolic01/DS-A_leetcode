@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1782765890 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1967. Number of Strings That Appear as Substrings in Word/1967_number_of_strings_that_appear_as_substrings_in_word_cpp/main.cpp
+	<iostream>
+	<vector>
+
