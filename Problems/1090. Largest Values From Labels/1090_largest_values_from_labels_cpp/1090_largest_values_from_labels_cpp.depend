@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1782840535 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1090. Largest Values From Labels/1090_largest_values_from_labels_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+	<algorithm>
+
