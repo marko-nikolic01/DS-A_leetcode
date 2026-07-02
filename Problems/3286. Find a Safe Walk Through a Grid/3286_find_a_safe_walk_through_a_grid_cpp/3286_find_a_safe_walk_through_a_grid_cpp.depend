@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1783014733 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3286. Find a Safe Walk Through a Grid/3286_find_a_safe_walk_through_a_grid_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+
