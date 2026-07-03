@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1783192764 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3620. Network Recovery Pathways/3620_network_recovery_pathways_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<climits>
+
