@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1783193146 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2492. Minimum Score of a Path Between Two Cities/2492_minimum_score_of_a_path_between_two_cities_cpp/main.cpp
+	<iostream>
+	<vector>
+	<climits>
+
