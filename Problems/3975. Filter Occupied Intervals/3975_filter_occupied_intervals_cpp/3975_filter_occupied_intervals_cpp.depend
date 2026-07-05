@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1783286658 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3975. Filter Occupied Intervals/3975_filter_occupied_intervals_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
