@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1783238145 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3978. Unique Middle Element/3978_unique_middle_element_cpp/main.cpp
+	<iostream>
+	<vector>
+
