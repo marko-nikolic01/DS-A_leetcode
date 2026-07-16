@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1784223901 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3989. Maximum Consistent Columns in a Grid/3989_maximum_consistent_columns_in_a_grid_cpp/main.cpp
+	<iostream>
+	<vector>
+
