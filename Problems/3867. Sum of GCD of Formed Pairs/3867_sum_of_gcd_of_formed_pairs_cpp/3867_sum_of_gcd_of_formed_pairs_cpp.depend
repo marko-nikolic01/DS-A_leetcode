@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1784221573 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3867. Sum of GCD of Formed Pairs/3867_sum_of_gcd_of_formed_pairs_cpp/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
