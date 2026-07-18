@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1784391300 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1979. Find Greatest Common Divisor of Array/1979_find_greatest_common_divisor_of_array_cpp/main.cpp
+	<iostream>
+	<vector>
+
