@@ -48,7 +48,7 @@ void test(vector<vector<int>> grid, int k, vector<vector<int>> expected) {
     cout << "Matrix:" << endl;
     printMatrix(grid);
 
-    cout << "k:" << k << endl;
+    cout << "k: " << k << endl;
 
     cout << "Expected:" << endl;
     printMatrix(expected);
