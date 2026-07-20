@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1784576537 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3996. Even Number of Knight Moves/3996_even_number_of_knight_moves_cpp/main.cpp
+	<iostream>
+	<vector>
+
