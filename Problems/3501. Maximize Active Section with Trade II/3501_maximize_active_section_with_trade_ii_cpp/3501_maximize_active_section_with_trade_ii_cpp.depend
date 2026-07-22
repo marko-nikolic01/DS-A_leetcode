@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1784740807 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3501. Maximize Active Section with Trade II/3501_maximize_active_section_with_trade_ii_cpp/main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
+	<cmath>
+	<climits>
+
