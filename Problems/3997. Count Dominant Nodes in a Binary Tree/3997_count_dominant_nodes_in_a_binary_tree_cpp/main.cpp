@@ -60,7 +60,7 @@ void printTree(TreeNode* root) {
 }
 
 void test(TreeNode* root, int expected) {
-    cout << "Tree: ";
+    cout << "Tree:";
     printTree(root);
 
     cout << "Expected: " << expected << endl;
