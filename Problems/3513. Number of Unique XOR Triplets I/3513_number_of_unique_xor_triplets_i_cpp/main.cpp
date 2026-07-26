@@ -26,7 +26,7 @@ void printArray(vector<int> array) {
 }
 
 void test(vector<int> nums, int expected) {
-    cout << "Tree: ";
+    cout << "Array: ";
     printArray(nums);
 
     cout << "Expected: " << expected << endl;

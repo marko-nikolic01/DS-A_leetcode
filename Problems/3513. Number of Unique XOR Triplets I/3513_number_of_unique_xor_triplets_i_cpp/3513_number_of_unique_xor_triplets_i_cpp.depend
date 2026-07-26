@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1786194512 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/3513. Number of Unique XOR Triplets I/3513_number_of_unique_xor_triplets_i_cpp/main.cpp
+	<iostream>
+	<vector>
+
