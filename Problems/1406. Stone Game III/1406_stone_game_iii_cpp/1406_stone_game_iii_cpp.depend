@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1786197531 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/1406. Stone Game III/1406_stone_game_iii_cpp/main.cpp
+	<iostream>
+	<vector>
+
