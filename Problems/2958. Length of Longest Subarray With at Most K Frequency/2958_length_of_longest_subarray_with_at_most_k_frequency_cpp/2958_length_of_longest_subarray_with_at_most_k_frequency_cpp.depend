@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1786649581 source:/home/marko/Documents/GitHub/DS-A_leetcode/Problems/2958. Length of Longest Subarray With at Most K Frequency/2958_length_of_longest_subarray_with_at_most_k_frequency_cpp/main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
